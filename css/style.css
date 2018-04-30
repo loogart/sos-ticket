@@ -146,15 +146,30 @@ main {
     height: 130px;
 }
 
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
 .benefit-item {
     width: 140px;
     height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+    transition: all .35s ease-out;
 }
 
-.how-it-works {
+.how-it-works {}
+
+.how-it-works::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left:4.05rem;
+    margin-top:5px;
+    width:6px;
+    height:200px;
+    background-color: #fff;
 }
 
 .how-it-works-item {
@@ -162,17 +177,7 @@ main {
 }
 
 .how-it-works-item::before {
-    content:"#";
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    position:absolute;
-    left:3rem;
-    margin-top:10px;
-    padding:5px;
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color:var(--black);
-    color:var(--white);
-    border-radius: 4px;
+    content: url(../img/icons/diamond-1.svg);
+    position: absolute;
+    left: 2.5rem;
 }
