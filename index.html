@@ -54,7 +54,7 @@
                 <div class="jumbotron-content text-light">
                     <h1 class="font-weight-bold mb-4 text-shadow">Les premiers<br> depuis 13 ans.</h1>
                     <p class="h4 mb-4 text-shadow">Une contravention peut être contestée. Nous sommes là pour vous aider.</p>
-                    <p><button class="btn btn-lg btn-dark bg-black" href=""><img class="btn-icon" src="./img/logos/checkmark.svg">Débuter</button></p>
+                    <p><a class="btn btn-lg btn-dark bg-black" href="#services"><img class="btn-icon" src="./img/logos/checkmark.svg">Débuter</a></p>
                     <a class="text-light" href="#!">> Faculté affaiblies? Cliquez ici.</a>
                 </div>
                 <img class="jumbotron-image rellax-2" src="./img/photos/car-driving-with-tunnel-motion-blur-P8JQ4Z2.jpg">
@@ -66,7 +66,7 @@
             <div class="container-fluid p-5 bg-black text-light">
                 <h2 class="font-weight-bold mb-4">Un ticket?</h2>
                 <p class="h5 yellow mb-4">Nous vous aidons à...</p>
-                <div class="d-flex justify-content-center justify-content-between flex-wrap">
+                <div class="d-flex justify-content-center justify-content-sm-between flex-wrap">
                     <div class="benefit-item">
                         <span class="circle-badge mb-4 yellow bg-light"><i class="far fa-shield-check fa-4x"></i></span>
                         <p>Vous défendre</p>
@@ -121,8 +121,66 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section 4: Services -->
+        <section class="services bg-light" id="services">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Sélectionnez le service</h2>
+                <p class="mb-4">Notre service est basé sur la transparence et le professionnalisme. Choisissez le forfait qui correspond à votre situation.</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-ultra-light-grey d-flex flex-column align-items-center py-4 px-3">
+                            <h5>1 point</h5>
+                            <h3 class="display-4 font-weight-bold">149$</h3>
+                            <p class="my-3">L’ouverture du dossier du Client; La compilation et recherche de l’information administrative de votre dossier; L’intégratio...</p>
+                            <a class="mb-3 mr-auto font-weight-bold black" href="#!">Plus d'info</a>
+                            <button class="btn btn-dark btn-lg btn-block bg-black"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-light-grey d-flex flex-column align-items-center py-4 px-3">
+                            <h5>2-3 points</h5>
+                            <h3 class="display-4 font-weight-bold">199$</h3>
+                            <p class="my-3">L’ouverture du dossier du Client; La compilation et recherche de l’information administrative de votre dossier; L’intégratio...</p>
+                            <a class="mb-3 mr-auto font-weight-bold black" href="#!">Plus d'info</a>
+                            <button class="btn btn-dark btn-lg btn-block bg-black"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-dark-grey text-light d-flex flex-column align-items-center py-4 px-3">
+                            <h5>4-5 points</h5>
+                            <h3 class="display-4 font-weight-bold">299$</h3>
+                            <p class="my-3">L’ouverture du dossier du Client; La compilation et recherche de l’information administrative de votre dossier; L’intégratio...</p>
+                            <a class="mb-3 mr-auto font-weight-bold text-light" href="#!">Plus d'info</a>
+                            <button class="btn btn-dark btn-lg btn-block bg-white black"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-black yellow d-flex flex-column align-items-center py-4 px-3">
+                            <h5>6 points et +</h5>
+                            <h3 class="display-4 font-weight-bold">499$</h3>
+                            <p class="my-3 text-light">L’ouverture du dossier du Client; La compilation et recherche de l’information administrative de votre dossier; L’intégratio...</p>
+                            <a class="mb-3 mr-auto font-weight-bold yellow" href="#!">Plus d'info</a>
+                            <button class="btn btn-dark btn-lg btn-block bg-yellow black"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Choisir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Special Services -->
+        <section class="special-services">
+
+        </section>
+
+        <!-- Section 6: Featured -->
+        <section class="featured">
+
+        </section>
+
     </main>
 
+    <!-- footer -->
     <footer>
 
     </footer>
@@ -138,7 +196,9 @@
         var rellax2 = new Rellax('.rellax-2');
         //scroll reveal
         window.sr = ScrollReveal();
-        sr.reveal('.circle-badge', { duration: 2000 }, 200);
+        sr.reveal('.circle-badge', {
+            duration: 2000
+        }, 200);
 
     </script>
 </body>

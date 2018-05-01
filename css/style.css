@@ -5,9 +5,15 @@
     --yellow: #FBB03B;
     --dark-grey: #4A4A4A;
     --light-grey: #9B9B9B;
+    --ultra-light-grey: #D8D8D8;
     --white: #fff;
     --text-shadow-jumbotron: 0px 4px 18px rgba(0, 0, 0, .6);
     --btn-shadow-1: 0 5px 15px 0 rgba(0, 0, 0, 0.57);
+    --shadow-level-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-level-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --shadow-level-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --shadow-level-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --shadow-level-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 h1,
@@ -21,16 +27,39 @@ a {
     font-family: 'Lato', sans-serif;
 }
 
+h2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin: 1.5rem 0;
+    background-color: var(--yellow);
+}
+
+.btn{
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.how-it-works h2::after {
+    background-color: var(--white);
+}
+
 .black {
-    color: var(--black)!important;;
+    color: var(--black)!important;
+    ;
 }
 
 .bg-black {
-    background-color: var(--black)!important;;
+    background-color: var(--black)!important;
+    ;
 }
 
 .yellow {
-    color: var(--yellow)!important;;
+    color: var(--yellow)!important;
+    ;
 }
 
 .bg-yellow {
@@ -38,19 +67,33 @@ a {
 }
 
 .dark-grey {
-    color: var(--dark-grey)!important;;
+    color: var(--dark-grey)!important;
+    ;
 }
 
 .bg-dark-grey {
-    background-color: var(--dark-grey)!important;;
+    background-color: var(--dark-grey)!important;
+    ;
 }
 
 .light-grey {
-    color: var(--light-grey)!important;;
+    color: var(--light-grey)!important;
+    ;
 }
 
 .bg-light-grey {
-    background-color: var(--light-grey)!important;;
+    background-color: var(--light-grey)!important;
+    ;
+}
+
+.ultra-light-grey {
+    color: var(--ultra-light-grey)!important;
+    ;
+}
+
+.bg-ultra-light-grey {
+    background-color: var(--ultra-light-grey)!important;
+    ;
 }
 
 .navbar {
@@ -151,10 +194,10 @@ main {
     content: "";
     display: block;
     position: absolute;
-    left:4.05rem;
-    margin-top:5px;
-    width:6px;
-    height:100%;
+    left: 4.05rem;
+    margin-top: 5px;
+    width: 6px;
+    height: 240px;
     background-color: #fff;
 }
 
@@ -167,21 +210,24 @@ main {
     position: absolute;
     left: 2.5rem;
 }
+
 .how-it-works-item:nth-child(2)::before {
     content: url(../img/icons/diamond-2.svg);
     position: absolute;
     left: 2.5rem;
 }
+
 .how-it-works-item:nth-child(3)::before {
     content: url(../img/icons/diamond-3.svg);
     position: absolute;
     left: 2.5rem;
 }
+
 .street-line {
     display: block;
-    position:absolute;
-    width:4px;
-    height:100%;
+    position: absolute;
+    width: 4px;
+    height: 100%;
     background-color: var(--yellow);
 }
 
@@ -198,4 +244,19 @@ main {
     .jumbotron-image {
         object-position: 0 0;
     }
+}
+
+.tile {
+    border-radius: 8px;
+    transition: all 0.25s ease-out;
+    box-shadow: var(--shadow-level-4);
+}
+
+.tile:hover {
+    transform: translateY(3px);
+    box-shadow: var(--shadow-level-2);
+}
+
+.tile p {
+    font-size: .9rem;
 }
