@@ -57,7 +57,7 @@
                     <p><button class="btn btn-lg btn-dark bg-black" href=""><img class="btn-icon" src="./img/logos/checkmark.svg">Débuter</button></p>
                     <a class="text-light" href="#!">> Faculté affaiblies? Cliquez ici.</a>
                 </div>
-                <img class="jumbotron-image" src="./img/photos/car-driving-with-tunnel-motion-blur-P8JQ4Z2.jpg">
+                <img class="jumbotron-image rellax-2" src="./img/photos/car-driving-with-tunnel-motion-blur-P8JQ4Z2.jpg">
             </div>
         </section>
 
@@ -66,25 +66,25 @@
             <div class="container-fluid p-5 bg-black text-light">
                 <h2 class="font-weight-bold mb-4">Un ticket?</h2>
                 <p class="h5 yellow mb-4">Nous vous aidons à...</p>
-                <div class="d-flex justify-content-center justify-content-md-between flex-wrap">
+                <div class="d-flex justify-content-center justify-content-between flex-wrap">
                     <div class="benefit-item">
                         <span class="circle-badge mb-4 yellow bg-light"><i class="far fa-shield-check fa-4x"></i></span>
                         <p>Vous défendre</p>
                     </div>
                     <div class="benefit-item">
-                        <span class="circle-badge mb-4"><i class="far fa-hands-usd fa-4x"></i></span>
+                        <span class="circle-badge mb-4 white bg-dark-grey"><i class="far fa-hands-usd fa-4x"></i></span>
                         <p>Sauver de l'argent</p>
                     </div>
                     <div class="benefit-item">
-                        <span class="circle-badge mb-4"><i class="far fa-car fa-4x"></i></span>
+                        <span class="circle-badge mb-4 black bg-yellow"><i class="far fa-car fa-4x"></i></span>
                         <p>Sauver votre permis</p>
                     </div>
                     <div class="benefit-item">
-                        <span class="circle-badge mb-4"><i class="far fa-id-card fa-4x"></i></span>
+                        <span class="circle-badge mb-4 white bg-yellow"><i class="far fa-id-card fa-4x"></i></span>
                         <p>Réduire votre frais de permis de conduire</p>
                     </div>
                     <div class="benefit-item">
-                        <span class="circle-badge mb-4"><i class="far fa-dollar-sign fa-4x"></i></span>
+                        <span class="circle-badge mb-4 yellow bg-dark-grey"><i class="far fa-dollar-sign fa-4x"></i></span>
                         <p>Réduire vos frais d’assurance</p>
                     </div>
                 </div>
@@ -96,25 +96,28 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7 p-5 bg-yellow overflow-hidden">
-                        <h2 class="font-weight-bold">Comment ça marche?</h2>
+                        <h2 class="font-weight-bold mb-5">Comment ça marche?</h2>
                         <div class="how-it-works">
-                            <div class="how-it-works-item">
+                            <div class="how-it-works-item mb-5">
                                 <h4>Sélectionner.</h4>
                                 <p>Sélectionnez le forfait qui vous convient le mieux.</p>
                             </div>
-                            <div class="how-it-works-item">
+                            <div class="how-it-works-item mb-5">
                                 <h4>Payer.</h4>
                                 <p>Payez en ligne sécuritairement avec PayPal ou carte de crédit.</p>
                             </div>
-                            <div class="how-it-works-item">
+                            <div class="how-it-works-item mb-5">
                                 <h4>Consulter.</h4>
                                 <p>Consultez avec nos avocats en expertise policière.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 bg-dark-grey">
-
+                    <div class="d-none d-sm-flex col-md-5 bg-dark-grey align-content-center justify-content-center">
+                        <img class="w-100 rellax" src="./img/logos/logomark-shadow.svg" style="z-index:3" data-rellax-speed="2">
+                        <span class="street-line"></span>
+                        <span class="street-line ml-2"></span>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -127,6 +130,17 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/rellax.js"></script>
+    <script>
+        //rellax
+        var rellax = new Rellax('.rellax');
+        var rellax2 = new Rellax('.rellax-2');
+        //scroll reveal
+        window.sr = ScrollReveal();
+        sr.reveal('.circle-badge', { duration: 2000 }, 200);
+
+    </script>
 </body>
 
 </html>
