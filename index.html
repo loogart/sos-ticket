@@ -12,6 +12,7 @@
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
 
     <title>SOS Ticket</title>
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
                     <p><a class="btn btn-lg btn-dark bg-black" href="#services"><img class="btn-icon" src="./img/logos/checkmark.svg">Débuter</a></p>
                     <a class="text-light text-shadow-dark" href="#services-plus"><i class="far fa-beer"></i> Faculté affaiblies? Cliquez ici.</a>
                 </div>
-                <img class="jumbotron-image rellax-2" src="./img/photos/car-driving-with-tunnel-motion-blur-P8JQ4Z2.jpg">
+                <img class="jumbotron-image rellax-2" src="./img/photos/car-tunnel.jpg">
             </div>
         </section>
 
@@ -316,6 +317,32 @@
         sr.reveal('.featured img', {
             duration: 1000
         }, 150);
+
+    </script>
+    <script>
+        window.fcWidget.init({
+            token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
+            host: "https://wchat.freshchat.com"
+        });
+
+    </script>
+    <script>
+        // Make sure fcWidget.init is included before setting these values
+
+        // To set unique user id in your system when it is available
+        window.fcWidget.setExternalId("john.doe1987");
+
+        // To set user name
+        window.fcWidget.user.setFirstName("John");
+
+        // To set user email
+        window.fcWidget.user.setEmail("john.doe@gmail.com");
+
+        // To set user properties
+        window.fcWidget.user.setProperties({
+            plan: "Estate", // meta property 1
+            status: "Active" // meta property 2
+        });
 
     </script>
 </body>
