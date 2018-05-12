@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
 
     <title>SOS Ticket | À propos</title>
 </head>
@@ -86,7 +87,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="cta-bottom bg-white text-white p-3">
             <div class="container-fluid bg-dark-grey text-center py-5">
                 <h3 class="mb-3">Nous sommes ici pour vous.</h3>
@@ -95,8 +96,9 @@
             </div>
         </section>
 
-        <img class="img-fluid bg-white" src="img/photos/the-team.jpg">
-
+        <div class="bg-white text-center">
+            <img class="img-fluid" src="img/photos/the-team.jpg">
+        </div>
     </main>
 
     <!-- footer -->
@@ -162,7 +164,13 @@
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/rellax.js"></script>
     <script src="./js/scripts.js"></script>
+    <script>
+        window.fcWidget.init({
+            token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
+            host: "https://wchat.freshchat.com"
+        });
 
+    </script>
 </body>
 
 </html>

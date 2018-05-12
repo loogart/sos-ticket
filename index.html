@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
 
     <title>SOS Ticket</title>
-    <script src="https://wchat.freshchat.com/js/widget.js"></script>
 </head>
 
 <body>
@@ -139,7 +139,7 @@
                             <h3 class="display-4 font-weight-bold">149$</h3>
                             <p class="my-3">11 à 20km/h par-dessus la vitesse limite.</p>
                             <button class="btn btn-dark btn-lg btn-block bg-black"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</button>
-<!--
+                            <!--
                             <form action="your-server-side-code" method="POST">
                                 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_opIudPBjzMbfPcKq9V5X9P3d" data-amount="14900" data-name="SOS LEX INC." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto" data-currency="cad" data-zip-code="true">
 
@@ -313,6 +313,14 @@
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/rellax.js"></script>
     <script src="./js/scripts.js"></script>
+    <script>
+        window.fcWidget.init({
+            token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
+            host: "https://wchat.freshchat.com"
+        });
+
+    </script>
+
 </body>
 
 </html>
