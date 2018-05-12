@@ -139,6 +139,13 @@
                             <h3 class="display-4 font-weight-bold">149$</h3>
                             <p class="my-3">11 à 20km/h par-dessus la vitesse limite.</p>
                             <button class="btn btn-dark btn-lg btn-block bg-black"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</button>
+<!--
+                            <form action="your-server-side-code" method="POST">
+                                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_opIudPBjzMbfPcKq9V5X9P3d" data-amount="14900" data-name="SOS LEX INC." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto" data-currency="cad" data-zip-code="true">
+
+                                </script>
+                            </form>
+-->
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 mb-4">
@@ -305,46 +312,7 @@
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/rellax.js"></script>
-    <script>
-        //rellax
-        var rellax = new Rellax('.rellax');
-        var rellax2 = new Rellax('.rellax-2');
-        //scroll reveal
-        window.sr = ScrollReveal();
-        sr.reveal('.circle-badge', {
-            duration: 2000
-        }, 200);
-        sr.reveal('.featured img', {
-            duration: 1000
-        }, 150);
-
-    </script>
-    <script>
-        window.fcWidget.init({
-            token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
-            host: "https://wchat.freshchat.com"
-        });
-
-    </script>
-    <script>
-        // Make sure fcWidget.init is included before setting these values
-
-        // To set unique user id in your system when it is available
-        window.fcWidget.setExternalId("john.doe1987");
-
-        // To set user name
-        window.fcWidget.user.setFirstName("John");
-
-        // To set user email
-        window.fcWidget.user.setEmail("john.doe@gmail.com");
-
-        // To set user properties
-        window.fcWidget.user.setProperties({
-            plan: "Estate", // meta property 1
-            status: "Active" // meta property 2
-        });
-
-    </script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
