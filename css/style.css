@@ -139,13 +139,14 @@ h2::after {
 }
 
 
-.navbar li.nav-item a {
+.navbar-nav li.nav-item > a {
     padding: 21px 0 15px;
     margin: auto 10px;
+    border-bottom: 6px solid transparent;
 }
 
-.navbar li.nav-item.active a,
-.navbar li.nav-item:hover a {
+.navbar-nav li.nav-item.active > a,
+.navbar-nav li.nav-item:hover > a {
     border-bottom: 6px solid var(--yellow);
 }
 
@@ -305,8 +306,12 @@ main {
     }
     .navbar li.nav-item.active a,
     .navbar li.nav-item:hover a {
-        border-bottom: 0px solid transparent;
+        border-bottom: 6px solid transparent;
         color: var(--yellow)!important;
+    }
+    .dropdown-menu.show {
+        background-color: #222;
+        border:0;
     }
 }
 
