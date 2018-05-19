@@ -185,6 +185,15 @@ main {
     width: 50%;
 }
 
+.jumbotron-content-forfait {
+    z-index: 1;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
 .jumbotron-content .btn {
     box-shadow: var(--btn-shadow-1);
 }
@@ -304,14 +313,22 @@ main {
     .jumbotron-image {
         object-position: 0 0;
     }
+    .navbar li.nav-item a{
+        border-bottom: 0px solid transparent;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
     .navbar li.nav-item.active a,
     .navbar li.nav-item:hover a {
-        border-bottom: 6px solid transparent;
+        border-bottom: 0px solid transparent;
         color: var(--yellow)!important;
     }
     .dropdown-menu.show {
         background-color: #222;
         border:0;
+    }
+    .dropdown-divider{
+        color:transparent;
     }
 }
 
@@ -370,4 +387,12 @@ footer ul li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+}
+
+.about {
+    text-align: justify;
+}
+
+.forfait .card{
+    box-shadow: var(--shadow-level-4)
 }
