@@ -35,7 +35,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <h6 class="dropdown-header">Services de base</h6>
-                            <a class="dropdown-item font-weight-bold" href="./forfait-1-point.html">1 point</a>
+                            <a class="dropdown-item active" href="./forfait-1-point.html">1 point</a>
                             <a class="dropdown-item" href="./forfait-2-3-points.html">2-3 points</a>
                             <a class="dropdown-item" href="./forfait-4-5-points.html">4-5 points</a>
                             <a class="dropdown-item" href="./forfait-6-points-et-plus.html">6 points et +</a>
@@ -72,8 +72,10 @@
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <div class="card">
+                            <img class="card-img-top" src="./img/photos/car-tunnel.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h1 class="font-weight-bold mb-3">Forfait: 1 point</h1>
+                                <h1 class="h3 font-weight-bold">Forfait: 1 point</h1>
+                                <h3 class="h3 display-3 font-weight-bold">$149</h3>
                                 <h2 class="card-title">Services compris dans ce forfait</h2>
                                 <ul class="">
                                     <li>L’ouverture du dossier du Client;</li>
@@ -86,38 +88,8 @@
                                     <li>Le suivi administratif et juridique de votre dossier;</li>
                                     <li>L’analyse juridique de votre dossier.</li>
                                 </ul>
-                                
+                                <hr>
                                 <button id="acheterForfait1" class="btn btn-default btn-block bg-yellow black"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Acheter</button>
-
-                                <script>
-                                    var handler = StripeCheckout.configure({
-                                        key: 'pk_test_opIudPBjzMbfPcKq9V5X9P3d',
-                                        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-                                        locale: 'auto',
-                                        token: function(token) {
-                                            // You can access the token ID with `token.id`.
-                                            // Get the token ID to your server-side code for use.
-                                        }
-                                    });
-
-                                    document.getElementById('acheterForfait1').addEventListener('click', function(e) {
-                                        // Open Checkout with further options:
-                                        handler.open({
-                                            name: 'SOS Ticket',
-                                            description: 'Forfait 1 point',
-                                            currency: 'cad',
-                                            amount: 14900
-                                        });
-                                        e.preventDefault();
-                                    });
-
-                                    // Close Checkout on page navigation:
-                                    window.addEventListener('popstate', function() {
-                                        handler.close();
-                                    });
-
-                                </script>
-
                             </div>
                         </div>
                     </div>
@@ -138,26 +110,26 @@
                 <div class="col-6 col-md d-none d-md-block">
                     <h6 class="text-uppercase yellow mb-3">Services de base</h6>
                     <ul class="list-unstyled text-small">
-                        <li><a href="./index.html#services">1 points</a></li>
-                        <li><a href="./index.html#services">2-3 points</a></li>
-                        <li><a href="./index.html#services">4-5 points</a></li>
-                        <li><a href="./index.html#services">6 points et +</a></li>
+                        <li><a href="./forfait-1-point.html">1 points</a></li>
+                        <li><a href="./forfait-2-3-points.html">2-3 points</a></li>
+                        <li><a href="./forfait-4-5-points.html">4-5 points</a></li>
+                        <li><a href="./forfait-6-points-et-plus.html">6 points et +</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md d-none d-md-block">
                     <h6 class="text-uppercase yellow mb-3">Services spécialisés</h6>
                     <ul class="list-unstyled text-small">
-                        <li><a href="./index.html#services-plus">Facultés affaiblies</a></li>
-                        <li><a href="./index.html#services-plus">Véhicules lourds</a></li>
-                        <li><a href="./index.html#services-plus">Taxis</a></li>
+                        <li><a href="./forfait-facultes-affaiblies.html">Facultés affaiblies</a></li>
+                        <li><a href="./forfait-vehicules-lourds.html">Véhicules lourds</a></li>
+                        <li><a href="./forfait-taxis.html">Taxis</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md d-none d-md-block">
                     <h6 class="text-uppercase yellow mb-3">Entreprise</h6>
                     <ul class="list-unstyled text-small">
-                        <li><a href="./about.html">À propos</a></li>
+                        <li><a href="./a-propos.html">À propos</a></li>
                         <li><a href="#!">Blogue (Arrive bientôt)</a></li>
-                        <li><a href="./contact.html">Contacter-nous</a></li>
+                        <li><a href="./contactez-nous.html">Contacter-nous</a></li>
                     </ul>
                 </div>
                 <div class="col-12">
@@ -177,7 +149,7 @@
                                 </li>
                             </ul>
                         </small>
-                        <small class="d-block mt-3 text-muted order-md-2"><a href="#!">Privacy</a> | <a href="#!">Terms</a> | <a href="#!">Sitemap</a></small>
+                        <small class="d-block mt-3 text-muted order-md-2"><a href="#!">Politique de confidentialité</a></small>
                         <small class="d-block mt-3 text-muted order-md-1">&copy; Copyright 2018 SOS Ticket</small> </div>
 
                 </div>
@@ -190,13 +162,13 @@
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/rellax.js"></script>
+    <script src="./js/payments.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
         window.fcWidget.init({
             token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
             host: "https://wchat.freshchat.com"
         });
-
     </script>
 </body>
 

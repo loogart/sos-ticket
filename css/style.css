@@ -299,6 +299,11 @@ main {
     background-color: var(--yellow);
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--yellow);
+    color: var(--black)
+}
+
 @media (max-width:767px) {
     .navbar {
         padding: 0.5rem 1rem;
@@ -313,10 +318,10 @@ main {
     .jumbotron-image {
         object-position: 0 0;
     }
-    .navbar li.nav-item a{
+    .navbar li.nav-item a {
         border-bottom: 0px solid transparent;
-        padding-top:20px;
-        padding-bottom:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .navbar li.nav-item.active a,
     .navbar li.nav-item:hover a {
@@ -325,10 +330,13 @@ main {
     }
     .dropdown-menu.show {
         background-color: #222;
-        border:0;
+        border: 0;
     }
-    .dropdown-divider{
-        color:transparent;
+    .dropdown-divider {
+        color: transparent;
+    }
+    .dropdown-item.active {
+        background-color: #fff;
     }
 }
 
@@ -393,6 +401,13 @@ footer ul li {
     text-align: justify;
 }
 
-.forfait .card{
-    box-shadow: var(--shadow-level-4)
+.forfait .card {
+    box-shadow: var(--shadow-level-4);
+    border:none;
+}
+
+.card-img-top {
+    object-fit:cover;
+    height:200px;
+    width:100%;
 }
