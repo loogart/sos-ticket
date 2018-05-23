@@ -13,7 +13,7 @@
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
     <script src="https://checkout.stripe.com/checkout.js"></script>
 
-    <title>SOS Ticket | Forfait 1 point</title>
+    <title>SOS Ticket | Forfait 6 points et plus</title>
 </head>
 
 <body>
@@ -35,10 +35,10 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <h6 class="dropdown-header">Services de base</h6>
-                            <a class="dropdown-item active" href="./forfait-1-point.html">1 point</a>
+                            <a class="dropdown-item" href="./forfait-1-point.html">1 point</a>
                             <a class="dropdown-item" href="./forfait-2-3-points.html">2-3 points</a>
                             <a class="dropdown-item" href="./forfait-4-5-points.html">4-5 points</a>
-                            <a class="dropdown-item" href="./forfait-6-points-et-plus.html">6 points et +</a>
+                            <a class="dropdown-item active" href="./forfait-6-points-et-plus.html">6 points et +</a>
                             <div class="dropdown-divider"></div>
                             <h6 class="dropdown-header">Services spécialisés</h6>
                             <a class="dropdown-item" href="./forfait-facultes-affaiblies.html">Facultés affaiblies</a>
@@ -72,12 +72,12 @@
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <div class="card">
-                            <img class="card-img-top" src="./img/photos/car-tunnel.jpg" alt="Auto dans un tunnel qui fait de la vitesse">
+                            <img class="card-img-top" src="./img/photos/high-speed.jpg" alt="Haute vitesse">
                             <div class="card-body">
-                                <h1 class="h3 font-weight-bold">Forfait: 1 point</h1>
-                                <h3 class="h3 display-3 font-weight-bold">$149</h3>
+                                <h1 class="h3 font-weight-bold">Forfait: 6 points et plus</h1>
+                                <h3 class="h3 display-3 font-weight-bold">$499</h3>
                                 <h2 class="card-title">Services compris dans ce forfait</h2>
-                                <p>11 à 20km/h par-dessus la vitesse limite, etc.</p>
+                                <p>Grand excès de vitesse, etc.</p>
                                 <ul class="">
                                     <li>L’ouverture du dossier du Client;</li>
                                     <li>La compilation et recherche de l’information administrative de votre dossier;</li>
@@ -90,7 +90,7 @@
                                     <li>L’analyse juridique de votre dossier.</li>
                                 </ul>
                                 <hr>
-                                <button id="acheterForfait1" class="btn btn-default btn-block bg-yellow black"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Acheter</button>
+                                <button id="acheterForfait4" class="btn btn-default btn-block bg-yellow black"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Acheter</button>
                             </div>
                         </div>
                     </div>
@@ -184,13 +184,13 @@
             });
 
             // forfait 1
-            document.getElementById('acheterForfait1').addEventListener('click', function(e) {
+            document.getElementById('acheterForfait4').addEventListener('click', function(e) {
                 // Open Checkout with further options:
                 handler.open({
                     name: 'SOS Ticket',
-                    description: 'Forfait 1 point',
+                    description: 'Forfait 6 points et plus',
                     currency: 'cad',
-                    amount: 14900
+                    amount: 49900
                 });
                 e.preventDefault();
             });
