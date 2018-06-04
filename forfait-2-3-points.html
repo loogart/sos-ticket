@@ -12,7 +12,24 @@
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
     <script src="https://checkout.stripe.com/checkout.js"></script>
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/favicon.png">
 
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Solii">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/favicon.png">
+    <meta name="msapplication-TileColor" content="#FBB03B">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#FBB03B">
+    <meta name="theme-color" content="#FBB03B">
+    
     <title>SOS Ticket | Forfait 2-3 points</title>
 </head>
 
@@ -186,7 +203,7 @@
         (function() {
             var handler = StripeCheckout.configure({
                 key: 'pk_test_opIudPBjzMbfPcKq9V5X9P3d',
-                image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+                image: './img/logos/marketplace.png',
                 locale: 'auto',
                 token: function(token) {
                     // You can access the token ID with `token.id`.
