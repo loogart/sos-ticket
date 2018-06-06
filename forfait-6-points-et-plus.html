@@ -12,7 +12,7 @@
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
     <script src="https://checkout.stripe.com/checkout.js"></script>
-    
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="img/favicon.png">
@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#FBB03B">
     <meta name="theme-color" content="#FBB03B">
-    
+
     <title>SOS Ticket | Forfait 6 points et plus</title>
 </head>
 
@@ -46,6 +46,9 @@
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:18664100101"><i class="far fa-phone"></i>  1-866-410-0101</a>
+                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Forfaits
@@ -91,7 +94,7 @@
                                 <h1 class="h3 font-weight-bold">Forfait: 6 points et plus</h1>
                                 <h3 class="h3 display-3 font-weight-bold">499$ <span class="text-taxes">+ taxes</span></h3>
                                 <h2 class="card-title">Services compris dans ce forfait</h2>
-                                <p>Grand excès de vitesse, etc.</p>
+                                <p>Grand excès de vitesse, autobus scolaire, délit de fuite, etc.</p>
                                 <ul class="">
                                     <li>L’ouverture du dossier du Client;</li>
                                     <li>La compilation et recherche de l’information administrative de votre dossier;</li>
@@ -114,11 +117,20 @@
 
             </div>
         </section>
+
+        <!-- BUY NOW -->
         <section class="cta-buy">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 mx-auto">
-                        <button id="acheterForfait4" class="btn btn-default btn-block bg-yellow black"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Acheter</button>
+                    <div class="col-sm-7 mx-auto">
+                        <div class="row">
+                            <div class="col-sm-6 my-1">
+                                <button id="acheterForfait4" class="btn btn-default btn-lg btn-block bg-yellow black"><i class="far fa-shopping-cart"></i> Acheter</button>
+                            </div>
+                            <div class="col-sm-6 my-1">
+                                <a class="btn btn-default btn-lg btn-block bg-black text-light" href="tel:18664100101"><i class="far fa-phone"></i> Par téléphone</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
