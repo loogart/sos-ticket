@@ -6,8 +6,8 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         autoplayTimeout: 3500,
-        animateOut: 'fadeOutRight',
-        animateIn: 'fadeInLeft',
+        animateOut: 'fadeOutLeft',
+        animateIn: 'fadeInRight',
     });
 });
 
