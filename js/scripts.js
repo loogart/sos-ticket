@@ -4,10 +4,10 @@ $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         items: 1,
         loop: true,
-//        autoplay: true,
-        autoplayTimeout: 4000,
+        //        autoplay: true,
+        autoplayTimeout: 3500,
         animateOut: 'fadeOutRight',
-        animateIn: 'fadeInLeft'
+        animateIn: 'fadeInLeft',
     });
 });
 

@@ -350,6 +350,19 @@ main {
     left: 50vw;
 }
 
+.media {
+    margin-bottom: 40px;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 40px;
+}
+
+.media img {
+    height: 120px;
+    width: 160px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
 @media (max-width:767px) {
     .navbar {
         padding: 0.5rem 1rem;
@@ -361,7 +374,7 @@ main {
     }
     .jumbotron-content {
         width: 100%;
-        min-height: 100vh;
+        min-height: 69vh;
     }
     .jumbotron-image {
         -o-object-position: 0 0;
@@ -389,9 +402,11 @@ main {
         background-color: #fff;
     }
     .owl-dots {
-        position: absolute;
-        bottom: 10px;
-        width:100%;
+        display: none;
+    }
+    .media img {
+        height: 64px;
+        width: 64px;
     }
 }
 
@@ -503,4 +518,8 @@ footer ul li {
 
 .forfait {
     text-align: justify;
+}
+
+.card-header .btn{
+    background-color: transparent;
 }
