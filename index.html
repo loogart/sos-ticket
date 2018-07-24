@@ -8,6 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
@@ -80,17 +83,43 @@
     </nav>
 
     <main>
+
         <!-- intro -->
         <section class="intro">
-            <div class="d-flex justify-content-end overflow-hidden position-relative p-5">
-                <div class="jumbotron-content text-light">
-                    <h1 class="font-weight-bold mb-4 text-shadow">Les premiers<br> depuis 2004.</h1>
-                    <p class="h4 mb-4 text-shadow">Une contravention peut être contestée. Nous sommes là pour vous aider.</p>
-                    <p><a class="btn btn-lg btn-dark bg-black" href="#services"><img class="btn-icon" src="./img/logos/checkmark.svg">Débuter</a></p>
-                    <a class="text-light text-shadow-dark" href="./forfait-facultes-affaiblies.html"><i class="far fa-beer"></i> Facultés affaiblies? Cliquez ici.</a>
+            <div class="owl-carousel owl-theme">
+
+                <!-- banner 1-->
+                <div class="d-flex justify-content-start overflow-hidden position-relative p-3 p-md-5">
+                    <div class="jumbotron-content text-light">
+                        <h1 class="font-weight-bold mb-4 text-shadow">Voulez-vous sauver vos points d'inaptitude?</h1>
+                        <p class="h4 mb-4 text-shadow">Plus de 50 000 dossiers traités.</p>
+                        <p><a class="btn btn-lg btn-dark bg-black" href="#services"><i class="fas fa-check-circle yellow"></i> Débuter</a></p>
+                    </div>
+                    <img class="jumbotron-image rellax-2" src="./img/photos/banner-1.jpg">
                 </div>
-                <img class="jumbotron-image rellax-2" src="./img/photos/car-tunnel.jpg">
+
+                <!-- banner 2-->
+                <div class="d-flex justify-content-start overflow-hidden position-relative p-5">
+                    <div class="jumbotron-content text-light">
+                        <h1 class="font-weight-bold mb-4 text-shadow">Besoin d'aide pour une faculté affaiblie?</h1>
+                        <p><a class="btn btn-lg btn-dark bg-black" href="./forfait-facultes-affaiblies.html"><i class="fas fa-check-circle yellow"></i>  Débuter</a></p>
+                    </div>
+                    <img class="jumbotron-image rellax-2" src="./img/photos/banner-2.jpg">
+                </div>
+
+                <!-- banner 3-->
+                <div class="d-flex justify-content-start overflow-hidden position-relative p-5">
+                    <div class="jumbotron-content text-light">
+                        <h1 class="font-weight-bold mb-4 text-shadow">Grand excès de vitesse? On peut vous aider.</h1>
+                        <p class="h4 mb-4 text-shadow">Nous contestons des tickets à Montréal, à Laval, à Longueuil, à Québec et partout dans la province.</p>
+                        <p><a class="btn btn-lg btn-dark bg-black" href="#services"><i class="fas fa-check-circle yellow"></i>  Débuter</a></p>
+                        <a class="text-light text-shadow-dark" href="./forfait-facultes-affaiblies.html"><i class="far fa-beer"></i> Facultés affaiblies? Cliquez ici.</a>
+                    </div>
+                    <img class="jumbotron-image rellax-2" src="./img/photos/banner-3.jpg">
+                </div>
+
             </div>
+
         </section>
 
         <!-- Section 2: un ticket -->
@@ -335,6 +364,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/rellax.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
@@ -342,8 +372,8 @@
             token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
             host: "https://wchat.freshchat.com"
         });
-
     </script>
+
 
 </body>
 
