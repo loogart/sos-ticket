@@ -169,7 +169,7 @@ main {
 
 .jumbotron-content {
     z-index: 1;
-    min-height: 55vh;
+    min-height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -232,8 +232,8 @@ main {
     left: 0;
     right: 0;
     z-index: 0;
-    /*-webkit-filter: grayscale(1) brightness(0.8) contrast(0.8);
-    filter: grayscale(1) brightness(0.8) contrast(0.8);*/
+    -webkit-filter: brightness(0.6) contrast(0.8);
+    filter: brightness(0.6) contrast(0.8);
 }
 
 
@@ -371,15 +371,32 @@ main {
     }
     .intro {
         margin-top: -3px;
+        min-height: 20vh;
+        background-color: #212121;
     }
     .jumbotron-content {
         width: 100%;
-        min-height: 69vh;
+        min-height: 20vh;
+    }
+    .jumbotron-content h1 {
+        font-size: 1.5rem;
+    }
+    .jumbotron-content h1::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        background-color: #F0B253;
+        width: 90px;
+        height: 4px;
+    }
+    .jumbotron-content p {
+        font-size: 1rem;
     }
     .jumbotron-image {
+        -o-object-fit: contain;
+        object-fit: contain;
         -o-object-position: 0 0;
         object-position: 0 0;
-        height: 100vh;
     }
     .navbar li.nav-item a {
         border-bottom: 0px solid transparent;
@@ -520,6 +537,6 @@ footer ul li {
     text-align: justify;
 }
 
-.card-header .btn{
+.card-header .btn {
     background-color: transparent;
 }
