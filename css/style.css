@@ -234,8 +234,8 @@ main {
     left: 0;
     right: 0;
     z-index: 0;
-    -webkit-filter: brightness(0.6) contrast(0.8);
-    filter: brightness(0.6) contrast(0.8);
+    -webkit-filter: brightness(0.4) contrast(0.8);
+    filter: brightness(0.4) contrast(0.8);
 }
 
 
@@ -591,4 +591,13 @@ ol.breadcrumb.light-breadcrumbs a{
 
 ol.breadcrumb{
     border-radius: 0;
+}
+
+.image-contact {
+    object-fit: cover;
+    object-position: top;
+    height:50vh;
+    width:100%;
+    filter: grayscale(100%) contrast(110%);
+    -webkit-filter:grayscale(100%) contrast(110%);
 }
