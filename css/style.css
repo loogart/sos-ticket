@@ -36,6 +36,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -45,6 +46,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -369,18 +371,22 @@ main {
         -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     }
+
     .intro {
         margin-top: -3px;
         min-height: 20vh;
         background-color: #212121;
     }
+
     .jumbotron-content {
         width: 100%;
         min-height: 20vh;
     }
+
     .jumbotron-content h1 {
         font-size: 1.5rem;
     }
+
     .jumbotron-content h1::after {
         content: "";
         display: block;
@@ -389,38 +395,47 @@ main {
         width: 90px;
         height: 4px;
     }
+
     .jumbotron-content p {
         font-size: 1rem;
     }
+
     .jumbotron-image {
         -o-object-fit: contain;
         object-fit: contain;
         -o-object-position: 0 0;
         object-position: 0 0;
     }
+
     .navbar li.nav-item a {
         border-bottom: 0px solid transparent;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .navbar li.nav-item.active a,
     .navbar li.nav-item:hover a {
         border-bottom: 0px solid transparent;
         color: var(--yellow) !important;
     }
+
     .dropdown-menu.show {
         background-color: #222;
         border: 0;
     }
+
     .dropdown-divider {
         color: transparent;
     }
+
     .dropdown-item.active {
         background-color: #fff;
     }
+
     .owl-dots {
         display: none;
     }
+
     .media img {
         height: 64px;
         width: 64px;
@@ -539,4 +554,41 @@ footer ul li {
 
 .card-header .btn {
     background-color: transparent;
+}
+
+.alert-call {
+    z-index: 4;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background-color:#2c99ad;
+    color:#fff;
+    cursor: pointer;
+}
+
+ol.breadcrumb.dark-breadcrumbs a{
+    color:var(--black);
+}
+ol.breadcrumb.light-breadcrumbs a{
+    color:var(--white);
+}
+
+.bg-special{
+    background-color:#2c99ad!important;
+}
+
+.dark-breadcrumbs .breadcrumb-item.active {
+  color: #222;
+}
+
+.light-breadcrumbs .breadcrumb-item.active {
+  color: #ddd;
+}
+
+ol.breadcrumb{
+    border-radius: 0;
 }

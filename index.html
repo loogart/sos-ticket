@@ -33,49 +33,54 @@
     <meta name="theme-color" content="#FBB03B">
 
     <title>SOS Ticket</title>
+
 </head>
 
 <body>
-
+    <div class="alert alert-info alert-dismissible fade show alert-call d-none d-sm-flex justify-content-center align-items-center" role="alert">
+        <strong><i class="fas fa-phone" aria-hidden="true"></i> Cherchez-vous un représentant?</strong>
+        <a class="btn btn-lg text-light bg-black mx-4" href="tel:18664100101"><i class="fas fa-check-circle yellow" aria-hidden="true"></i> Appelez 1-866-410-0101</a>
+        <a data-dismiss="alert" aria-label="Close">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </a>
+    </div>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-black">
         <div class="container">
             <a class="navbar-brand" href="./">
                 <img src="./img/logos/logo-alt-horizontal.svg" style="height:32px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-               <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="tel:18664100101"><i class="far fa-phone"></i>  1-866-410-0101</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Forfaits
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <h6 class="dropdown-header">Services de base</h6>
-                            <a class="dropdown-item" href="./forfait-1-point.html">1 point</a>
-                            <a class="dropdown-item" href="./forfait-2-3-points.html">2-3 points</a>
-                            <a class="dropdown-item" href="./forfait-4-5-points.html">4-5 points</a>
-                            <a class="dropdown-item" href="./forfait-6-points-et-plus.html">6 points et +</a>
-                            <div class="dropdown-divider"></div>
-                            <h6 class="dropdown-header">Services spécialisés</h6>
-                            <a class="dropdown-item" href="./forfait-facultes-affaiblies.html">Facultés affaiblies</a>
-                            <a class="dropdown-item" href="./forfait-vehicules-lourds.html">Véhicules lourds</a>
-                            <a class="dropdown-item" href="./forfait-taxis.html">Taxis</a>
-                        </div>
+                        <a class="nav-link" href="forfaits.html">Forfaits</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./a-propos.html">À propos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./contactez-nous.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./en/home.html">EN</a>
+                        <a class="nav-link" href="./#!">EN</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle" aria-hidden="true"></i> <span class="sr-only">Compte</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <h6 class="dropdown-header">Réglages</h6>
+                            <a class="dropdown-item" href="./forfait-1-point.html">Tableau de bord</a>
+                            <a class="dropdown-item" href="./forfait-2-3-points.html">Mot de passe</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./forfait-4-5-points.html">Déconnexion</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -93,9 +98,9 @@
                     <div class="jumbotron-content text-light">
                         <img class="img-fluid d-block d-md-none" src="./img/photos/banner-1.jpg">
                         <div class="content-text p-4 p-md-0">
-                            <h1 class="font-weight-bold mb-4 mb-md-5 yellow text-shadow">Voulez-vous sauver vos points d'inaptitude?</h1>
+                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Voulez-vous sauver vos points d'inaptitude?</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Plus de 50 000 dossiers traités.<br> Parlez à un de nos représentants gratuitement</p>
-                            <p><a class="btn btn-lg black bg-yellow" href="#services"><i class="fas fa-check-circle black"></i> Appelez 1-866-410-0101</a></p>
+                            <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle black"></i> Appelez 1-866-410-0101</a></p>
                         </div>
                     </div>
                     <img class="jumbotron-image d-none d-md-block rellax-2" src="./img/photos/banner-1.jpg">
@@ -106,9 +111,9 @@
                     <div class="jumbotron-content text-light">
                         <img class="img-fluid d-block d-md-none" src="./img/photos/banner-2.jpg">
                         <div class="content-text p-4 p-md-0">
-                            <h1 class="font-weight-bold mb-4 mb-md-5 yellow text-shadow">Besoin d'aide pour une faculté affaiblie?</h1>
+                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Besoin d'aide pour une faculté affaiblie?</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Gardez votre permis: SOS Ticket conteste les tickets de conduite avec facultés affaiblies.<br> Parlez à un de nos représentants gratuitement</p>
-                            <p><a class="btn btn-lg black bg-yellow" href="./forfait-facultes-affaiblies.html"><i class="fas fa-check-circle"></i> Appelez  1-866-410-0101</a></p>
+                            <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle"></i> Appelez 1-866-410-0101</a></p>
                         </div>
                     </div>
                     <img class="jumbotron-image d-none d-md-block rellax-2" src="./img/photos/banner-2.jpg">
@@ -120,9 +125,9 @@
                         <img class="img-fluid d-block d-md-none" src="./img/photos/banner-3.jpg">
                         <div class="content-text p-4 p-md-0">
 
-                            <h1 class="font-weight-bold mb-4 mb-md-5 yellow text-shadow">Grand excès de vitesse? On peut vous aider.</h1>
+                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Grand excès de vitesse? On peut vous aider.</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Nous contestons des tickets à Montréal, à Laval, à Longueuil, à Québec et partout dans la province.<br> Parlez à un de nos représentants gratuitement</p>
-                            <p><a class="btn btn-lg black bg-yellow" href="#services"><i class="fas fa-check-circle black"></i> Appelez  1-866-410-0101</a></p>
+                            <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle black"></i> Appelez 1-866-410-0101</a></p>
                         </div>
                     </div>
                     <img class="jumbotron-image d-none d-md-block rellax-2" src="./img/photos/banner-3.jpg">
@@ -241,7 +246,7 @@
 
         <!-- Section 5: Special Services -->
         <section class="special-services bg-white p-md-5" id="services-plus">
-            <div class="container-fluid px-2 py-5 p-md-5 bg-dark-grey text-light">
+            <div class="container-fluid px-2 py-5 p-md-5 bg-special text-light shadow-lg">
                 <div class="container">
                     <h2 class="font-weight-bold mb-3">Services spécialisés</h2>
                     <p class="mb-4">Nos avocats et notre équipe d’experts ont l’expérience dans les domaines spécialisés afin de rendre un service du plus haut niveau, maximisant vos chances, tout en respectant notre mission d’offrir des prix les plus compétitifs.</p>
@@ -384,7 +389,6 @@
             token: "3bf40794-29e0-4ec1-b829-0e2e8f24f014",
             host: "https://wchat.freshchat.com"
         });
-
     </script>
 
 
