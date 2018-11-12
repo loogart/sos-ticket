@@ -645,6 +645,10 @@ ol.breadcrumb {
     -webkit-filter: grayscale(100%) contrast(110%);
 }
 
+.owl-carousel {
+    margin-bottom:-10px;
+}
+
 .owl-carousel .owl-nav button {
     color: #fff !important;
     position: absolute;
