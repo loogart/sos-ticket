@@ -37,12 +37,14 @@
 </head>
 
 <body>
-    <div class="alert alert-info alert-dismissible fade show alert-call d-none d-sm-flex justify-content-center align-items-center" role="alert">
-        <strong><i class="fas fa-phone" aria-hidden="true"></i> Cherchez-vous un représentant?</strong>
-        <a class="btn btn-lg text-light bg-black mx-4" href="tel:18664100101"><i class="fas fa-check-circle yellow" aria-hidden="true"></i> Appelez 1-866-410-0101</a>
-        <a data-dismiss="alert" aria-label="Close">
-            <i class="fas fa-times" aria-hidden="true"></i>
-        </a>
+    <div class="alert alert-info alert-dismissible fade show alert-call" role="alert">
+        <div class="container d-flex flex-column flex-sm-row justify-content-center align-items-center">
+            <strong><i class="fas fa-phone" aria-hidden="true"></i> Cherchez-vous un représentant?</strong>
+            <a class="btn btn-lg text-light bg-black mt-2 mx-4 mt-sm-0" href="tel:18664100101"><i class="fas fa-check-circle yellow" aria-hidden="true"></i> Appelez 1-866-410-0101</a>
+            <a data-dismiss="alert" aria-label="Close" class="close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
     </div>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-black">
         <div class="container">
@@ -66,6 +68,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contactez-nous.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactez-nous.html">Blogue</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./#!">EN</a>
@@ -98,7 +103,7 @@
                     <div class="jumbotron-content text-light">
                         <img class="img-fluid d-block d-md-none" src="./img/photos/v2_banner1.jpg">
                         <div class="content-text p-4 p-md-0">
-                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Voulez-vous sauver vos points d'inaptitude?</h1>
+                            <h1 class="font-weight-bold display-4 mb-4 mb-md-5 text-shadow">Voulez-vous sauver vos points d'inaptitude?</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Plus de 50 000 dossiers traités.<br> Parlez à un de nos représentants gratuitement</p>
                             <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle black"></i> Appelez 1-866-410-0101</a></p>
                         </div>
@@ -111,7 +116,7 @@
                     <div class="jumbotron-content text-light">
                         <img class="img-fluid d-block d-md-none" src="./img/photos/v2_banner2.jpg">
                         <div class="content-text p-4 p-md-0">
-                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Besoin d'aide pour une faculté affaiblie?</h1>
+                            <h1 class="font-weight-bold display-4 mb-4 mb-md-5 text-shadow">Besoin d'aide pour une faculté affaiblie?</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Gardez votre permis: SOS Ticket conteste les tickets de conduite avec facultés affaiblies.<br> Parlez à un de nos représentants gratuitement</p>
                             <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle"></i> Appelez 1-866-410-0101</a></p>
                         </div>
@@ -125,7 +130,7 @@
                         <img class="img-fluid d-block d-md-none" src="./img/photos/v2_banner4.jpg">
                         <div class="content-text p-4 p-md-0">
 
-                            <h1 class="font-weight-bold mb-4 mb-md-5 text-shadow">Grand excès de vitesse? On peut vous aider.</h1>
+                            <h1 class="font-weight-bold display-4 mb-4 mb-md-5 text-shadow">Grand excès de vitesse? On peut vous aider.</h1>
                             <p class="h4 mb-4 mb-md-5 text-shadow">Nous contestons des tickets à Montréal, à Laval, à Longueuil, à Québec et partout dans la province.<br> Parlez à un de nos représentants gratuitement</p>
                             <p><a class="btn btn-lg black bg-yellow" href="tel:18664100101"><i class="fas fa-check-circle black"></i> Appelez 1-866-410-0101</a></p>
                         </div>
@@ -136,7 +141,88 @@
             </div>
 
         </section>
+        
+        <!-- Section 4: Services -->
+        <section class="services bg-light py-5" id="services">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Sélectionnez le service</h2>
+                <p class="mb-4">Notre service est basé sur la transparence et le professionnalisme. Choisissez le forfait qui correspond à votre situation.</p>
+                <div class="row row-eq-height">
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-ultra-light-grey py-4 px-3 bg-un-point">
+                            <h5>1 point</h5>
+                            <h3 class="display-4 font-weight-bold">149$</h3>
+                            <p class="my-3">11 à 20km/h par-dessus la vitesse limite, etc.</p>
+                            <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-1-point.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Voir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-light-grey py-4 px-3 bg-deux-points">
+                            <h5>2-3 points</h5>
+                            <h3 class="display-4 font-weight-bold">199$</h3>
+                            <p class="my-3">Stop raté; Feu rouge; Ceinture sécurité; 21 à 39km/h par-dessus la vitesse limite, etc.</p>
+                            <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-2-3-points.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Voir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-dark-grey text-light py-4 px-3 bg-quatre-points">
+                            <h5>4-5 points</h5>
+                            <h3 class="display-4 font-weight-bold">299$</h3>
+                            <p class="my-3">Téléphone cellulaire; 45 à 49km/h de plus sur une zone 100km/h, etc.</p>
+                            <a class="btn btn-dark btn-lg btn-block bg-white black" href="./forfait-4-5-points.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Voir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="tile bg-black yellow py-4 px-3 bg-six-points">
+                            <h5>6 points et +</h5>
+                            <h3 class="display-4 font-weight-bold">499$</h3>
+                            <p class="my-3 text-light">Grand excès de vitesse, autobus scolaire, délit de fuite, etc.</p>
+                            <a class="btn btn-dark btn-lg btn-block bg-yellow black" href="./forfait-6-points-et-plus.html"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section 5: Special Services -->
+        <section class="special-services bg-white p-md-5" id="services-plus">
+            <div class="container-fluid px-2 py-5 p-md-5 bg-special text-light shadow-lg">
+                <div class="container">
+                    <h2 class="font-weight-bold mb-3">Services spécialisés</h2>
+                    <p class="mb-4">Nos avocats et notre équipe d’experts ont l’expérience dans les domaines spécialisés afin de rendre un service du plus haut niveau, maximisant vos chances, tout en respectant notre mission d’offrir des prix les plus compétitifs.</p>
+                    <div class="row row-eq-height">
+                        <div class="col-sm-6 col-md-4 mb-4">
+                            <div class="tile bg-ultra-light-grey black py-4 px-3 bg-facultes">
+                                <i class="far fa-beer fa-3x mb-2 mx-auto"></i>
+                                <h5>Facultés</h5>
+                                <h3 class="font-weight-bold text-uppercase">Affaiblies</h3>
+                                <p class="my-3">Nos avocats peuvent vous représenter dans votre défense lorsque vous êtes arrêtés pour conduite avec présence d’alcool ou de drogue.</p>
+                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-facultes-affaiblies.html">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4">
+                            <div class="tile bg-grey black py-4 px-3 bg-lourds">
+                                <i class="far fa-truck-moving fa-3x mb-2 mx-auto"></i>
+                                <h5>Véhicules</h5>
+                                <h3 class="font-weight-bold text-uppercase">Lourds</h3>
+                                <p class="my-3">Le régime des autobus et camions est particulier, et nos avocats sont formés pour vous représenter et vous accompagner.</p>
+                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-vehicules-lourds.html">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4">
+                            <div class="tile bg-yellow black py-4 px-3 bg-taxi">
+                                <i class="far fa-taxi fa-3x mb-2 mx-auto"></i>
+                                <h5>Véhicules</h5>
+                                <h3 class="font-weight-bold text-uppercase">Taxis</h3>
+                                <p class="my-3">Les taxis sont sur la route constamment, et votre permis est votre gagne-pain. Nos avocats sauront vous représenter adéquatement.</p>
+                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-taxis.html">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Section 2: un ticket -->
         <section class="benefits p-3 bg-white">
             <div class="container-fluid p-5 bg-black text-light">
@@ -193,92 +279,11 @@
 
                     </div>
                     <div class="d-none d-sm-flex col-md-5 bg-dark-grey justify-content-center">
-                        <img class="w-100 mt-auto rellax" src="./img/logos/logomark-shadow.svg" style="z-index:3" data-rellax-speed="1.5">
+                        <img class="w-75 mt-auto rellax" src="./img/logos/logomark-shadow.svg" style="z-index:3" data-rellax-speed="1.1">
                         <span class="street-line"></span>
                         <span class="street-line ml-2"></span>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 4: Services -->
-        <section class="services bg-light py-5" id="services">
-            <div class="container py-5">
-                <h2 class="font-weight-bold mb-3">Sélectionnez le service</h2>
-                <p class="mb-4">Notre service est basé sur la transparence et le professionnalisme. Choisissez le forfait qui correspond à votre situation.</p>
-                <div class="row row-eq-height">
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="tile bg-ultra-light-grey py-4 px-3">
-                            <h5>1 point</h5>
-                            <h3 class="display-4 font-weight-bold">149$</h3>
-                            <p class="my-3">11 à 20km/h par-dessus la vitesse limite, etc.</p>
-                            <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-1-point.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="tile bg-light-grey py-4 px-3">
-                            <h5>2-3 points</h5>
-                            <h3 class="display-4 font-weight-bold">199$</h3>
-                            <p class="my-3">Stop raté; Feu rouge; Ceinture sécurité; 21 à 39km/h par-dessus la vitesse limite, etc.</p>
-                            <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-2-3-points.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="tile bg-dark-grey text-light py-4 px-3">
-                            <h5>4-5 points</h5>
-                            <h3 class="display-4 font-weight-bold">299$</h3>
-                            <p class="my-3">Téléphone cellulaire; 45 à 49km/h de plus sur une zone 100km/h, etc.</p>
-                            <a class="btn btn-dark btn-lg btn-block bg-white black" href="./forfait-4-5-points.html"><img class="btn-icon" src="./img/logos/checkmark.svg"> Choisir</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="tile bg-black yellow py-4 px-3">
-                            <h5>6 points et +</h5>
-                            <h3 class="display-4 font-weight-bold">499$</h3>
-                            <p class="my-3 text-light">Grand excès de vitesse, autobus scolaire, délit de fuite, etc.</p>
-                            <a class="btn btn-dark btn-lg btn-block bg-yellow black" href="./forfait-6-points-et-plus.html"><img class="btn-icon" src="./img/logos/checkmark-black.svg"> Choisir</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 5: Special Services -->
-        <section class="special-services bg-white p-md-5" id="services-plus">
-            <div class="container-fluid px-2 py-5 p-md-5 bg-special text-light shadow-lg">
-                <div class="container">
-                    <h2 class="font-weight-bold mb-3">Services spécialisés</h2>
-                    <p class="mb-4">Nos avocats et notre équipe d’experts ont l’expérience dans les domaines spécialisés afin de rendre un service du plus haut niveau, maximisant vos chances, tout en respectant notre mission d’offrir des prix les plus compétitifs.</p>
-                    <div class="row row-eq-height">
-                        <div class="col-sm-6 col-md-4 mb-4">
-                            <div class="tile bg-ultra-light-grey black py-4 px-3">
-                                <i class="far fa-beer fa-3x mb-2 mx-auto"></i>
-                                <h5>Facultés</h5>
-                                <h3 class="font-weight-bold text-uppercase">Affaiblies</h3>
-                                <p class="my-3">Nos avocats peuvent vous représenter dans votre défense lorsque vous êtes arrêtés pour conduite avec présence d’alcool ou de drogue.</p>
-                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-facultes-affaiblies.html">Choisir</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 mb-4">
-                            <div class="tile bg-grey black py-4 px-3">
-                                <i class="far fa-truck-moving fa-3x mb-2 mx-auto"></i>
-                                <h5>Véhicules</h5>
-                                <h3 class="font-weight-bold text-uppercase">Lourds</h3>
-                                <p class="my-3">Le régime des autobus et camions est particulier, et nos avocats sont formés pour vous représenter et vous accompagner.</p>
-                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-vehicules-lourds.html">Choisir</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 mb-4">
-                            <div class="tile bg-yellow black py-4 px-3">
-                                <i class="far fa-taxi fa-3x mb-2 mx-auto"></i>
-                                <h5>Véhicules</h5>
-                                <h3 class="font-weight-bold text-uppercase">Taxis</h3>
-                                <p class="my-3">Les taxis sont sur la route constamment, et votre permis est votre gagne-pain. Nos avocats sauront vous représenter adéquatement.</p>
-                                <a class="btn btn-dark btn-lg btn-block bg-black text-white" href="./forfait-taxis.html">Choisir</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
