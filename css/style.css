@@ -654,6 +654,7 @@ ol.breadcrumb {
     margin-bottom:-10px;
 }
 
+
 .owl-carousel .owl-nav button {
     color: #fff !important;
     position: absolute;
@@ -674,6 +675,10 @@ ol.breadcrumb {
     .alert-call {
 /*        top: 60px;*/
     }
+    
+.owl-item{
+    height:100vh;
+}
     .owl-carousel .owl-nav button{
         top:20%;
         opacity:0.6;
