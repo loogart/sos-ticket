@@ -1,0 +1,27 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+
+
+// Define new colors
+
+
+// Map colors
+$colors: ("orange":#ED5D28, "yellow":#F78C26);
+
+//Map theme-colors
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":black, "light":white);
+
+// customize theme
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
