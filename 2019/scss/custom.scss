@@ -14,29 +14,81 @@ $yellow:#F7AE52;
 // Define new colors
 $lightblue:#EAF2FF;
 $darkblue:#3462AA;
+$darkpurple:#1B1F3B;
 $black: #212121;
 
 // Map colors
-$colors: ("blue":$blue, "yellow":$yellow, "lightblue":$lightblue, "darkblue":$darkblue,"black":$black);
+$colors: ("blue":$blue, "yellow":$yellow, "lightblue":$lightblue, "darkblue":$darkblue, "black":$black, "darkpurple":$darkpurple);
 
 //Map theme-colors
-$theme-colors: ("primary": $blue, "warning":$yellow, "dark":$black, "light":$lightblue);
+$theme-colors: ("primary": $blue, "warning":$yellow, "dark":$darkpurple, "light":$lightblue);
 
 // customize theme
-
+$navbar-brand-padding-y:0;
+$navbar-brand-padding-y:0;
+$navbar-light-color: $black;
+$navbar-light-hover-color:$darkblue;
+$navbar-light-active-color:$blue;
+$navbar-light-color:$black;
+$navbar-light-toggler-border-color:transparent;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
 // Typography
 
-$font-family-sans-serif: 'Lato', sans-serif;
-$headings-font-family:'Lato', sans-serif;
-$input-font-family: 'Lato', sans-serif;
+$font-family-sans-serif: 'Lato',
+sans-serif;
+$headings-font-family:'Lato',
+sans-serif;
+$input-font-family: 'Lato',
+sans-serif;
 $font-family-base: $font-family-sans-serif;
 
-
-body{
-   font-family: $font-family-base; 
+// custom scss
+body {
+    font-family: $font-family-base;
 }
 
+.navbar-container {
+    z-index: 1000;
+}
+
+.navbar-brand {
+    width: 140px;
+}
+
+.nav-link {
+    @include media-breakpoint-up(lg) {
+        margin: auto $spacer*.69;
+    }
+}
+
+.megatron {
+    display: flex;
+    justify-content: center;
+    align-items: center bottom;
+    background-color: $darkpurple;
+    background-image: url(../img/photos/man-driving-inside-car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 30vh;
+    width: 100%;
+    padding: $spacer*6 0;
+
+    @include media-breakpoint-down(sm) {
+        align-items: flex-end;
+        background-size: 140%;
+        min-height: 80vh;
+        background-position: left top;
+        padding: $spacer 0;
+        background-color: black;
+    }
+
+    .panel {
+        background-color: white;
+        padding: $spacer*2;
+        border-radius: $border-radius;
+    }
+}
