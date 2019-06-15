@@ -1,113 +1,296 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="./img/logos/favicon.png">
-
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="SOS TIcket">
     <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
-
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="./img/favicon.png">
     <meta name="msapplication-TileColor" content="#F9AF48">
     <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#F9AF48">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <title>SOS Ticket</title>
 </head>
 
 <body>
-
     <header>
-        <div class="navbar-container shadow">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<!--            <nav class="navbar navbar-expand-lg navbar-light bg-white">-->
-                <div class="container">
-                    <a class="navbar-brand" href="./"><h1 class="sr-only">SOS Ticket</h1>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <!--            <nav class="navbar navbar-expand-lg navbar-light bg-white">-->
+            <div class="container">
+                <a class="navbar-brand" href="./">
+                    <h1 class="sr-only">SOS Ticket</h1>
                     <img src="./img/logos/logo-light.svg" alt="SOS Ticket">
-<!--                    <img src="./img/logos/logo.svg" alt="SOS Ticket">-->
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-chevron-circle-down"></i> Menu
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <!--
+                    <!--                    <img src="./img/logos/logo.svg" alt="SOS Ticket">-->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-chevron-circle-down" aria-hidden="true"></i> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <!--
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Forfaits <span class="sr-only">(current)</span></a>
                             </li>-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Forfaits</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    À propos
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Mission</a>
-                                    <a class="dropdown-item" href="#">L'équipe</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">FAQ</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Restez branché
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Blogue</a>
-                                    <a class="dropdown-item" href="#">Facebook</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">EN</a>
-                            </li>
-                        </ul>
-                        <a href="tel:18664100101" class="btn btn-primary ml-lg-3 shadow"><i class="fas fa-phone"></i> Appelez-nous</a>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Forfaits</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                À propos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Mission</a>
+                                <a class="dropdown-item" href="#">L'équipe</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">FAQ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Restez branché
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Blogue</a>
+                                <a class="dropdown-item" href="#">Facebook</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EN</a>
+                        </li>
+                    </ul>
+                    <a href="tel:18664100101" class="btn btn-primary ml-lg-3 shadow"><i class="fas fa-phone"></i> Appelez-nous</a>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-    
-    <!-- jumbotron -->
-    <section class="megatron">
-        <div class="container">
-           <div class="row">
-           <div class="col-md-6 ml-auto">
-            <div class="panel">
-                <h2 class="h1 font-weight-bold">Un ticket?</h2>
-                <p>Fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions. </p> <p>Plus de 30 000 conducteurs ont fait confiance à notre expertise. Faites comme eux!</p>
-                <a href="#!" class="btn btn-primary btn-block shadow">Débuter</a>
-                <p class="small mt-4 mb-0">Quelles sont mes chances de gagner? <a href="#!">Appelez 1-866-410-0101</a></p>
+        <!-- jumbotron -->
+        <section class="megatron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-6 ml-auto">
+                        <div class="panel shadow">
+                            <h2>Un ticket?</h2>
+                            <p>Fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions. </p>
+                            <p>Plus de 30 000 conducteurs ont fait confiance à notre expertise. Faites comme eux!</p>
+                            <a href="#!" class="btn btn-primary btn-lg btn-block shadow">Débuter</a>
+                            <p class="small mt-4 mb-0">Quelles sont mes chances de gagner? <a href="#!">Appelez 1-866-410-0101</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- wizard -->
+        <section class="wizard">
+            <div class="container text-center">
+                <h2>Quelle est votre infraction?</h2>
+                <div class="row mt-5">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/traffic-light-stop-light.svg" alt="Infraction reliée aux lumières de circulation">
+                                        Feu rouge
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/stop-sign.svg" alt="Infraction reliée à un signe d'arrêt">
+                                        Stop
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="#!" data-toggle="modal" data-target="#questionsVitesse">
+                                    <div class="tile">
+                                        <img src="./img/icons/tachometer-regular.svg" alt="Infraction reliée à un excès de vitesse">
+                                        Vitesse
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/mobile-android-alt-regular.svg" alt="Infraction reliée à un cellulaire au volant">
+                                        Cellulaire
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/dui.svg" alt="Infraction reliée aux facultés affaiblies">
+                                        Facultés affaiblies
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/car-crash-regular.svg" alt="Infraction reliée à un délit de fuite">
+                                        Délit de fuite
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/grip-lines-vertical-regular.svg" alt="Infraction reliée à une ligne double">
+                                        Ligne double
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="#!" data-toggle="modal" data-target="#questionsAutre">
+                                    <div class="tile">
+                                        <img src="./img/icons/car-regular.svg" alt="Autres infractions">
+                                        Autre
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/gavel-regular.svg" alt="Droit criminel">
+                                        Droit criminel
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/truck-moving-regular.svg" alt="Aide juridique pour les véhicules lourds">
+                                        Véhicules lourds
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="">
+                                    <div class="tile">
+                                        <img src="./img/icons/taxi-regular.svg" alt="Aide juridique pour les taxis">
+                                        Taxis
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <!-- Modal 1: Speed -->
+            <div class="modal wizard fade" id="questionsVitesse" tabindex="-1" role="dialog" aria-labelledby="questionsVitesse" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalCenterTitle"><img src="./img/icons/tachometer-regular.svg" alt="Tachomère d'automobile" aria-hidden="true"> Vitesse</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="lead">1. Combien de points avez-vous perdu?</p>
+                            <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 1-3
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 4-5
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 6 +
+                                </label>
+                            </div>
+                            <p class="lead mt-3">2. S’agit—il d’un Grand Excès de vitesse?</p>
+                            <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="options" id="option5" autocomplete="off" checked> Oui
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option6" autocomplete="off"> Non
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">Cancel</button>
+                            <a href="#!" class="btn btn-primary btn-lg btn-block" role="button">Next</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
+            
+            <!-- Modal 2: Other -->
+            <div class="modal wizard fade" id="questionsAutre" tabindex="-1" role="dialog" aria-labelledby="questionsAutre" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalCenterTitle"><img src="./img/icons/car-regular.svg" alt="Automobile" aria-hidden="true"> Autre</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="lead">1. Combien de points avez-vous perdu?</p>
+                            <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 1-3
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 4-5
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 6 +
+                                </label>
+                            </div>
+                            <p class="lead mt-3">2. Étiez-vous sous l'influence de drogue ou d'alcohol?</p>
+                            <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="options" id="option5" autocomplete="off" checked> Oui
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="option6" autocomplete="off"> Non
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">Cancel</button>
+                            <a href="#!" class="btn btn-primary btn-lg btn-block" role="button">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section vers à propos -->
+        <section class="feature-1"></section>
+        <!-- section vers blogue -->
+        <section class="feature-2"></section>
+        <!-- section vers faq -->
+        <section class="feature-3"></section>
+        <!-- section media -->
+        <section class="media"></section>
+        <!-- section final cta -->
+        <section class="cta"></section>
     </main>
     <footer>
-
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body></html>
