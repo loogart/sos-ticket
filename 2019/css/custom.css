@@ -7643,16 +7643,16 @@ section.megatron {
   padding: 6rem 0; }
   @media (max-width: 767.98px) {
     section.megatron {
-      align-items: flex-end;
-      background-size: 140%;
-      min-height: 80vh;
-      background-position: left top;
+      background-image: none;
       padding: 1rem 0;
-      background-color: black; } }
+      background-color: white; } }
   section.megatron .panel {
     background-color: white;
     padding: 2rem;
     border-radius: 0.25rem; }
+    @media (max-width: 767.98px) {
+      section.megatron .panel {
+        margin-top: -3rem; } }
 
 section.wizard {
   background-color: white;
@@ -7757,10 +7757,19 @@ section.media {
 
 section.cta {
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 5rem;
   background-color: white; }
   section.cta h3 {
     font-weight: 700;
     margin-bottom: 1.25rem; }
+
+footer h5 {
+  color: #5189E0; }
+footer a {
+  color: white; }
+  footer a:hover {
+    color: #5189E0; }
+footer hr {
+  border-color: #22406f; }
 
 /*# sourceMappingURL=custom.css.map */

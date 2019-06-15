@@ -102,19 +102,20 @@ section.megatron {
     padding: $spacer*6 0;
 
     @include media-breakpoint-down(sm) {
-        align-items: flex-end;
-        background-size: 140%;
-        min-height: 80vh;
-        background-position: left top;
+        background-image:none;
         padding: $spacer 0;
-        background-color: black;
+        background-color: white;
     }
 
     .panel {
         background-color: white;
         padding: $spacer*2;
-        border-radius: $border-radius;
+        border-radius: $border-radius;   
+        @include media-breakpoint-down(sm) {
+            margin-top: $spacer*-3;
+        }
     }
+    
 }
 
 section.wizard {
@@ -268,7 +269,7 @@ section.media {
 
 section.cta {
     padding-top: $spacer*2.5;
-    padding-bottom: $spacer*2.5;
+    padding-bottom: $spacer*5;
 
     h3 {
         font-weight: $font-weight-bold;
@@ -276,4 +277,19 @@ section.cta {
     }
 
     background-color: white;
+}
+
+footer{
+    h5{
+        color:$blue;
+    }
+    a{
+        color:white;
+        &:hover{
+            color:$blue;
+        }
+    }
+    hr{
+       border-color:darken($darkblue, 15%);
+    }
 }
