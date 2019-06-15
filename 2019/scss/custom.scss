@@ -231,7 +231,7 @@ section[class^="feature-"] {
 
 section.media {
     padding-top: $spacer*5;
-    padding-bottom: $spacer*5;
+    padding-bottom: $spacer*2.5;
 
     h3 {
         font-weight: $font-weight-bold;
@@ -264,4 +264,16 @@ section.media {
         object-fit: cover;
     }
 
+}
+
+section.cta {
+    padding-top: $spacer*2.5;
+    padding-bottom: $spacer*2.5;
+
+    h3 {
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacer*1.25;
+    }
+
+    background-color: white;
 }
