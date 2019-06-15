@@ -7733,4 +7733,26 @@ section[class^="feature-"] {
     padding-bottom: 0.5rem;
     border-top: 0.5px solid black; }
 
+section.media {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white; }
+  section.media h3 {
+    font-weight: 700;
+    margin-bottom: 1.25rem; }
+  section.media a {
+    text-decoration: none;
+    color: #1B1F3B; }
+  section.media .card {
+    transition: all .15s ease-out; }
+    section.media .card:hover {
+      background: #EAF2FF; }
+    section.media .card .media-logo {
+      max-width: 69px;
+      max-height: 69px;
+      margin-bottom: 1rem; }
+  section.media .card-img {
+    height: 100%;
+    object-fit: cover; }
+
 /*# sourceMappingURL=custom.css.map */
