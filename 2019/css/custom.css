@@ -7656,7 +7656,7 @@ section.megatron {
 
 section.wizard {
   background-color: white;
-  padding: 3rem 0; }
+  padding: 5rem 0; }
   section.wizard a .tile {
     display: flex;
     flex-direction: column;
@@ -7713,5 +7713,24 @@ section.wizard {
       color: #5189E0;
       border-color: #5189E0;
       background-color: white; }
+
+section[class^="feature-"] {
+  background-color: white; }
+  section[class^="feature-"] h3 {
+    font-weight: 700;
+    margin-bottom: 1.25rem; }
+  section[class^="feature-"] a {
+    text-decoration: underline; }
+
+.faq-accordion {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.5px solid black; }
+  .faq-accordion .faq-accordion__question {
+    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    border-top: 0.5px solid black; }
 
 /*# sourceMappingURL=custom.css.map */

@@ -20,6 +20,7 @@
     <meta name="theme-color" content="#F9AF48">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>SOS Ticket</title>
 </head>
@@ -30,7 +31,7 @@
             <!--            <nav class="navbar navbar-expand-lg navbar-light bg-white">-->
             <div class="container">
                 <a class="navbar-brand" href="./">
-                    <h1 class="sr-only">SOS Ticket</h1>
+                    <h1 class="sr-only">SOS Ticket <span class="sr-only">(current)</span></h1>
                     <img src="./img/logos/logo-light.svg" alt="SOS Ticket">
                     <!--                    <img src="./img/logos/logo.svg" alt="SOS Ticket">-->
                 </a>
@@ -81,7 +82,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-lg-6 ml-auto">
-                        <div class="panel shadow">
+                        <div class="panel shadow" data-aos="fade-in" data-aos-duration="1500">
                             <h2>Un ticket?</h2>
                             <p>Fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions. </p>
                             <p>Plus de 30 000 conducteurs ont fait confiance à notre expertise. Faites comme eux!</p>
@@ -92,13 +93,14 @@
                 </div>
             </div>
         </section>
+
         <!-- wizard -->
         <section class="wizard">
             <div class="container text-center">
                 <h2>Quelle est votre infraction?</h2>
                 <div class="row mt-5">
                     <div class="col-lg-10 mx-auto">
-                        <div class="row">
+                        <div class="row" data-aos="fade-up">
                             <div class="col-6 col-md-3">
                                 <a href="">
                                     <div class="tile">
@@ -132,7 +134,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up">
                             <div class="col-6 col-md-3">
                                 <a href="">
                                     <div class="tile">
@@ -166,7 +168,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up">
                             <div class="col-12 col-md-6">
                                 <a href="">
                                     <div class="tile">
@@ -195,7 +197,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Modal 1: Speed -->
             <div class="modal wizard fade" id="questionsVitesse" tabindex="-1" role="dialog" aria-labelledby="questionsVitesse" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -236,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Modal 2: Other -->
             <div class="modal wizard fade" id="questionsAutre" tabindex="-1" role="dialog" aria-labelledby="questionsAutre" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -278,14 +280,130 @@
                 </div>
             </div>
         </section>
+
         <!-- section vers à propos -->
-        <section class="feature-1"></section>
+        <section class="feature-1">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 p-4">
+                        <img src="./img/photos/woman-shocked-rear-view-mirror.jpg" alt="woman shocked with hands on face viewed from a rearview mirror" class="img-fluid rounded-lg shadow-lg" data-aos="fade-right">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container py-4 p-md-5">
+                            <h3>Voulez-vous sauver vos points d’inaptitude?</h3>
+                            <p>Grand excès de vitesse, facultés affaiblies, cellulaire au volant ? Pas de panique! </p>
+                            <p>Confiez-nous votre dossier, on peut vous aider. Consultez gratuitement un membre de notre équipe.</p>
+                            <a href="./about.html">En savoir plus sur SOS Ticket</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- section vers blogue -->
-        <section class="feature-2"></section>
+        <section class="feature-2">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 p-4 order-md-last">
+                        <img src="./img/photos/dashboard-view-of-road.jpg" alt="car dashboard view of road" class="img-fluid rounded-lg shadow-lg" data-aos="fade-left">
+                    </div>
+                    <div class="col-md-6 py-4 p-md-5">
+                        <div class="container order-md-first">
+                            <h3>La prévention et la sensibilisation: au cœur de nos priorités !</h3>
+                            <p>SOS Ticket encourage les automobilistes à adopter une conduite responsable et sécuritaire. Notre mission passe par l’information et l’éducation.</p>
+                            <p>Vous aimeriez avoir un dossier de conduite exemplaire? Profitez des conseils de nos experts pour savoir quoi faire.</p>
+                            <a href="./blog.html">Consultez notre blogue</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- section vers faq -->
-        <section class="feature-3"></section>
+        <section class="feature-3">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 p-4">
+                        <img src="./img/photos/speeding-car-tickets-flying.jpg" alt="side view of a sports car speeding on urban road with tickets flying out of it" class="img-fluid rounded-lg shadow-lg" data-aos="fade-right">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container py-4 p-md-5">                           
+                           
+                            <h3>Questions populaires</h3>
+                            <div class="faq-accordion" id="accordionExample">
+                                <!-- question 1 -->
+                                <div class="faq-accordion__question" id="headingOne">
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        + Comment contester une contravention?
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                                <!-- question 2 -->
+                                <div class="faq-accordion__question" id="headingTwo">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        + Quels sont les frais de contestation de contravention?
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                                
+                                <!-- question 3 -->
+                                <div class="faq-accordion__question" id="headingThree">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        + Comment contester une contravention en ligne? 
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                                                                
+                                <!-- question 4 -->
+                                <div class="faq-accordion__question" id="headingFour">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        + Who won the 2019 NBA Championships?
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        We the north of course. Our Toronto Raptors: Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                                                                <!-- question 5 -->
+                                <div class="faq-accordion__question" id="headingFive">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        + Est-ce que ça vaut la peine de contester un ticket?
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                              
+                                
+                                
+                            </div>
+                            <a href="./faq.html">Consulter la foire aux questions</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- section media -->
-        <section class="media"></section>
+        <section class="media">
+
+        </section>
         <!-- section final cta -->
         <section class="cta"></section>
     </main>
@@ -293,4 +411,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body></html>
