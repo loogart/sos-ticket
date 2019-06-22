@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,12 +27,18 @@
 </head>
 
 <body>
+
+    <nav>
+        <a class="skip" href="#phone">Skip to "Talk to a Lawyer"</a>
+        <a class="skip" href="#mainContent">Skip to main content</a>
+        <a class="skip" href="#info">Skip to "About SOS"</a>
+    </nav>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <!--            <nav class="navbar navbar-expand-lg navbar-light bg-white">-->
             <div class="container">
                 <a class="navbar-brand" href="./">
-                    <h1 class="sr-only">SOS Ticket <span class="sr-only">(current)</span></h1>
+                    <h1 class="text-white sr-only">SOS Ticket <span class="sr-only">(current)</span></h1>
                     <img src="./img/logos/logo-light.svg" alt="SOS Ticket">
                     <!--                    <img src="./img/logos/logo.svg" alt="SOS Ticket">-->
                 </a>
@@ -71,12 +78,12 @@
                             <a class="nav-link" href="#">EN</a>
                         </li>
                     </ul>
-                    <a href="tel:18664100101" class="btn btn-primary ml-lg-3 shadow"><i class="fas fa-phone"></i> Appelez-nous</a>
+                    <a href="tel:18664100101" class="btn btn-primary ml-lg-3 shadow" id="phone" role="button"><i class="fas fa-phone"></i> Appelez-nous</a>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main id="mainContent">
         <!-- jumbotron -->
         <img class="img-fluid d-block d-sm-none" src="./img/photos/man-driving-inside-car.jpg" alt="person driving a car" aria-hidden="true">
         <section class="megatron">
@@ -96,7 +103,7 @@
         </section>
 
         <!-- wizard -->
-        <section class="wizard">
+        <section class="wizard" id="mainContent">
             <div class="container text-center">
                 <h2>Quelle est votre infraction?</h2>
                 <div class="row mt-5">
@@ -416,7 +423,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card-body">
-                                            <img class="media-logo" src="./img/logos/logo-ici.jpg" alt="ici tv">
+                                            <img class="media-logo" src="./img/logos/logo-ici.jpg" alt="ici tv logo">
                                             <div class="d-flex flex-column">
                                                 <h5 class="card-title">Cellulaire au volant</h5>
                                                 <p class="card-text">Me Thierry Rassam en entrevue avec Mme Isabelle Richer.</p>
@@ -437,7 +444,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card-body">
-                                            <img class="media-logo" src="./img/logos/logo-ctv.jpg" alt="ctv news">
+                                            <img class="media-logo" src="./img/logos/logo-ctv.jpg" alt="ctv news logo">
                                             <div class="d-flex flex-column">
                                                 <h5 class="card-title">Damages by Potholes</h5>
                                                 <p class="card-text">Me Frédérique Bossé, in interview with CTV</p>
@@ -458,7 +465,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card-body">
-                                            <img class="media-logo" src="./img/logos/logo-cbc.jpg" alt="ici tv">
+                                            <img class="media-logo" src="./img/logos/logo-cbc.jpg" alt="ici tv logo">
                                             <div class="d-flex flex-column">
                                                 <h5 class="card-title">Les coûts exagérés des billets de stationnement</h5>
                                                 <p class="card-text">Me Thierry Rassam, entrevue à Radio-Canada</p>
@@ -479,7 +486,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card-body">
-                                            <img class="media-logo" src="./img/logos/logo-ici.jpg" alt="ici tv">
+                                            <img class="media-logo" src="./img/logos/logo-ici.jpg" alt="ici tv logo">
                                             <div class="d-flex flex-column">
                                                 <h5 class="card-title">Accident sur la route</h5>
                                                 <p class="card-text">Me Jimmy Marcotte, en entrevue à Radio-Canada</p>
@@ -535,17 +542,17 @@
                 <p>Encourageant les automobilistes à adopter une conduite sécuritaire et responsable, la prévention et la sensibilisation sont au cœur de nos priorités.</p>
                 <p>Notre mission ultime?</p>
                 <p> Vous aider à garder un bon dossier de conduite et… Ne pas vous revoir trop souvent!</p>
-                <a href="#!" class="btn btn-primary mt-2 shadow">Parler à un avocat</a>
+                <a href="tel:5144484911" class="btn btn-primary mt-2 shadow">Parler à un avocat</a>
             </div>
         </section>
     </main>
 
 
-    <footer class="py-5 bg-dark text-light">
+    <footer class="py-5 bg-dark text-light" id="info">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md">
-                    <img class="d-none d-md-block mt-md-2" src="./img/logos/logomark.svg" style="width:100px">
+                    <a href="./"><img class="d-none d-md-block mt-md-2" src="./img/logos/logomark.svg" style="width:100px" alt="sos-ticket-logo"></a>
                 </div>
                 <div class="col-6 col-md">
                     <h5 class="mb-3">Services de base</h5>
@@ -585,12 +592,12 @@
                             <ul class="list-inline">
                                 <li class="list-inline-item ml-2">
                                     <a href="https://www.facebook.com/sosticket.ca/" target="_blank">
-                                        <i class="fab fa-facebook fa-2x"></i>
+                                        <i class="fab fa-facebook fa-2x"></i><span class="sr-only">Facebook</span>
                                     </a>
                                 </li>
                                 <li class="list-inline-item ml-3">
                                     <a href="mailto:info@sosticket.ca">
-                                        <i class="far fa-envelope fa-2x"></i>
+                                        <i class="far fa-envelope fa-2x"></i><span class="sr-only">Email us</span>
                                     </a>
                                 </li>
                             </ul>
@@ -607,5 +614,8 @@
     <script src="./js/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
-</body></html>
+</body>
+
+</html>

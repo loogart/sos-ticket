@@ -8,13 +8,15 @@
 
 
 // Re-define BS colors
-$blue:#5189E0;
+//$blue:#5189E0;
+$blue:#2566cf;
+
 $yellow:#F7AE52;
 
 // Define new colors
-$lightblue:#EAF2FF;
+$lightblue:#eaf2ff;
 $darkblue:#3462AA;
-$darkpurple:#1B1F3B;
+$darkpurple:#1b1f3b;
 $black: #212121;
 
 // Map colors
@@ -49,6 +51,7 @@ $modal-footer-border-color:transparent;
 $modal-fade-transform: scale(.8);
 $modal-transition: transform .1s ease-out;
 
+
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
@@ -62,6 +65,36 @@ $input-font-family: 'Lato',
 sans-serif;
 $font-family-base: $font-family-sans-serif;
 
+//accessiblity
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+a.skip:active, 
+a.skip:focus, 
+a.skip:hover {
+    left: 15px; 
+    top: 12.5px;
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
+    z-index:2000;
+    background:$darkpurple;
+    color:white;
+    padding:5px;
+
+}
+.btn:focus{
+    border-color: $lightblue;
+    background: darken($blue, 15%);
+    
+}
 // custom scss
 body {
     font-family: $font-family-base;
@@ -281,7 +314,7 @@ section.cta {
 
 footer{
     h5{
-        color:$blue;
+        color:lighten($blue, 15%);
     }
     a{
         color:white;
