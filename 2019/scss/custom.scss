@@ -30,14 +30,14 @@ $navbar-padding-y: $spacer / 1.5;
 $navbar-brand-padding-y:0;
 $navbar-brand-padding-y:0;
 $navbar-light-color: $black;
-$navbar-light-hover-color:$darkblue;
+$navbar-light-hover-color:$lightblue;
 $navbar-light-active-color:$blue;
 $navbar-light-color:$black;
 $navbar-light-toggler-border-color:transparent;
 
 $navbar-dark-color:white;
-$navbar-dark-hover-color:$blue;
-$navbar-dark-active-color:$blue;
+$navbar-dark-hover-color:$yellow;
+$navbar-dark-active-color:$yellow;
 $navbar-dark-toggler-border-color:transparent;
 
 $nav-link-padding-y:0.25rem;
@@ -154,7 +154,10 @@ section.megatron {
 section.wizard {
     background-color: white;
     padding: $spacer*5 0;
-
+    
+    a{
+        text-decoration: none;
+    }
     a .tile {
         display: flex;
         flex-direction: column;
@@ -192,6 +195,19 @@ section.wizard {
             height: 69px;
             margin-bottom: $spacer / 2;
         }
+        h1, h2, h3, h4, h5, h6, p{
+            color: $darkblue;
+        }
+    }
+
+    .nav-link{
+        &.active{
+            background:$blue;
+        }
+        color:$blue;
+        border:1px solid $blue;
+        padding-top:$spacer/2;
+        padding-bottom:$spacer/2;
     }
 }
 
@@ -319,7 +335,7 @@ footer{
     a{
         color:white;
         &:hover{
-            color:$blue;
+            color:$yellow;
         }
     }
     hr{

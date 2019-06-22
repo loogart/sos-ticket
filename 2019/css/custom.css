@@ -4022,7 +4022,7 @@ input[type=button].btn-block {
   color: #212121;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #3462AA;
+  color: #eaf2ff;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -4060,7 +4060,7 @@ input[type=button].btn-block {
   color: white;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: #2566cf;
+  color: #F7AE52;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -4069,7 +4069,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #2566cf;
+  color: #F7AE52;
 }
 .navbar-dark .navbar-toggler {
   color: white;
@@ -4082,10 +4082,10 @@ input[type=button].btn-block {
   color: white;
 }
 .navbar-dark .navbar-text a {
-  color: #2566cf;
+  color: #F7AE52;
 }
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #2566cf;
+  color: #F7AE52;
 }
 
 .card {
@@ -9768,6 +9768,9 @@ section.wizard {
   background-color: white;
   padding: 5rem 0;
 }
+section.wizard a {
+  text-decoration: none;
+}
 section.wizard a .tile {
   display: flex;
   flex-direction: column;
@@ -9802,6 +9805,18 @@ section.wizard a .tile img {
   width: 69px;
   height: 69px;
   margin-bottom: 0.5rem;
+}
+section.wizard a .tile h1, section.wizard a .tile h2, section.wizard a .tile h3, section.wizard a .tile h4, section.wizard a .tile h5, section.wizard a .tile h6, section.wizard a .tile p {
+  color: #3462AA;
+}
+section.wizard .nav-link {
+  color: #2566cf;
+  border: 1px solid #2566cf;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+section.wizard .nav-link.active {
+  background: #2566cf;
 }
 
 .modal.wizard {
@@ -9907,7 +9922,7 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: #2566cf;
+  color: #F7AE52;
 }
 footer hr {
   border-color: #22406f;
