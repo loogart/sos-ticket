@@ -50,7 +50,8 @@ $modal-header-border-color:transparent;
 $modal-footer-border-color:transparent;
 $modal-fade-transform: scale(.8);
 $modal-transition: transform .1s ease-out;
-
+$dropdown-link-active-color: $darkpurple;
+$dropdown-link-active-bg: $lightblue;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -76,25 +77,27 @@ $font-family-base: $font-family-sans-serif;
     overflow: hidden;
 }
 
-a.skip:active, 
-a.skip:focus, 
+a.skip:active,
+a.skip:focus,
 a.skip:hover {
-    left: 15px; 
+    left: 15px;
     top: 12.5px;
-    width: auto; 
-    height: auto; 
-    overflow: visible; 
-    z-index:2000;
-    background:$darkpurple;
-    color:white;
-    padding:5px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 2000;
+    background: $darkpurple;
+    color: white;
+    padding: 5px;
 
 }
-.btn:focus{
+
+.btn:focus {
     border-color: $lightblue;
     background: darken($blue, 15%);
-    
+
 }
+
 // custom scss
 body {
     font-family: $font-family-base;
@@ -135,7 +138,7 @@ section.megatron {
     padding: $spacer*6 0;
 
     @include media-breakpoint-down(sm) {
-        background-image:none;
+        background-image: none;
         padding: $spacer 0;
         background-color: white;
     }
@@ -143,21 +146,23 @@ section.megatron {
     .panel {
         background-color: white;
         padding: $spacer*2;
-        border-radius: $border-radius;   
+        border-radius: $border-radius;
+
         @include media-breakpoint-down(sm) {
             margin-top: $spacer*-3;
         }
     }
-    
+
 }
 
 section.wizard {
     background-color: white;
     padding: $spacer*5 0;
-    
-    a{
+
+    a {
         text-decoration: none;
     }
+
     a .tile {
         display: flex;
         flex-direction: column;
@@ -195,19 +200,46 @@ section.wizard {
             height: 69px;
             margin-bottom: $spacer / 2;
         }
-        h1, h2, h3, h4, h5, h6, p{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
             color: $darkblue;
         }
     }
 
-    .nav-link{
-        &.active{
-            background:$blue;
+    li.nav-item {
+        &:first-child .nav-link{
+            border-top-left-radius: .25em;
+            border-bottom-left-radius: .25em;
         }
+        &:last-child .nav-link{
+            border-top-right-radius: .25em;
+            border-bottom-right-radius: .25em;
+        }
+    }
+
+    .nav-link {
+        &.active {
+            background: $blue;
+        }
+
         color:$blue;
         border:1px solid $blue;
         padding-top:$spacer/2;
         padding-bottom:$spacer/2;
+        margin:0;
+        border-radius: 0;
+
+    }
+
+    hr {
+        border-color: darken($lightblue, 5%);
+        margin-top: $spacer*2.5;
     }
 }
 
@@ -328,17 +360,20 @@ section.cta {
     background-color: white;
 }
 
-footer{
-    h5{
-        color:lighten($blue, 15%);
+footer {
+    h5 {
+        color: lighten($blue, 15%);
     }
-    a{
-        color:white;
-        &:hover{
-            color:$yellow;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $yellow;
         }
     }
-    hr{
-       border-color:darken($darkblue, 15%);
+
+    hr {
+        border-color: darken($darkblue, 15%);
     }
 }
