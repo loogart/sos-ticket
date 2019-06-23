@@ -3009,7 +3009,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6666666667rem 1rem; }
+  padding: 1rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
@@ -7722,6 +7722,8 @@ section.wizard {
     section.wizard a .tile h6,
     section.wizard a .tile p {
       color: #3462AA; }
+  section.wizard h2 {
+    margin-bottom: 2rem; }
   section.wizard li.nav-item:first-child .nav-link {
     border-top-left-radius: .25em;
     border-bottom-left-radius: .25em; }
@@ -7816,6 +7818,35 @@ section.cta {
   section.cta h3 {
     font-weight: 700;
     margin-bottom: 1.25rem; }
+
+section.about {
+  background-color: white; }
+  section.about #mission,
+  section.about #expertise,
+  section.about #equipe {
+    padding-top: 6em;
+    margin-top: -6em; }
+
+.banner {
+  width: 100%;
+  min-height: 50vh;
+  display: block;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2566cf; }
+  .banner h2,
+  .banner p {
+    text-shadow: 0px 2px 17px rgba(0, 0, 0, 0.4); }
+
+.badge {
+  font-weight: light;
+  text-transform: uppercase;
+  padding: 0.5em 1em; }
+
+.blockquote {
+  border-left: 4px solid #2566cf;
+  padding-left: 1.5rem; }
 
 footer h5 {
   color: #5e91e2; }

@@ -26,7 +26,7 @@ $colors: ("blue":$blue, "yellow":$yellow, "lightblue":$lightblue, "darkblue":$da
 $theme-colors: ("primary": $blue, "warning":$yellow, "dark":$darkpurple, "light":$lightblue);
 
 // customize theme
-$navbar-padding-y: $spacer / 1.5;
+$navbar-padding-y: $spacer;
 $navbar-brand-padding-y:0;
 $navbar-brand-padding-y:0;
 $navbar-light-color: $black;
@@ -212,12 +212,17 @@ section.wizard {
         }
     }
 
+    h2 {
+        margin-bottom: $spacer*2;
+    }
+
     li.nav-item {
-        &:first-child .nav-link{
+        &:first-child .nav-link {
             border-top-left-radius: .25em;
             border-bottom-left-radius: .25em;
         }
-        &:last-child .nav-link{
+
+        &:last-child .nav-link {
             border-top-right-radius: .25em;
             border-bottom-right-radius: .25em;
         }
@@ -358,6 +363,43 @@ section.cta {
     }
 
     background-color: white;
+}
+
+section.about {
+    background-color: white;
+
+    #mission,
+    #expertise,
+    #equipe {
+        padding-top: 6em;
+        margin-top: -6em;
+    }
+}
+
+.banner {
+    width: 100%;
+    min-height: 50vh;
+    display: block;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $blue;
+
+    h2,
+    p {
+        text-shadow: 0px 2px 17px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.badge {
+    font-weight: light;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+}
+
+.blockquote {
+    border-left: 4px solid $blue;
+    padding-left: $spacer*1.5;
 }
 
 footer {
