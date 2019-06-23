@@ -121,8 +121,8 @@ h2 {
 .navbar-nav {
     .nav-item {
         @include media-breakpoint-down(lg) {
-            margin-top:$spacer/1.5;
-            margin-bottom:$spacer/1.5;
+            margin-top: $spacer/1.5;
+            margin-bottom: $spacer/1.5;
         }
     }
 }
@@ -382,6 +382,23 @@ section.about {
     #equipe {
         padding-top: 6em;
         margin-top: -6em;
+    }
+}
+
+section.faq {
+    background-color: white;
+    padding: $spacer*5 0;
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-bottom: 0;
+                        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .faq-accordion .faq-accordion__question  {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 

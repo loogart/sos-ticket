@@ -9955,6 +9955,22 @@ section.about #equipe {
   margin-top: -6em;
 }
 
+section.faq {
+  background-color: white;
+  padding: 5rem 0;
+}
+section.faq h3 {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section.faq .faq-accordion .faq-accordion__question {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .banner {
   width: 100%;
   min-height: 50vh;
