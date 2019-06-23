@@ -52,6 +52,9 @@ $modal-fade-transform: scale(.8);
 $modal-transition: transform .1s ease-out;
 $dropdown-link-active-color: $darkpurple;
 $dropdown-link-active-bg: $lightblue;
+$breadcrumb-padding-x:0;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider: quote(">");
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -393,12 +396,32 @@ section.faq {
         font-weight: bold;
         font-size: 1.25em;
         margin-bottom: 0;
-                        padding-top: 1rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .faq-accordion .faq-accordion__question  {
+
+    .faq-accordion .faq-accordion__question {
         padding-top: 0;
         padding-bottom: 0;
+    }
+}
+
+section.forfait {
+    background-color: white;
+    padding: $spacer*3 0;
+    
+    h3{
+        font-weight: bold;
+        font-size: 1.25rem;
+        color:$darkblue;
+    }
+    hr{
+        margin-top:$spacer*2;
+        margin-bottom:$spacer*2;
+    }
+    img.logo-payment-alt{
+        height:2rem;
+        margin-right:$spacer/2;
     }
 }
 

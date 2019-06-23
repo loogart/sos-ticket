@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Forfaits | SOS Ticket</title>
+    <title>Forfait 6 points et plus | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
@@ -60,7 +60,7 @@
                                 <a class="dropdown-item" href="./a-propos.html#expertise">Expertise</a>
                                 <a class="dropdown-item" href="./a-propos.html#equipe">L'équipe</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="faq.html">FAQ</a>
+                                <a class="dropdown-item active" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -85,118 +85,57 @@
     <main id="mainContent">
 
         <!-- section select forfait -->
-        <section class="wizard">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
-                        <h2>Sélectionnez le service</h2>
-                        <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#populaire" role="tab" aria-controls="populaire" aria-selected="true">Services populaires</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#special" role="tab" aria-controls="special" aria-selected="false">Services spécialisés</a>
-                            </li>
+        <section class="forfait">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./forfaits.html">Forfaits</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Forfait 6 points et plus</li>
+                    </ol>
+                </nav>
+                <h2>Forfait 6 points et plus</h2>
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <img class="img-fluid rounded-lg shadow mb-5" src="./img/photos/autobus-scolaire.jpg" alt="autobus scolaire arrêté devant un bâtiment" data-aos="fade-up">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Autobus scolaire, délit de fuite, etc. Sauf Grand Excès de vitesse</h3>
+                        <p class="my-4 font-weight-bold">Services compris dans ce forfait :</p>
+                        <ul>
+                            <li>L’ouverture du dossier du Client;</li>
+                            <li>La compilation et recherche de l’information administrative de votre dossier;</li>
+                            <li>L’intégration de votre dossier à notre système de gestion informatisé;</li>
+                            <li>La demande d’une copie de votre dossier auprès de la SAAQ;</li>
+                            <li>L’aide et le soutien de notre équipe d’experts et de nos policiers retraités dans les cas qui le nécessitent;</li>
+                            <li>L’assignation d’un conseiller juridique à votre dossier; </li>
+                            <li>La demande de la divulgation de la preuve juridique dans votre dossier;</li>
+                            <li>Le suivi administratif et juridique de votre dossier;</li>
+                            <li>L’analyse juridique de votre dossier.</li>
+                            <li>Consultation avec un avocat au sujet de votre dossier, au téléphone.</li>
                         </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="populaire" role="tabpanel" aria-labelledby="pills-populaire-tab">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-1-3-points.html">
-                                            <div class="tile">
-                                                <h3 class="h4 mb-0">1-3 points</h3>
-                                                <p class="display-3 font-weight-bold">199 $</p>
-                                                <p>Stop raté; Feu rouge; Ceinture sécurité; <br>21 à 39km/h par-dessus la vitesse limite, etc.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-4-5-points.html">
-                                            <div class="tile">
-                                                <h3 class="h4 mb-0">4-5 points</h3>
-                                                <p class="display-3 font-weight-bold">299 $</p>
-                                                <p>Téléphone cellulaire;<br> 45 à 49km/h de plus sur une zone 100km/h, etc.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-6-points-et-plus.html">
-                                            <div class="tile">
-                                                <h3 class="h4 mb-0">6 points et +</h3>
-                                                <p class="display-3 font-weight-bold">499 $</p>
-                                                <p>Autobus scolaire, délit de fuite, etc.<br>Sauf Grand Excès de vitesse</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-gev.html">
-                                            <div class="tile">
-                                                <h3 class="h4 mb-0">GEV</h3>
-                                                <p class="display-3 font-weight-bold">659 $</p>
-                                                <p>Contestation de Grand excès de vitesse. <br>Négociation incluse.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="pills-special-tab">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-10">
-                                        <a href="./forfait-droit-criminel.html">
-                                            <div class="tile">
-                                                <img src="./img/icons/gavel-regular.svg" alt="Droit criminel">
-                                                <h3 class="font-weight-bold mt-2">Droit criminel</h3>
-                                                <p>Nos avocats peuvent vous représenter dans votre défense lorsque vous êtes arrêtés pour voies de faits; drogues; vol à l’étalage, etc.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <a href="./forfait-facultes-affaiblies.html">
-                                            <div class="tile">
-                                                <img src="./img/icons/dui.svg" alt="Aide juridique pour les cas de facultés affaiblies">
-                                                <h3 class="font-weight-bold mt-2">Facultés affaiblies</h3>
-                                                <p>La présence d'alcool ou de drogue, par exemple le cannabis, pendant la conduite a causé plusieurs graves accidents, et c'est pour cela que les sanctions sont très sévères pour l'accusé.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <a href="./forfait-vehicules-lourds.html">
-                                            <div class="tile">
-                                                <img src="./img/icons/truck-moving-regular.svg" alt="Aide juridique pour les véhicules lourds">
-                                                <h3 class="font-weight-bold mt-2">Véhicules lourds</h3>
-                                                <p>Les infractions liées aux véhicules lourds et aux autobus sont administrées de manière particulière. Notre équipe s’y connaît en la matière et peut vous accompagner et vous représenter tout au long du processus de contestation.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <a href="./forfait-1-3-points.html">
-                                            <div class="tile">
-                                                <img src="./img/icons/taxi-regular.svg" alt="Aide juridique pour les taxis">
-                                                <h3 class="font-weight-bold mt-2">Taxis</h3>
-                                                <p>Si vous conduisez un taxi, nous savons que votre permis de conduire est à la source de votre gagne-pain. Fiez-vous à nos experts pour prendre en charge votre dossier en tenant compte de votre réalité professionnelle.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <p class="h2 font-weight-bold mr-4 mr-sm-5">499 $</p>
+                            <a href="#!" class="btn btn-primary shadow flex-grow-1" role="button"><i class="fas fa-shopping-cart"></i> Acheter</a>
                         </div>
+                        <!-- paiement alternatif -->
+                        <a href="#!">
+                            <div class="card mt-5">
+                                <div class="card-body">
+                                    <img class="logo-payment-alt" src="./img/logos/access-d.png" alt="logo accès D affaires"> Achetez et payez en 6 mois sans intérêts
+                                </div>
+                            </div>
+                        </a>
+
                         <hr>
+                        <p class="small">Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
                     </div>
                 </div>
+
+
             </div>
 
         </section>
 
-
-        <!-- section final cta -->
-        <section class="cta">
-            <div class="container text-center" style="max-width:767px">
-                <h3>Besoin d’aide tout de suite?</h3>
-                <p>Appelez-nous pour parler à un de nos avocats gratuitement. Nous vous conseillerons sur le service qui vous conviendra le mieux.</p>
-                <a href="tel:5144484911" class="btn btn-primary mt-2 shadow">Parler à un avocat</a>
-            </div>
-        </section>
     </main>
 
     <footer class="py-5 bg-dark text-light" id="info">

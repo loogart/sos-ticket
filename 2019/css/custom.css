@@ -4307,10 +4307,10 @@ input[type=button].btn-block {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: transparent;
   border-radius: 0.25rem;
 }
 
@@ -4321,7 +4321,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
-  content: "/";
+  content: ">";
 }
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline;
@@ -9969,6 +9969,24 @@ section.faq h3 {
 section.faq .faq-accordion .faq-accordion__question {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+section.forfait {
+  background-color: white;
+  padding: 3rem 0;
+}
+section.forfait h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #3462AA;
+}
+section.forfait hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+section.forfait img.logo-payment-alt {
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .banner {
