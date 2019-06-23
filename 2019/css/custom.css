@@ -9727,6 +9727,13 @@ h2 {
   width: 160px;
 }
 
+@media (max-width: 1199.98px) {
+  .navbar-nav .nav-item {
+    margin-top: 0.6666666667rem;
+    margin-bottom: 0.6666666667rem;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-link {
     margin: auto 0.69rem;

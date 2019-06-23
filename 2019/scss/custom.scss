@@ -118,6 +118,15 @@ h2 {
     width: 160px;
 }
 
+.navbar-nav {
+    .nav-item {
+        @include media-breakpoint-down(lg) {
+            margin-top:$spacer/1.5;
+            margin-bottom:$spacer/1.5;
+        }
+    }
+}
+
 .nav-link {
     @include media-breakpoint-up(lg) {
         margin: auto $spacer*.69;
@@ -402,8 +411,8 @@ section.about {
     padding-left: $spacer*1.5;
 }
 
-.img-loogmoji{
-    max-height:160px;
+.img-loogmoji {
+    max-height: 160px;
 }
 
 footer {
