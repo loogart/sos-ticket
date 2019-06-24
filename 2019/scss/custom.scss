@@ -170,7 +170,11 @@ section.megatron {
 section.wizard {
     background-color: white;
     padding: $spacer*5 0;
-
+    
+    #question{
+        padding-top: 6em;
+        margin-top: -6em;
+    }
     a {
         text-decoration: none;
     }
@@ -189,8 +193,9 @@ section.wizard {
         transition: all 0.15s ease-in;
         border-radius: $border-radius-lg;
         margin-bottom: $spacer;
+        
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(xs) {
             min-height: 100px;
         }
 

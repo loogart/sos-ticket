@@ -9775,6 +9775,10 @@ section.wizard {
   background-color: white;
   padding: 5rem 0;
 }
+section.wizard #question {
+  padding-top: 6em;
+  margin-top: -6em;
+}
 section.wizard a {
   text-decoration: none;
 }
@@ -9793,7 +9797,7 @@ section.wizard a .tile {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   section.wizard a .tile {
     min-height: 100px;
   }
