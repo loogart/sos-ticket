@@ -10013,13 +10013,36 @@ section.forfait img.logo-payment-alt {
   padding: 0.5em 1em;
 }
 
-.blockquote {
+blockquote {
   border-left: 4px solid #2566cf;
   padding-left: 1.5rem;
 }
 
 .img-loogmoji {
   max-height: 160px;
+}
+
+section.blog {
+  background-color: white;
+  padding: 3rem 0;
+}
+section.blog h2 {
+  margin-bottom: 2rem;
+}
+section.blog .card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+section.blog .card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+section.blog .card p {
+  font-size: 0.86rem;
+}
+section.blog img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
 }
 
 footer h5 {

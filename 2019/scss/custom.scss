@@ -451,7 +451,7 @@ section.forfait {
     padding: 0.5em 1em;
 }
 
-.blockquote {
+blockquote {
     border-left: 4px solid $blue;
     padding-left: $spacer*1.5;
 }
@@ -459,6 +459,30 @@ section.forfait {
 .img-loogmoji {
     max-height: 160px;
 }
+
+section.blog{
+    background-color: white;
+    padding: $spacer*3 0;
+    h2{
+        margin-bottom: $spacer*2;
+    }
+    .card{
+        box-shadow: $box-shadow-sm;
+        h3{
+            font-size: $h5-font-size;
+            font-weight: $font-weight-bold;
+        }
+        p{
+            font-size: .86rem;
+        }
+    }
+    img{
+        object-fit: cover;
+        width:100%;
+        min-height:100%;
+    }
+}
+
 
 footer {
     h5 {
