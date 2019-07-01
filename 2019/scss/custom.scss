@@ -457,7 +457,10 @@ blockquote {
 }
 
 .img-loogmoji {
-    max-height: 160px;
+    max-height: 369px;
+    width:100%;
+    margin-top:$spacer;
+    margin-bottom:$spacer;
 }
 
 section.blog{
