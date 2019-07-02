@@ -170,11 +170,12 @@ section.megatron {
 section.wizard {
     background-color: white;
     padding: $spacer*5 0;
-    
-    #question{
+
+    #question {
         padding-top: 6em;
         margin-top: -6em;
     }
+
     a {
         text-decoration: none;
     }
@@ -193,7 +194,7 @@ section.wizard {
         transition: all 0.15s ease-in;
         border-radius: $border-radius-lg;
         margin-bottom: $spacer;
-        
+
 
         @include media-breakpoint-down(xs) {
             min-height: 100px;
@@ -414,19 +415,21 @@ section.faq {
 section.forfait {
     background-color: white;
     padding: $spacer*3 0;
-    
-    h3{
+
+    h3 {
         font-weight: bold;
         font-size: 1.25rem;
-        color:$darkblue;
+        color: $darkblue;
     }
-    hr{
-        margin-top:$spacer*2;
-        margin-bottom:$spacer*2;
+
+    hr {
+        margin-top: $spacer*2;
+        margin-bottom: $spacer*2;
     }
-    img.logo-payment-alt{
-        height:2rem;
-        margin-right:$spacer/2;
+
+    img.logo-payment-alt {
+        height: 2rem;
+        margin-right: $spacer/2;
     }
 }
 
@@ -456,33 +459,45 @@ blockquote {
     padding-left: $spacer*1.5;
 }
 
-.img-loogmoji {
-    max-height: 369px;
-    width:100%;
-    margin-top:$spacer;
-    margin-bottom:$spacer;
-}
-
-section.blog{
+section.blog {
     background-color: white;
     padding: $spacer*3 0;
-    h2{
+
+    h2 {
         margin-bottom: $spacer*2;
     }
-    .card{
+
+    .card {
         box-shadow: $box-shadow-sm;
-        h3{
+
+        h3 {
             font-size: $h5-font-size;
             font-weight: $font-weight-bold;
         }
-        p{
+
+        p {
             font-size: .86rem;
         }
     }
-    img{
+
+    img {
         object-fit: cover;
-        width:100%;
-        min-height:100%;
+        width: 100%;
+        min-height: 100%;
+    }
+}
+
+.biographie {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
+    h4{
+        color:$darkpurple;
+        font-weight: bold;
+        margin-bottom: $spacer;
     }
 }
 
