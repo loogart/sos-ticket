@@ -119,10 +119,7 @@
                             <!--                            <a href="#!" class="btn btn-primary shadow flex-grow-1" role="button"><i class="fas fa-shopping-cart"></i> Acheter</a>-->
 
                             <!-- Shopify Buy button -->
-                            <style>
-
-                            </style>
-                            <div id='product-component-f45f91ef249'></div>
+                            <div id='product-component-ad769a5fc64'></div>
                             <script type="text/javascript">
                                 /*<![CDATA[*/
 
@@ -155,7 +152,7 @@
                                         ShopifyBuy.UI.onReady(client).then(function(ui) {
                                             ui.createComponent('product', {
                                                 id: [3882018308157],
-                                                node: document.getElementById('product-component-f45f91ef249'),
+                                                node: document.getElementById('product-component-ad769a5fc64'),
                                                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                                                 options: {
                                                     "product": {
@@ -235,6 +232,12 @@
                                                     "cart": {
                                                         "contents": {
                                                             "button": true
+                                                        },
+                                                        "text": {
+                                                            "total": "Sous-total",
+                                                            "notice": "Les codes d'expédition et de réduction sont ajoutés à la caisse.",
+                                                            "button": "PAYER",
+                                                            "empty": "Votre panier est vide."
                                                         },
                                                         "styles": {
                                                             "button": {
@@ -453,6 +456,7 @@
     <script src="./js/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
 </body>
 
