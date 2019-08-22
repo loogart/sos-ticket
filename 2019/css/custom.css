@@ -1850,7 +1850,7 @@ pre code {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .form-control::placeholder {
-  color: #333b6f;
+  color: #949494;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -3479,14 +3479,14 @@ input[type=button].btn-block {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .custom-file {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: 48px;
   margin-bottom: 0;
 }
 
@@ -3494,7 +3494,7 @@ input[type=button].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: 48px;
   margin: 0;
   opacity: 0;
 }
@@ -3508,6 +3508,9 @@ input[type=button].btn-block {
 .custom-file-input:lang(en) ~ .custom-file-label::after {
   content: "Browse";
 }
+.custom-file-input:lang(fr) ~ .custom-file-label::after {
+  content: "Parcourir";
+}
 .custom-file-input ~ .custom-file-label[data-browse]::after {
   content: attr(data-browse);
 }
@@ -3518,13 +3521,13 @@ input[type=button].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: 48px;
+  padding: 10px 0.75rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 2px solid #1b1f3b;
   border-radius: 0.25rem;
 }
 .custom-file-label::after {
@@ -3535,7 +3538,7 @@ input[type=button].btn-block {
   z-index: 3;
   display: block;
   height: calc(1.5em + 0.75rem);
-  padding: 0.375rem 0.75rem;
+  padding: 10px 0.75rem;
   line-height: 1.5;
   color: #495057;
   content: "Browse";
@@ -9710,6 +9713,12 @@ a.skip:hover {
 label {
   font-weight: bold;
   color: #1b1f3b;
+}
+
+.custom-file-label::after {
+  height: 44px;
+  color: #1b1f3b;
+  background-color: #eaf2ff;
 }
 
 .btn:focus {

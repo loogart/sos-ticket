@@ -56,14 +56,13 @@ $breadcrumb-padding-x:0;
 $breadcrumb-bg: transparent;
 $breadcrumb-divider: quote(">");
 
-$custom-select-font-size-lg: $font-size-base;
+//$custom-select-font-size-lg: $font-size-base;
 $custom-select-background: none;
-
 
 $input-border-width: $border-width*2;
 $input-border-color: $darkpurple;
 $input-color:$darkpurple;
-$input-placeholder-color: lighten($darkpurple,15%);
+$input-placeholder-color: lighten($black, 45%);
 
 $input-focus-color: $darkblue;
 $input-focus-bg:$lightblue;
@@ -74,6 +73,14 @@ $custom-select-border-width: $input-border-width;
 $custom-select-color: $darkpurple;
 $custom-select-border-color:$darkpurple;
 $custom-select-focus-border-color:$darkblue;
+
+
+$custom-file-height:48px;
+$custom-file-padding-y:10px;
+$custom-file-border-color: $darkpurple;
+$custom-file-border-width: $input-border-width;
+$custom-file-text: (en: "Browse", fr: "Parcourir");
+
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -115,12 +122,19 @@ a.skip:hover {
 }
 
 // forms
-.btn-group-toggle > .btn{
+.btn-group-toggle > .btn {
     border-width: 2px;
 }
-label{
-    font-weight:bold;
-    color:$darkpurple;
+
+label {
+    font-weight: bold;
+    color: $darkpurple;
+}
+
+.custom-file-label::after {
+    height: 44px;
+    color: $darkpurple;
+    background-color: $lightblue;
 }
 
 
