@@ -1,13 +1,3 @@
-AOS.init();
-// load header and footer
-$(function () {
-    $("#enHeader").load("../html/en_header.html");
-    $("#enFooter").load("../html/en_footer.html");
-    $("#frHeader").load("../html/fr_header.html");
-    $("#frFooter").load("../html/fr_footer.html");
-});
-
-// wizard
 var vitesse1 = $('#vitesse1');
 var vitesse2 = $('#vitesse2');
 var vitesse3 = $('#vitesse3');
@@ -51,4 +41,3 @@ $("input[type=radio]").change(function () {
         nextButton2.attr("href", "./forfait-facultes-affaiblies.html");
     }
 });
-var pathname = window.location.pathname;
