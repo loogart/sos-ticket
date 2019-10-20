@@ -28,7 +28,7 @@
 </head>
 
 <body>
-   <div id="enHeader"></div>
+    <div id="enHeader"></div>
 
     <main id="mainContent">
         <!-- jumbotron -->
@@ -511,13 +511,16 @@
             </div>
         </section>
     </main>
-    
+
     <div id="enFooter"></div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
     <script src="../js/scripts.js"></script>
-</body>
-
-</html>
+    <script>
+        window.onload = function() {
+            $('#translation').attr("href", "../");
+        };
+    </script>
+</body></html>
