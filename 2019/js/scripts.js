@@ -113,4 +113,62 @@ $("input[type=radio]").change(function () {
     }
 });
 
+
+
+    //contact us
+
+
+    let submitContactForm = function()
+    {
+      console.log('submitContactForm')
+
+      console.log('$(#contact-form).checkValidity(): ',$('#contact-form')[0].checkValidity());
+
+      $('#contact-form').addClass('was-validated');
+      if ($('#contact-form')[0].checkValidity() === false) {
+          return;
+      }
+
+
+
+      let data = $('#contact-form').serializeArray().reduce(function(obj, item) {
+        obj[item.name] = item.value;
+        return obj;
+      }, {});
+
+      if(data.dob_day && data.dob_month && data.dob_year)
+      {
+        let dd = new Date();
+        dd.setFullYear( data.dob_year);
+        dd.setDate(data.dob_day);
+        dd.setMonth(data.dob_month-1);
+        data['dob']=dd;
+      }
+      console.log('data: ',data);
+
+
+      let url = config.apiURL+'/inquiry';
+      $.ajax({
+        type: "POST",
+        url: url,
+        data:data
+        //context: document.body
+      }).done(function(res) {
+        // $( this ).addClass( "done" );
+
+        // populateBlogHistoryHTML(res.data);
+        // populatePagination(res);
+      })
+      .fail(function() {
+        alert( "error" );
+      });
+
+
+
+
+    }
+    $('#btn-submit-contact-form').click(function(){
+      submitContactForm();
+    });
+
 });
