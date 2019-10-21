@@ -26,6 +26,7 @@
     <meta property="og:image" content="<%= imageUrl %>" />
     <meta property="og:url" content="<%= url %>" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<<<<<<< HEAD:2019/blogue-histoire.ejs
     <title><%= metaTitle %></title>
     <meta name="description" content="<%= metaDescription %>">
 </head>
@@ -83,6 +84,15 @@
             </div>
         </nav>
     </header>
+=======
+    <link rel="import" href="./html/freshchat.html">
+    <title>Blogue 1 | SOS Ticket</title>
+    <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
+</head>
+
+<body>
+    <div id="frHeader"></div>
+>>>>>>> 625a4813202a39f810fc521223bfce4e4295b952:2019/blogue-histoire.html
 
     <main id="mainContent">
         <section class="blog">
@@ -135,8 +145,13 @@
                                 <li><a href="#">Juillet 2015</a></li>
                                 <li><a href="#">Juin 2015</a></li>
                             </ol>
+<<<<<<< HEAD:2019/blogue-histoire.ejs
                         </div> -->
                                                 <div class="p-4">
+=======
+                        </div>
+                        <div class="p-4">
+>>>>>>> 625a4813202a39f810fc521223bfce4e4295b952:2019/blogue-histoire.html
                             <h4 class="font-italic">Réseaux sociaux</h4>
                             <ol class="list-unstyled">
                                 <li><a href="#">Facebook</a></li>
@@ -159,6 +174,7 @@
 
     </main>
 
+<<<<<<< HEAD:2019/blogue-histoire.ejs
     <footer class="py-5 bg-dark text-light" id="info">
         <div class="container">
             <div class="row">
@@ -224,7 +240,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
+=======
+    <div id="frFooter"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/scripts.js"></script>
+>>>>>>> 625a4813202a39f810fc521223bfce4e4295b952:2019/blogue-histoire.html
     <script>
-        AOS.init();
+        window.onload = function() {
+            document.getElementById('connect').classList.add("active");
+            document.getElementById('blog').classList.add("active");
+            $('#translation').attr("href", "./en/blogue-histoire.html");
+        };
     </script>
+
 </body></html>
