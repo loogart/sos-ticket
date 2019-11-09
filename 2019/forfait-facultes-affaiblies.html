@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="./html/freshchat.html">
+    <%- include('html/freshchat') -%>
     <title>Facultés affaiblies | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="frHeader"></div>
+    <%- include('html/fr_header') -%>
     <main id="mainContent">
 
         <!-- section select forfait -->
@@ -316,7 +316,7 @@
         </section>
 
     </main>
-    <div id="frFooter"></div>
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>

@@ -82,7 +82,7 @@ $(document).ready(function() {
       populatePagination(res);
     })
     .fail(function() {
-      alert( "error" );
+      alert( "loadBlogHistory error" );
     });
   }
 
@@ -107,11 +107,13 @@ $(document).ready(function() {
       populateLatestArticleHTML(res.data[0]);
     })
     .fail(function() {
-      alert( "error" );
+      alert( "loadLatestArticle error" );
     });
   }
 
 
+  console.log('loadLatestArticle');
   loadLatestArticle();
+  console.log('loadBlogHistory');
   loadBlogHistory();
 });

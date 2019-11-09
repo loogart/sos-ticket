@@ -1,0 +1,20 @@
+{
+  "name": "sos-ticket-node-server",
+  "version": "1.0.0",
+  "description": "the server for the sos-ticket project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}

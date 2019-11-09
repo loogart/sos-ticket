@@ -1,5 +1,6 @@
 
 
 let config = {
-  apiURL: 'http://localhost:3030',//'https://api.sosticket.ca'
+  //apiURL: 'https://api.sosticket.ca',
+  apiURL: 'http://localhost:3030'
 }

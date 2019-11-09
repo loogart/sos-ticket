@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags -->
@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../../img/logos/favicon.png">
+    <link rel="icon" sizes="192x192" href="../img/logos/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="SOS TIcket">
-    <link rel="apple-touch-icon-precomposed" href="../../img/favicon.png">
+    <meta name="apple-mobile-web-app-title" content="<%= title %>">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="../../img/favicon.png">
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
     <meta name="msapplication-TileColor" content="#F9AF48">
-    <link rel="shortcut icon" href="../../img/favicon.png">
-    <link rel="mask-icon" href="../../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#F9AF48">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../css/custom.css">
-    <link rel="stylesheet" href="../../css/aos.css" />
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/aos.css" />
     <meta property="og:title" content="<%= metaTitle %>" />
     <meta property="og:image" content="<%= imageUrl %>" />
     <meta property="og:url" content="<%= url %>" />
@@ -30,8 +30,9 @@
     <meta name="description" content="<%= metaDescription %>">
 </head>
 
+
 <body>
-  <%- include('../html/en_header') -%>
+    <%- include('html/fr_header') -%>
 
     <main id="mainContent">
         <section class="blog">
@@ -39,7 +40,7 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../blogue.html">Blog</a></li>
+                        <li class="breadcrumb-item"><a href="../blogue.html">Blogue</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><%= title %></li>
                     </ol>
                 </nav>
@@ -48,7 +49,7 @@
                         <div class="blog-post">
                             <img class="img-fluid rounded-lg mb-5 shadow" src="<%= imageUrl %>" alt="">
                             <h2><%= title %></h2>
-                            <p class="blog-post-meta"><%= publishDateFormatted %> by <a href="#"><%= author %></a></p>
+                            <p class="blog-post-meta"><%= publishDateFormatted %> par <a href="#"><%= author %></a></p>
 
                             <hr>
                             <div id="article">
@@ -61,6 +62,7 @@
                             <% if(hasNext){ %>
                               <a class="btn btn-primary float-right" href="./<%= nextSlug %>">Prochain</a>
                             <%  } %>
+
                         </div>
 
                     </div>
@@ -70,33 +72,35 @@
                         <!-- <div class="p-4">
                             <h4 class="font-italic">Archives</h4>
                             <ol class="list-unstyled mb-0">
-                                <li><a href="#">May 2016</a></li>
-                                <li><a href="#">April 2016</a></li>
-                                <li><a href="#">March 2016</a></li>
-                                <li><a href="#">February 2016</a></li>
-                                <li><a href="#">January 2016</a></li>
-                                <li><a href="#">December 2015</a></li>
-                                <li><a href="#">November 2015</a></li>
-                                <li><a href="#">October 2015</a></li>
-                                <li><a href="#">September 2015</a></li>
-                                <li><a href="#">August 2015</a></li>
-                                <li><a href="#">July 2015</a></li>
-                                <li><a href="#">June 2015</a></li>
+                                <li><a href="#">Mai 2016</a></li>
+                                <li><a href="#">Avril 2016</a></li>
+                                <li><a href="#">Mars 2016</a></li>
+                                <li><a href="#">Février 2016</a></li>
+                                <li><a href="#">Janvier 2016</a></li>
+                                <li><a href="#">Décembre 2015</a></li>
+                                <li><a href="#">Novembre 2015</a></li>
+                                <li><a href="#">Octobre 2015</a></li>
+                                <li><a href="#">Septembre 2015</a></li>
+                                <li><a href="#">Août 2015</a></li>
+                                <li><a href="#">Juillet 2015</a></li>
+                                <li><a href="#">Juin 2015</a></li>
                             </ol>
                         </div> -->
+
                         <div class="p-4">
-                            <h4 class="font-italic">Social Media</h4>
+                            <h4 class="font-italic">Réseaux sociaux</h4>
                             <ol class="list-unstyled">
                                 <li><a href="#">Facebook</a></li>
                             </ol>
                         </div>
-
                     </aside>
+
+
 
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../blogue.html">Blog</a></li>
+                        <li class="breadcrumb-item"><a href="../blogue.html">Blogue</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><%= title %></li>
                     </ol>
                 </nav>
@@ -105,11 +109,18 @@
 
     </main>
 
-    <%- include('../html/en_footer') -%>
+    <!-- <div id="frFooter"></div> -->
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/aos.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/scripts.js"></script>
     <script>
-        AOS.init();
+        window.onload = function() {
+            document.getElementById('connect').classList.add("active");
+            document.getElementById('blog').classList.add("active");
+            $('#translation').attr("href", "./en/blogue-histoire.html");
+        };
     </script>
+
 </body></html>

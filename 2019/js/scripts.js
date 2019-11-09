@@ -73,10 +73,10 @@ $(document).ready(function() {
 AOS.init();
 // load header and footer
 $(function () {
-    $("#enHeader").load("../html/en_header.html");
-    $("#enFooter").load("../html/en_footer.html");
-    $("#frHeader").load("./html/fr_header.html");
-    $("#frFooter").load("./html/fr_footer.html");
+    // $("#enHeader").load("../html/en_header.html");
+    // $("#enFooter").load("../html/en_footer.html");
+    // $("#frHeader").load("./html/fr_header.html");
+    // $("#frFooter").load("./html/fr_footer.html");
 });
 
 // wizard
@@ -131,9 +131,6 @@ $("input[type=radio]").change(function () {
 
     let submitContactForm = function()
     {
-      console.log('submitContactForm')
-
-      console.log('$(#contact-form).checkValidity(): ',$('#contact-form')[0].checkValidity());
 
       $('#contact-form').addClass('was-validated');
       if ($('#contact-form')[0].checkValidity() === false) {
@@ -153,9 +150,13 @@ $("input[type=radio]").change(function () {
         dd.setFullYear( data.dob_year);
         dd.setDate(data.dob_day);
         dd.setMonth(data.dob_month-1);
-        data['dob']=dd;
+
+        if(!isNaN(dd.getTime()))
+        {
+          data['dob']=dd;
+        }
+
       }
-      console.log('data: ',data);
 
 
       let url = config.apiURL+'/inquiry';
@@ -163,12 +164,8 @@ $("input[type=radio]").change(function () {
         type: "POST",
         url: url,
         data:data
-        //context: document.body
       }).done(function(res) {
-        // $( this ).addClass( "done" );
-
-        // populateBlogHistoryHTML(res.data);
-        // populatePagination(res);
+        window.location.href = './merci';
       })
       .fail(function() {
         alert( "error" );

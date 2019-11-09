@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <%- include('../html/freshchat') -%>
     <title>Contact us | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="enHeader"></div>
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
 
         <section class="contact">
@@ -200,13 +200,13 @@
                                                     <input type="text"  name="infractionType" id="infractionType" class="form-control form-control-lg" placeholder="E.g. speeding, criminal law...">
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <!-- <div class="col-lg-6">
                                                 <p class="font-weight-bold mb-2">Ticket photo</p>
                                                 <div class="custom-file">
                                                     <input type="file" class="custom-file-input" id="customFile">
                                                     <label class="custom-file-label" for="customFile">Select</label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
 
                                     </div>
@@ -224,10 +224,11 @@
         </section>
 
     </main>
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
+    <script src="../js/config.js"></script>
     <script src="../js/scripts.js"></script>
     <script>
         window.onload = function() {

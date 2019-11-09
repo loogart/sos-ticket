@@ -12,7 +12,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="SOS TIcket">
-<<<<<<< HEAD
     <link rel="apple-touch-icon-precomposed" href="../../img/favicon.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="../../img/favicon.png">
@@ -24,13 +23,13 @@
     <link rel="stylesheet" href="../../css/custom.css">
     <link rel="stylesheet" href="../../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <%- include('../html/freshchat') -%>
     <title>Blog | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="enHeader"></div>
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
         <section class="blog">
 
@@ -53,42 +52,6 @@
 
                         <nav aria-label="blog page navigation" id="page-selection">
                             <!-- <ul class="pagination justify-content-center">
-=======
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-5 order-md-2">
-                                            <img src="../img/photos/blog-5.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-primary">Tips and tricks</strong>
-                                                <h3>Alcohol and guests: Not always easy to manage!</h3>
-                                                <div class="mb-2 text-muted">December 20 2018</div>
-                                                <p class="mb-2">Do you receive kinship? Discover six effective tips ...</p>
-                                                <a href="./blogue-histoire.html">Keep reading</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <nav aria-label="blog page navigation">
-                            <ul class="pagination justify-content-center">
->>>>>>> 625a4813202a39f810fc521223bfce4e4295b952
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Most recent</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-<<<<<<< HEAD
                             </ul> -->
                         </nav>
 
@@ -128,7 +91,7 @@
 
     </main>
 
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
 
     <script id="tmpl-article-card" type="text/x-jsrender">
 

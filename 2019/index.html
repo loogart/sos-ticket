@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="./html/freshchat.html">
+    <%- include('html/freshchat') -%>
     <title>SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
+
 <body>
-    <div id="frHeader"></div>
+   <%- include('html/fr_header') -%>
 
     <main id="mainContent">
         <!-- jumbotron -->
@@ -39,7 +40,7 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-6 ml-auto">
                         <div class="panel shadow" data-aos="fade-in" data-aos-duration="1500">
-                            <h2>Un ticket?</h2>
+                            <h2>Un ticket? asda</h2>
                             <p>Fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions. </p>
                             <p>Plus de 30 000 conducteurs ont fait confiance à notre expertise. Faites comme eux!</p>
                             <a href="#question" class="btn btn-primary btn-lg btn-block shadow">Débuter</a>
@@ -517,7 +518,8 @@
             </div>
         </section>
     </main>
-    <div id="frFooter"></div>
+    <!-- <div id="frFooter"></div> -->
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/scripts.js"></script>
