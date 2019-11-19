@@ -10,15 +10,15 @@ $(document).ready(function() {
       switch(val)
       {
         case '1-3':
-          window.location.href = '/forfait-1-3-points';
+          window.location.href = './forfait-1-3-points';
           return;
         break;
         case '4-5':
-          window.location.href = '/forfait-4-5-points';
+          window.location.href = './forfait-4-5-points';
           return;
         break;
         case '6 +':
-          window.location.href = '/forfait-6-points-et-plus';
+          window.location.href = './forfait-6-points-et-plus';
           return;
         break;
         default:
@@ -28,6 +28,7 @@ $(document).ready(function() {
 
     let submitSpeedingForm = function()
     {
+
       let data = $('#speeding-form').serializeArray().reduce(function(obj, item) {
         obj[item.name] = item.value;
         return obj;
@@ -35,7 +36,7 @@ $(document).ready(function() {
 
       if(data['speedingFormExcessSpeeding']==='true')
       {
-        window.location.href = '/forfait-gev';
+        window.location.href = './forfait-gev';
         return;
       }
 
@@ -45,6 +46,7 @@ $(document).ready(function() {
 
     let submitOtherInfractionForm = function()
     {
+      console.log('submitOtherInfractionForm')
       let data = $('#other-infraction-form').serializeArray().reduce(function(obj, item) {
         obj[item.name] = item.value;
         return obj;
@@ -52,7 +54,7 @@ $(document).ready(function() {
 
       if(data['otherInfractionFormDrugs']==='true')
       {
-        window.location.href = '/forfait-facultes-affaiblies';
+        window.location.href = './forfait-facultes-affaiblies';
         return;
       }
 
@@ -65,8 +67,48 @@ $(document).ready(function() {
       submitSpeedingForm();
     });
 
+    let submitOtherForm = function()
+    {
+
+
+      let autre1 = $('#autre1');
+      let autre2 = $('#autre2');
+      let autre3 = $('#autre3');
+      let autreNon = $('#autreNon');
+      let autreOui = $('#autreOui');
+      let nextButton2 = $('#next2');
+
+      let link = '/';
+      if ((autre1.is(':checked')) && (autreNon.is(':checked'))) {
+        link = '/forfait-1-3-points.html';
+         // nextButton2.attr("href", "./forfait-1-3-points.html");
+     } else if ((autre2.is(':checked')) && (autreNon.is(':checked'))) {
+         // nextButton2.attr("href", "./forfait-4-5-points.html");
+         link = '/forfait-4-5-points.html';
+     } else if ((autre3.is(':checked')) && (autreNon.is(':checked'))) {
+         // nextButton2.attr("href", "./forfait-6-points-et-plus.html");
+         link = '/forfait-6-points-et-plus.html';
+     } else if ((autre1.is(':checked')) && (autreOui.is(':checked'))) {
+         // nextButton2.attr("href", "./forfait-facultes-affaiblies.html");
+         link = '/forfait-facultes-affaiblies.html';
+     } else if ((autre2.is(':checked')) && (autreOui.is(':checked'))) {
+         // nextButton2.attr("href", "./forfait-facultes-affaiblies.html");
+         link = '/forfait-facultes-affaiblies.html';
+     } else if ((autre3.is(':checked')) && (autreOui.is(':checked'))) {
+         // nextButton2.attr("href", "./forfait-facultes-affaiblies.html");
+         link = '/forfait-facultes-affaiblies.html';
+     }
+
+
+     // window.location.href = link;
+    }
+
     $('#btn-submit-other-infraction-form').click(function(){
+      //submitOtherInfractionForm();
+
+    //submitOtherForm();
       submitOtherInfractionForm();
+
     });
 
 
@@ -109,7 +151,12 @@ $("input[type=radio]").change(function () {
     } else if ((vitesse3.is(':checked')) && (vitesseOui.is(':checked'))) {
         nextButton.attr("href", "./forfait-gev.html");
         //modal 2
-    } else if ((autre1.is(':checked')) && (autreNon.is(':checked'))) {
+    }
+
+    let one = autre1.is(':checked');
+    let two = autreNon.is(':checked');
+
+     if ((autre1.is(':checked')) && (autreNon.is(':checked'))) {
         nextButton2.attr("href", "./forfait-1-3-points.html");
     } else if ((autre2.is(':checked')) && (autreNon.is(':checked'))) {
         nextButton2.attr("href", "./forfait-4-5-points.html");

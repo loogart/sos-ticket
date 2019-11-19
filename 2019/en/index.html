@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <%- include('../html/freshchat') -%>
-    <title>SOS Ticket</title>
+    <title>SOS Ticket - Lawyers specialized in traffic tickets and DUIs</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
@@ -172,31 +172,33 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                          <form id="speeding-form">
                             <p class="lead">1. How many demerit points did you lose?</p>
                             <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" id="vitesse1" autocomplete="off"> 1-3
+                                    <input type="radio" name="speedingFormPoints" value="1-3"  id="vitesse1" autocomplete="off"> 1-3
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" id="vitesse2" autocomplete="off"> 4-5
+                                    <input type="radio" name="speedingFormPoints"  value="4-5" id="vitesse2" autocomplete="off"> 4-5
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" id="vitesse3" autocomplete="off"> 6 +
+                                    <input type="radio" name="speedingFormPoints" value="6 +" id="vitesse3" autocomplete="off"> 6 +
                                 </label>
                             </div>
                             <p class="lead mt-3">2. Is this an excessive speeding offense?</p>
                             <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options2" id="vitesseNon" autocomplete="off"> No
+                                    <input type="radio"  name="speedingFormExcessSpeeding" value=false id="vitesseNon" autocomplete="off"> No
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options2" id="vitesseOui" autocomplete="off"> Yes
+                                    <input type="radio" name="speedingFormExcessSpeeding" value=true id="vitesseOui" autocomplete="off"> Yes
                                 </label>
                             </div>
+                          </form>
                         </div>
                         <div class="modal-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">Cancel</button>
-                            <a href="#!" class="btn btn-primary btn-lg btn-block" role="button" id="next1">Next</a>
+                            <button class="btn btn-primary btn-lg btn-block" role="button" id="btn-submit-speeding-form">Next</a>
                         </div>
                     </div>
                 </div>
@@ -213,31 +215,33 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                          <form id="other-infraction-form">
                             <p class="lead">1. How many demerit points did you lose?</p>
                             <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
-                                <label class="btn btn-light">
-                                    <input type="radio" name="options3" id="autre1" autocomplete="off"> 1-3
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="otherInfractionFormPoints" id="autre1" value="1-3" autocomplete="off" checked> 1-3
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options3" id="autre2" autocomplete="off"> 4-5
+                                    <input type="radio" name="otherInfractionFormPoints" id="autre2" value="4-5" autocomplete="off"> 4-5
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options3" id="autre3" autocomplete="off"> 6 +
+                                    <input type="radio" name="otherInfractionFormPoints" id="autre3" value="6 +" autocomplete="off"> 6 +
                                 </label>
                             </div>
                             <p class="lead mt-3">2. Were you under the influence of drugs or alcohol?</p>
                             <div class="btn-group btn-group-lg btn-group-toggle btn-block" data-toggle="buttons">
-                                <label class="btn btn-light">
-                                    <input type="radio" name="options4" id="autreNon" autocomplete="off"> No
+                                <label class="btn btn-light active">
+                                    <input type="radio" name="otherInfractionFormDrugs" id="autreNon" value=false autocomplete="off" checked> No
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options4" id="autreOui" autocomplete="off"> yes
+                                    <input type="radio" name="otherInfractionFormDrugs" id="autreOui" value=true  autocomplete="off"> yes
                                 </label>
                             </div>
+                          </form>
                         </div>
                         <div class="modal-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">Cancel</button>
-                            <a href="#!" class="btn btn-primary btn-lg btn-block" role="button" id="next2">Next</a>
+                            <button id="btn-submit-other-infraction-form" class="btn btn-primary btn-lg btn-block" role="button" >Next</button>
                         </div>
                     </div>
                 </div>
