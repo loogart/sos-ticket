@@ -210,6 +210,8 @@ glob(html_dir +'/en/*.html', {}, (err, files)=>{
      });
 
   }
+
+
 });
 
 
@@ -234,5 +236,12 @@ app.use('/js', express.static(html_dir+'js/'));
 app.use('/img', express.static(html_dir+'img/'));
 app.use('/bootstrap', express.static(html_dir+'bootstrap/'));
 
+
+// app.get('*', function(req, res){
+//   let data={};
+//   ejs.renderFile(html_dir+'404.html', data, null, function(err, html){
+//      res.send(html);
+//   });
+// });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
