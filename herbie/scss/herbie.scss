@@ -1,0 +1,207 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900&display=swap');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+//$blue:#5189E0;
+$blue:#2566cf;
+
+$yellow:#F7AE52;
+
+// Define new colors
+$lightblue:#eaf2ff;
+$darkblue:#3462AA;
+$darkpurple:#1b1f3b;
+$black: #212121;
+
+// Map colors
+$colors: ("blue":$blue, "yellow":$yellow, "lightblue":$lightblue, "darkblue":$darkblue, "black":$black, "darkpurple":$darkpurple);
+
+//Map theme-colors
+$theme-colors: ("primary": $blue, "warning":$yellow, "dark":$darkpurple, "light":$lightblue);
+
+// customize theme
+$navbar-padding-y: $spacer;
+$navbar-brand-padding-y:0;
+$navbar-brand-padding-y:0;
+$navbar-light-color: $black;
+$navbar-light-hover-color:$lightblue;
+$navbar-light-active-color:$blue;
+$navbar-light-color:$black;
+$navbar-light-toggler-border-color:transparent;
+
+$navbar-dark-color:white;
+$navbar-dark-hover-color:$yellow;
+$navbar-dark-active-color:$yellow;
+$navbar-dark-toggler-border-color:transparent;
+
+$nav-link-padding-y:0.25rem;
+
+$headings-color:darken($darkpurple, 5%);
+
+$link-color: $blue;
+$link-hover-color: darken($link-color, 15%);
+$modal-header-border-color:transparent;
+$modal-footer-border-color:transparent;
+$modal-fade-transform: scale(.8);
+$modal-transition: transform .1s ease-out;
+$dropdown-link-active-color: $darkpurple;
+$dropdown-link-active-bg: $lightblue;
+$breadcrumb-padding-x:0;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider: quote(">");
+
+//$custom-select-font-size-lg: $font-size-base;
+$custom-select-background: none;
+
+$input-border-width: $border-width*2;
+$input-border-color: $darkpurple;
+$input-color:$darkpurple;
+$input-placeholder-color: lighten($black, 45%);
+
+$input-focus-color: $darkblue;
+$input-focus-bg:$lightblue;
+$input-focus-border-color:$darkblue;
+//$input-border-radius-lg:$border-radius-lg/3;
+
+$custom-select-border-width: $input-border-width;
+$custom-select-color: $darkpurple;
+$custom-select-border-color:$darkpurple;
+$custom-select-focus-border-color:$darkblue;
+
+
+$custom-file-height:48px;
+$custom-file-padding-y:10px;
+$custom-file-border-color: $darkpurple;
+$custom-file-border-width: $input-border-width;
+$custom-file-text: (en: "Browse", fr: "Parcourir");
+
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
+
+$font-family-sans-serif: 'Lato',
+sans-serif;
+$headings-font-family:'Lato',
+sans-serif;
+$input-font-family: 'Lato',
+sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+//accessiblity
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 15px;
+    top: 12.5px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 2000;
+    background: $darkpurple;
+    color: white;
+    padding: 5px;
+
+}
+
+// forms
+.btn-group-toggle > .btn {
+    border-width: 2px;
+}
+
+label {
+    font-weight: bold;
+    color: $darkpurple;
+}
+
+.custom-file-label::after {
+    height: 44px;
+    color: $darkpurple;
+    background-color: $lightblue;
+}
+
+
+
+.btn:focus {
+    border-color: $lightblue;
+    background: darken($blue, 15%);
+
+}
+
+// custom scss
+body {
+    font-family: $font-family-base;
+}
+
+/* ============= HERBIE CSS ============= */
+
+.logo {
+    max-width: 260px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.herbie__chat {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 3em 0;
+}
+
+.bubble {
+    display: block;
+    position: relative;
+    width: 100%;
+    color: white;
+    background-color: $blue;
+    padding: 1.25em;
+    border-radius: 8px;
+    margin-bottom: 1.69em;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .bubble-triangle__under {
+        display: block;
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $blue;
+        margin-bottom: -15px;
+
+    }
+}
+
+.herbie {
+    .herbie-full {
+        width: 120px;
+    }
+}
+
+.start{
+    max-width:60%;
+}
