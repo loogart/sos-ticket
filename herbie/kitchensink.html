@@ -59,9 +59,7 @@
                         <div class="bubble-triangle__under"></div>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <div class="herbie">
-                            <img src="./img/herbie-full.svg" class="herbie-full" alt="herbie l'hibou">
-                        </div>
+                        <img src="./img/herbie-full.svg" class="herbie-full" alt="herbie l'hibou">
                         <div class="start text-right" data-aos="fade-up" data-aos-delay="1000">
                             <a class="btn btn-primary shadow" href="#!" role="button" id="next1" onclick="$('#chat2').animatescroll();">Débuter</a>
                             <p class="small mt-4 mb-0">En cliquant “Débuter”, j’accepte les <a href="#!" target="_blank">termes et conditions d’utilisations</a> de Rouge Jaune Vert.</p>
@@ -84,23 +82,44 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#!" onclick="$('#chat1').animatescroll({padding:100});"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
-                                <a class="btn btn-ui" href="#chat3" id="answer1">Oui j'ai contesté</a>
-                                <a class="btn btn-ui" href="#chat3" id="answer2">Non</a>
-                                <a class="btn btn-ui" href="#chat3" id="answer3">Non, mais je suis hors délai</a>
-                                <a class="btn btn-ui" href="#chat3" id="answer4">J’ai été déclaré coupable par défaut</a>
-                                <a class="btn btn-ui" href="#chat3" id="answer5">J’ai payé le constat</a>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer1">Oui j'ai contesté</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer2">Non</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer3">Non, mais je suis hors délai</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer4">J’ai été déclaré coupable par défaut</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer5">J’ai payé le constat</a>
+                                    </div>
+                                </div>
                                 <div class="text-center">
                                     <a id="moreButton" data-toggle="collapse" href="#collapseOptions" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         Plus d'options
                                     </a>
                                 </div>
                                 <div class="collapse" id="collapseOptions">
-                                    <a class="btn btn-ui" href="#chat3" id="answer1">Option 6</a>
-                                    <a class="btn btn-ui" href="#chat3" id="answer2">Option 7</a>
-                                    <a class="btn btn-ui" href="#chat3" id="answer3">Option 8</a>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a class="btn btn-ui" href="#chat3" id="answer1">Option 6</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a class="btn btn-ui" href="#chat3" id="answer2">Option 7</a>
+                                        </div>
+                                        <div class="col-12">
+
+                                            <a class="btn btn-ui" href="#chat3" id="answer3">Option 8</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </fieldset>
                             <div class="bubble-triangle__right">
@@ -128,17 +147,24 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat2" onclick="$('#chat2').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat4" id="answer1">1-4</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat4" id="answer2">5-8</a>
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat4" id="answer3">9-12</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat4" id="answer4">13-14</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat3" id="answer3">Je ne sais pas</a>
                                     </div>
                                 </div>
                             </fieldset>
@@ -167,7 +193,7 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat3" onclick="$('#chat3').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <form>
@@ -203,13 +229,13 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat4" onclick="$('#chat4').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <form>
-                                   <label for="selectDate">Date de l'infraction</label>
+                                    <label for="selectDate">Date de l'infraction</label>
                                     <div class="input-group mb-3">
-                                        <input  id="selectDate" type="text" class="form-control datepicker" placeholder="Selectionnez la date">
+                                        <input id="selectDate" type="text" class="form-control datepicker" placeholder="Selectionnez la date">
                                         <div class="input-group-addon">
                                         </div>
                                     </div>
@@ -241,17 +267,17 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat5" onclick="$('#chat5').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat7" id="answer1">Oui</a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat7" id="answer2">Non</a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-12 col-sm-6">
                                         <a class="btn btn-ui" href="#chat7" id="answer3">Je ne sais pas</a>
                                     </div>
                                 </div>
@@ -281,7 +307,7 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat6" onclick="$('#chat6').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <form>
@@ -317,7 +343,7 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat7" onclick="$('#chat7').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <form>
@@ -350,7 +376,7 @@
                                 <p>Message Page</p>
                                 <p class="mt-3"> Leaves an informative page or piece of information to the user, but allows them to continue with the questionnaire. The question would be right under this bubble.</p>
                                 <div class="bubble-nav mt-3">
-                                    <a class="text-light" href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                    <a class="text-light" href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                                 </div>
                             </div>
                             <div class="bubble bubble__right">
@@ -363,7 +389,7 @@
                         <div class="bubble bubble__user bubble__left">
                             <div class="bubble-nav">
                                 <a href="#chat8" onclick="$('#chat8').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
-                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
                             </div>
                             <fieldset>
                                 <form>
@@ -412,7 +438,7 @@
                     <p class="small mt-4">Encore besoin d’aide, visitez <a href="https://sosticket.ca" target="_blank">sosticket.ca</a> ou appelez le <a href="tel:5144484911">514-448-4911</a>.</p>
                 </section>
 
-                <!-- 11 Plus d'information popup -->
+                <!-- 11 Plus d'info popup -->
                 <div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">

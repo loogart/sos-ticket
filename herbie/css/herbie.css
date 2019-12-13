@@ -7656,6 +7656,9 @@ body {
 /* ============= HERBIE CSS ============= */
 .logo {
   max-width: 260px; }
+  @media (max-width: 767.98px) {
+    .logo {
+      max-width: 200px; } }
 
 .container {
   max-width: 600px; }
@@ -7664,11 +7667,10 @@ body {
   background-color: white;
   width: 100%;
   height: auto;
-  padding: 6em 0; }
+  padding: 6em 0 0; }
 
 .chat-block {
   display: block;
-  width: 100%;
   margin-bottom: 2em; }
   .chat-block:not(:first-child) {
     margin-top: 40vh;
@@ -7677,20 +7679,32 @@ body {
     display: flex;
     align-items: flex-end;
     margin-bottom: 2em; }
+    @media (max-width: 767.98px) {
+      .chat-block .chat-block__herbie {
+        flex-direction: column;
+        align-items: flex-start; } }
   .chat-block .chat-block__user {
     display: flex;
     align-items: flex-end;
     margin-bottom: 2em; }
+    @media (max-width: 767.98px) {
+      .chat-block .chat-block__user {
+        flex-direction: column; } }
 
 .bubble {
   display: block;
   position: relative;
+  width: 100%;
   color: white;
+  flex-grow: 1;
   border: 3.5px solid #2566cf;
   background-color: #2566cf;
   padding: 1.25em;
   border-radius: 8px;
   margin-bottom: 1.69em; }
+  @media (max-width: 767.98px) {
+    .bubble {
+      order: 0; } }
   .bubble p {
     margin-bottom: 0; }
   .bubble .bubble-triangle__under {
@@ -7715,6 +7729,18 @@ body {
     border-top: 30px solid transparent;
     border-right: 30px solid #2566cf;
     margin-left: -50px; }
+    @media (max-width: 767.98px) {
+      .bubble .bubble-triangle__left {
+        display: block;
+        position: absolute;
+        left: 150px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid #2566cf;
+        margin-bottom: -20px; } }
 
 .bubble-dark {
   background-color: #1b1f3b;
@@ -7723,14 +7749,32 @@ body {
     border-top: 15px solid #1b1f3b; }
   .bubble-dark .bubble-triangle__left {
     border-right: 30px solid #1b1f3b; }
+    @media (max-width: 767.98px) {
+      .bubble-dark .bubble-triangle__left {
+        display: block;
+        position: absolute;
+        left: 150px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid #1b1f3b;
+        margin-bottom: -20px; } }
 
 .bubble__right {
   margin-left: 30px;
   margin-bottom: .48em; }
+  @media (max-width: 767.98px) {
+    .bubble__right {
+      margin-left: 0; } }
 
 .bubble__left {
   margin-right: 30px;
   margin-bottom: .48em; }
+  @media (max-width: 767.98px) {
+    .bubble__left {
+      margin-right: 0; } }
 
 .bubble__user {
   background-color: white;
@@ -7743,15 +7787,28 @@ body {
     width: 40px;
     height: 40px;
     margin-right: -30px; }
+    @media (max-width: 767.98px) {
+      .bubble__user .bubble-triangle__right {
+        right: 100px;
+        bottom: -30px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+        transform: rotate(90deg) scaleY(-1); } }
   .bubble__user .bubble-nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em; }
 
-.herbie .herbie-full {
-  width: 120px; }
+@media (max-width: 767.98px) {
+  .herbie {
+    order: 1;
+    margin-top: .5rem; } }
 .herbie .herbie-head {
   width: 69px; }
+
+.herbie-full {
+  width: 120px; }
 
 .user {
   position: relative;
