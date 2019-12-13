@@ -7664,7 +7664,7 @@ body {
   background-color: white;
   width: 100%;
   height: auto;
-  padding: 7em 0; }
+  padding: 6em 0; }
 
 .chat-block {
   display: block;
@@ -7672,7 +7672,7 @@ body {
   margin-bottom: 2em; }
   .chat-block:not(:first-child) {
     margin-top: 40vh;
-    padding-top: 7em; }
+    padding-top: 6em; }
   .chat-block .chat-block__herbie {
     display: flex;
     align-items: flex-end;

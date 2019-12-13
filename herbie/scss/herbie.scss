@@ -171,16 +171,17 @@ body {
     background-color: white;
     width: 100%;
     height: auto;
-    padding: 7em 0;
+    padding: 6em 0;
 }
 
 .chat-block {
     display: block;
     width: 100%;
     margin-bottom: 2em;
-    &:not(:first-child){
-            margin-top: 40vh;
-    padding-top: 7em;
+
+    &:not(:first-child) {
+        margin-top: 40vh;
+        padding-top: 6em;
     }
 
     .chat-block__herbie {
@@ -245,7 +246,8 @@ body {
     .bubble-triangle__under {
         border-top: 15px solid $darkpurple;
     }
-        .bubble-triangle__left {
+
+    .bubble-triangle__left {
         border-right: 30px solid $darkpurple;
     }
 }
