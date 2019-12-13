@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="SOS TIcket">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#F9AF48">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <meta name="theme-color" content="#F9AF48">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/herbie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Step 3 | Rouge Jaune Vert</title>
+    <meta name="description" content="Rouge Jaune Vert encourage les automobilistes à adopter une conduite sécuritaire et responsable tout en les aidant à garder un bon dossier de conduite.">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./">
+                    <h1 class="sr-only">Rouge Jaune Vert</h1>
+                    <img class="logo" src="./img/logo.svg" alt="Rouge Jaune Vert homepage">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#">English</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <section class="herbie__chat">
+            <div class="container container-chat">
+
+                <!-- 2 Text Select -->
+                <section class="chat-block" id="chat2">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Avez-vous transmis un plaidoyer de culpabilité?</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="./step2.html"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'information</a>
+                            </div>
+                            <fieldset>
+                                <a class="btn btn-ui" href="./step4a.html" id="answer1">Oui j'ai contesté</a>
+                                <a class="btn btn-ui" href="./step4b.html" id="answer2">Non</a>
+                                <a class="btn btn-ui" href="./step4b.html" id="answer3">Non, mais je suis hors délai</a>
+                                <a class="btn btn-ui" href="./step4b.html" id="answer4">J’ai été déclaré coupable par défaut</a>
+                                <a class="btn btn-ui" href="#!" id="shortAnswer">J’ai payé le constat</a>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                    <!-- short answer to end -->
+                    <div class="short-answer d-none">
+                        <div class="chat-block__herbie">
+                            <div class="herbie">
+                                <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                            </div>
+                            <div class="bubble bubble-dark bubble__right">
+                                <p>Il n’y a rien a fair à part des circonstances exceptionnelles.</p>
+                                <div class="bubble-triangle__left"></div>
+                            </div>
+                        </div>
+                        <p class="small mt-4">Encore besoin d’aide, visitez <a href="https://sosticket.ca" target="_blank">sosticket.ca</a> ou appelez le <a href="tel:5144484911">514-448-4911</a>.</p>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- 11 Plus d'information popup -->
+        <div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="exampleModalLabel"><i class="fas fa-info-circle"></i> More details title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
+                        <img src="./img/herbie-full.svg" style="width:80px;display: inline-block;float:left;margin:1em 1em 1em 0;" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto non minus enim dolor dolorum ipsa! Nisi totam at consectetur, quae quidem. Reiciendis iste, praesentium unde libero autem omnis assumenda.</p>
+                        <p>Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="#!" data-dismiss="modal" role="button">Fermer cette fenêtre</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/animatescroll.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body></html>

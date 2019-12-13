@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="./img/logos/favicon.png">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -20,16 +20,17 @@
     <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#F9AF48">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/herbie.css">
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/herbie.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Rouge Jaune Vert</title>
     <meta name="description" content="Rouge Jaune Vert encourage les automobilistes à adopter une conduite sécuritaire et responsable tout en les aidant à garder un bon dossier de conduite.">
 </head>
 
 <body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="./">
                     <h1 class="sr-only">Rouge Janue Vert</h1>
@@ -50,31 +51,41 @@
     <main id="mainContent">
         <section class="herbie__chat">
             <div class="container container-chat">
-                <div class="bubble">
-                    <p>Salut, je suis Herbie l’hibou! Vous avez eu un ticket? Besoin d’aide pour le contester? Laissez-moi vous guider dans la bonne direction.</p>
-                    <div class="bubble-triangle__under"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="herbie">
-                        <img src="./img/herbie-full.svg" class="herbie-full" alt="">
+
+                <!-- 1 start -->
+                <section class="chat-block" data-aos="fade-in" id="chat1">
+                    <div class="bubble">
+                        <p>Salut, je suis Herbie l’hibou! Vous avez eu un ticket? Besoin d’aide pour le contester? Laissez-moi vous guider dans la bonne direction.</p>
+                        <div class="bubble-triangle__under"></div>
                     </div>
-                    <div class="start text-right">
-                        <button type="button" class="btn btn-primary shadow">Débuter</button>
-                        <p class="small mt-4 mb-0">En cliquant “Débuter”, j’accepte les <a href="#!">termes et conditions d’utilisations</a> de Rouge Jaune Vert.</p>
+                    <div class="d-flex justify-content-between">
+                        <div class="herbie">
+                            <img src="./img/herbie-full.svg" class="herbie-full" alt="herbie l'hibou">
+                        </div>
+                        <div class="start text-right" data-aos="fade-up" data-aos-delay="1000">
+                            <a class="btn btn-primary shadow" href="./step2.html" role="button">Débuter</a>
+                            <p class="small mt-4 mb-0">En cliquant “Débuter”, j’accepte les <a href="#!" target="_blank">termes et conditions d’utilisations</a> de Rouge Jaune Vert.</p>
+                        </div>
                     </div>
-                </div>
+                </section>
+
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="text-center">
+            <a href="./kitchensink.html"><i class="fas fa-th"></i> Kitchen Sink UI Components</a>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/animatescroll.min.js"></script>
     <script src="./js/scripts.js"></script>
+
 </body>
 
 </html>
