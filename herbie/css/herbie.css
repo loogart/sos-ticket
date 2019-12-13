@@ -7685,7 +7685,6 @@ body {
 .bubble {
   display: block;
   position: relative;
-  width: 100%;
   color: white;
   border: 3.5px solid #2566cf;
   background-color: #2566cf;
