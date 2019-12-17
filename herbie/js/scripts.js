@@ -1,5 +1,22 @@
 AOS.init();
 window.addEventListener('load', AOS.refresh);
+
+// lottie
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('bm'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './js/herbie.json'
+})
+var animationMobile = bodymovin.loadAnimation({
+    container: document.getElementById('bm2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './js/herbie-head.json'
+})
+
 // load header and footer
 $(function () {
     $("#herbieHeader").load("../html/herbie_header.html");
@@ -14,8 +31,8 @@ $("#moreButton").click(function () {
 $("#shortAnswer").click(function () {
     $(".short-answer").addClass("d-block");
 
-        $('html, body').animate({
-        scrollTop: $(".short-answer").offset().top-100
+    $('html, body').animate({
+        scrollTop: $(".short-answer").offset().top - 100
     }, 1500);
 });
 
@@ -35,3 +52,4 @@ $('.datepicker').datepicker({
     orientation: 'bottom',
     autoclose: true
 });
+

@@ -195,6 +195,7 @@ body {
         @include media-breakpoint-down(sm) {
             flex-direction: column;
             align-items: flex-start;
+            margin-bottom: .5em;
         }
     }
 
@@ -247,7 +248,7 @@ body {
         display: block;
         position: absolute;
         left: 0;
-        bottom: -3.5px;
+        bottom: -3px;
         width: 0;
         height: 0;
         border-left: 30px solid transparent;
@@ -347,7 +348,7 @@ body {
 .herbie {
     @include media-breakpoint-down(sm) {
         order: 1;
-        margin-top: .5rem;
+        margin-top: .1rem;
     }
 
     .herbie-head {
@@ -357,7 +358,7 @@ body {
 
 
 .herbie-full {
-    width: 120px;
+    width: 130px;
 }
 
 .user {
@@ -385,7 +386,8 @@ body {
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.active {
         background-color: white;
         box-shadow: $box-shadow;
         color: darken($blue, 5%);
