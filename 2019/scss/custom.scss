@@ -265,11 +265,14 @@ section.wizard {
         margin-top: -6em;
     }
 
-    a {
+    a.tile-wrapper {
         text-decoration: none;
+        display: flex;
+        align-items: stretch;
+        height:100%;
     }
 
-    a .tile {
+    a.tile-wrapper .tile {
         display: flex;
         flex-direction: column;
         color: $darkblue;
