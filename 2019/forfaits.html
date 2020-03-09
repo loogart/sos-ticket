@@ -36,7 +36,7 @@
         <section class="wizard">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="col-md-10 mx-auto">
                         <h2>Sélectionnez le service</h2>
                         <ul class="nav nav-pills justify-content-center mb-5 " id="pills-tab" role="tablist">
                             <li class="nav-item">
@@ -50,38 +50,45 @@
                             <div class="tab-pane fade show active" id="populaire" role="tabpanel" aria-labelledby="pills-populaire-tab">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <a href="./forfait-1-3-points.html">
+                                        <a class="tile-wrapper" href="./forfait-1-3-points.html">
                                             <div class="tile">
-                                                <h3 class="h4 mb-0">1-3 points</h3>
-                                                <p class="display-3 font-weight-bold">199&nbsp;$ + taxes</p>
-                                                <p>Stop raté; Feu rouge; Ceinture sécurité; <br>21 à 39km/h par-dessus la vitesse limite, etc.</p>
+                                                <span class="badge badge-danger mb-2">Spécial</span>
+                                                <h3 class="h4">1-3 points</h3>
+                                                <p class="display-4 font-weight-bold mb-0">139&nbsp;$</p>
+                                                <p class="h6"><i>Prix courant:&nbsp;<strike>199&nbsp;$</strike></i></p>
+                                                <p class="small">+&nbsp;taxes</p>
+                                                <p class="mb-0">Stop raté; Feu rouge; Ceinture sécurité; 21 à 39km/h par-dessus la vitesse limite, etc.</p>
+
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-sm-6">
-                                        <a href="./forfait-4-5-points.html">
+                                        <a class="tile-wrapper" href="./forfait-4-5-points.html">
                                             <div class="tile">
-                                                <h3 class="h4 mb-0">4-5 points</h3>
-                                                <p class="display-3 font-weight-bold">299&nbsp;$ + taxes</p>
-                                                <p>Téléphone cellulaire;<br> 45 à 49km/h de plus sur une zone 100km/h, etc.</p>
+                                                <h3 class="h4">4-5 points</h3>
+                                                <p class="display-4 font-weight-bold mb-0">299&nbsp;$</p>
+                                                <p class="small">+&nbsp;taxes</p>
+                                                <p class="mb-0">Téléphone cellulaire;<br> 45 à 49km/h de plus sur une zone 100km/h, etc.</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-sm-6">
-                                        <a href="./forfait-6-points-et-plus.html">
+                                        <a class="tile-wrapper" href="./forfait-6-points-et-plus.html">
                                             <div class="tile">
-                                                <h3 class="h4 mb-0">6 points et +</h3>
-                                                <p class="display-3 font-weight-bold">499&nbsp;$ + taxes</p>
-                                                <p>Autobus scolaire, délit de fuite, etc.<br>Sauf Grand Excès de vitesse</p>
+                                                <h3 class="h4">6 points et +</h3>
+                                                <p class="display-4 font-weight-bold mb-0">499&nbsp;$</p>
+                                                <p class="small">+&nbsp;taxes</p>
+                                                <p class="mb-0">Autobus scolaire, délit de fuite, etc. Sauf Grand Excès de vitesse</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-sm-6">
-                                        <a href="./forfait-gev.html">
+                                        <a class="tile-wrapper" href="./forfait-gev.html">
                                             <div class="tile">
-                                                <h3 class="h4 mb-0">GEV</h3>
-                                                <p class="display-3 font-weight-bold">499&nbsp;$ + taxes</p>
-                                                <p>Contestation de Grand excès de vitesse. <br>Négociation incluse.</p>
+                                                <h3 class="h4">GEV</h3>
+                                                <p class="display-4 font-weight-bold mb-0">659&nbsp;$</p>
+                                                <p class="small">+&nbsp;taxes</p>
+                                                <p class="mb-0">Contestation de Grand excès de vitesse. Négociation incluse.</p>
                                             </div>
                                         </a>
                                     </div>
@@ -90,51 +97,91 @@
                             </div>
                             <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="pills-special-tab">
                                 <div class="row justify-content-center">
-                                    <div class="col-sm-12">
-                                        <a href="./forfait-permis-suspendu.html">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-permis-suspendu.html">
                                             <div class="tile">
-                                                <img src="./img/icons/id-card-regular.svg" alt="Droit criminel">
-                                                <h3 class="font-weight-bold mt-2">Permis suspendu</h3>
-                                                <p>Consultation gratuite avec un avocat.</p>
+                                                <img class="w-25" src="./img/icons/id-card-regular.svg" alt="Droit criminel">
+                                                <h3 class="font-weight-bold">Permis suspendu</h3>
+                                                <p class="mb-0">Consultation gratuite avec un avocat.</p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-droit-criminel.html">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-droit-criminel.html">
                                             <div class="tile">
-                                                <img src="./img/icons/gavel-regular.svg" alt="Droit criminel">
-                                                <h3 class="font-weight-bold mt-2">Droit criminel</h3>
+                                                <img class="w-25" src="./img/icons/gavel-regular.svg" alt="Droit criminel">
+                                                <h3 class="font-weight-bold">Droit criminel</h3>
                                                 <p>Nos avocats peuvent vous représenter dans votre défense lorsque vous êtes arrêtés pour voies de faits; drogues; vol à l’étalage, etc.</p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-facultes-affaiblies.html">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-facultes-affaiblies.html">
                                             <div class="tile">
-                                                <img src="./img/icons/dui.svg" alt="Aide juridique pour les cas de facultés affaiblies">
-                                                <h3 class="font-weight-bold mt-2">Facultés affaiblies</h3>
-                                                <p>La présence d'alcool ou de drogue, par exemple le cannabis, pendant la conduite a causé plusieurs graves accidents. Les sanctions sont très sévères pour l'accusé.</p>
+                                                <img class="w-25" src="./img/icons/dui.svg" alt="Aide juridique pour les cas de facultés affaiblies">
+                                                <h3 class="font-weight-bold">Facultés affaiblies</h3>
+                                                <p>La présence d'alcool ou de drogue, par exemple le cannabis, pendant la conduite a causé plusieurs graves accidents.</p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-vehicules-lourds.html">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-vehicules-lourds.html">
                                             <div class="tile">
-                                                <img src="./img/icons/truck-moving-regular.svg" alt="Aide juridique pour les véhicules lourds">
-                                                <h3 class="font-weight-bold mt-2">Véhicules lourds</h3>
-                                                <p>Les infractions liées aux véhicules lourds et aux autobus sont administrées de manière particulière. Notre équipe s’y connaît en la matière et peut vous accompagner et vous représenter tout au long du processus de contestation.</p>
+                                                <img class="w-25" src="./img/icons/truck-moving-regular.svg" alt="Aide juridique pour les véhicules lourds">
+                                                <h3 class="font-weight-bold">Véhicules lourds</h3>
+                                                <p>Les infractions liées aux véhicules lourds et aux autobus sont administrées de manière particulière.</p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <a href="./forfait-taxis.html">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-taxis.html">
                                             <div class="tile">
-                                                <img src="./img/icons/taxi-regular.svg" alt="Aide juridique pour les taxis">
-                                                <h3 class="font-weight-bold mt-2">Taxis</h3>
-                                                <p>Si vous conduisez un taxi, nous savons que votre permis de conduire est à la source de votre gagne-pain. Fiez-vous à nos experts pour prendre en charge votre dossier en tenant compte de votre réalité professionnelle.</p>
+                                                <img class="w-25" src="./img/icons/taxi-regular.svg" alt="Aide juridique pour les taxis">
+                                                <h3 class="font-weight-bold">Taxis</h3>
+                                                <p>Si vous conduisez un taxi, nous savons que votre permis de conduire est à la source de votre gagne-pain.</p>
                                             </div>
                                         </a>
                                     </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-retractation-de-jugement.html">
+                                            <div class="tile">
+                                                <img class="w-25" src="./img/icons/balance.svg" alt="Rétractation de jugement">
+                                                <h3 class="font-weight-bold">Rétractation de jugement</h3>
+                                                <p class="font-weight-bold mb-2">250&nbsp;$&nbsp;+&nbsp;taxes</p>
+                                                <p>Si vous avez été trouvé coupable par défaut d’une contravention, il est possible de demander la réouverture de votre dossier.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-permis-restreint.html">
+                                            <div class="tile">
+                                                <img class="w-25" src="./img/icons/car-bus.svg" alt="Permis restreint pour travail">
+                                                <h3 class="font-weight-bold">Permis restreint pour travail</h3>
+                                                <p class="font-weight-bold mb-2">550&nbsp;$&nbsp;+&nbsp;taxes</p>
+                                                <p>Le permis restreint peut être octroyé lorsqu’il est essentiel, dans le cadre de votre travail principal, que vous soyez titulaire d’un permis de conduire.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-mainlevee-de-la-saisie-de-vehicule.html">
+                                            <div class="tile">
+                                                <img class="w-25" src="./img/icons/key-regular.svg" alt="Mainlevée de la saisie d’un véhicule">
+                                                <h3 class="font-weight-bold">Mainlevée de la saisie d’un véhicule</h3>
+                                                <p class="font-weight-bold mb-2">250&nbsp;$&nbsp;+&nbsp;taxes</p>
+                                                <p>Demandez à un juge de la Cour du Québec d’être remis en possession de votre véhicule avant l’expiration du délai de la saisie.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <a class="tile-wrapper" href="./forfait-retrait-de-plaidoyer.html">
+                                            <div class="tile">
+                                                <img class="w-25" src="./img/icons/undo-regular.svg" alt="Retrait de plaidoyer">
+                                                <h3 class="font-weight-bold">Retrait de plaidoyer</h3>
+                                                <p>Lorsque vous payez un constat, vous plaidoyez coupable par défaut. Si c'est une erreur, nous pouvons vous aider à retirer ce plaidoyer.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

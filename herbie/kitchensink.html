@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="SOS TIcket">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#F9AF48">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <meta name="theme-color" content="#F9AF48">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/herbie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Rouge Jaune Vert</title>
+    <meta name="description" content="Rouge Jaune Vert encourage les automobilistes à adopter une conduite sécuritaire et responsable tout en les aidant à garder un bon dossier de conduite.">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./">
+                    <h1 class="sr-only">Rouge Jaune Vert</h1>
+                    <img class="logo" src="./img/logo.svg" alt="Rouge Jaune Vert homepage">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#">English</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <section class="herbie__chat">
+            <div class="container container-chat">
+
+                <!-- 1 start -->
+                <section class="chat-block" data-aos="fade-in" id="chat1">
+                    <div class="bubble">
+                        <p>Salut, je suis Herbie l’hibou! Vous avez eu un ticket? Besoin d’aide pour le contester? Laissez-moi vous guider dans la bonne direction.</p>
+                        <div class="bubble-triangle__under"></div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+<!--                        <img src="./img/herbie-full.svg" class="herbie-full" alt="herbie l'hibou">-->
+                        <div id="bm" class="herbie-full"></div>
+                        <div class="start text-right" data-aos="fade-up" data-aos-delay="1000">
+                            <a class="btn btn-primary shadow" href="#!" role="button" id="next1" onclick="$('#chat2').animatescroll();">Débuter</a>
+                            <p class="small mt-4 mb-0">En cliquant “Débuter”, j’accepte les <a href="#!" target="_blank">termes et conditions d’utilisations</a> de Rouge Jaune Vert.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2 Text Select -->
+                <section class="chat-block" id="chat2">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+<!--                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">-->
+                            <div id="bm2" class="herbie-head"></div>
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Text select: Select from a list of strings</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#!" onclick="$('#chat1').animatescroll({padding:100});"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer1">Oui j'ai contesté</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer2">Non</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer3">Non, mais je suis hors délai</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer4">J’ai été déclaré coupable par défaut</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-ui" href="#chat3" id="answer5">J’ai payé le constat</a>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a id="moreButton" data-toggle="collapse" href="#collapseOptions" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Plus d'options
+                                    </a>
+                                </div>
+                                <div class="collapse" id="collapseOptions">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a class="btn btn-ui" href="#chat3" id="answer1">Option 6</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a class="btn btn-ui" href="#chat3" id="answer2">Option 7</a>
+                                        </div>
+                                        <div class="col-12">
+
+                                            <a class="btn btn-ui" href="#chat3" id="answer3">Option 8</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3 Number Select -->
+                <section class="chat-block" id="chat3">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Number select: Select from a list of numbers</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat2" onclick="$('#chat2').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat4" id="answer1">1-4</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat4" id="answer2">5-8</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat4" id="answer3">9-12</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat4" id="answer4">13-14</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat3" id="answer3">Je ne sais pas</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4 Number Roll -->
+                <section class="chat-block" id="chat4">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Number roll: select from a rolling list of numbers with a given increment, min and max values</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat3" onclick="$('#chat3').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <form>
+                                    <div class="form-group mt-3 text-center">
+                                        <input type="range" class="form-control-range slider" id="formControlRange" name="points" min="0" max="50">
+                                        <p class="h3 font-weight-bold text-primary mt-3"><span id="showValue"></span></p>
+                                    </div>
+                                    <a class="btn btn-ui" href="#chat5" id="answer1">Continuer</a>
+                                </form>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5 Date Select -->
+                <section class="chat-block" id="chat5">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Number roll: select from a rolling list of numbers with a given increment, min and max values</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat4" onclick="$('#chat4').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <form>
+                                    <label for="selectDate">Date de l'infraction</label>
+                                    <div class="input-group mb-3">
+                                        <input id="selectDate" type="text" class="form-control datepicker" placeholder="Selectionnez la date">
+                                        <div class="input-group-addon">
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-ui" href="#chat6" id="answer1">Continuer</a>
+                                </form>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6 Boolean Plus -->
+                <section class="chat-block" id="chat6">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Boolean Plus: A choice of [Yes, No, or I don’t know / N/A.</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat5" onclick="$('#chat5').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat7" id="answer1">Oui</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat7" id="answer2">Non</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <a class="btn btn-ui" href="#chat7" id="answer3">Je ne sais pas</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7 Text Box -->
+                <section class="chat-block" id="chat7">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>Text Box: An area to write text, with a minimum character count</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat6" onclick="$('#chat6').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label for="textInformation">Text Area</label>
+                                        <textarea id="textInformation" type="text" class="form-control" placeholder="Écrivez du bon texte..." rows="3"></textarea>
+                                    </div>
+                                    <a class="btn btn-ui" href="#chat8" id="answer1">Continuer</a>
+                                </form>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 8 File Upload -->
+                <section class="chat-block" id="chat8">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="bubble bubble__right">
+                            <p>File Upload: Upload an image to the SOS Ticket servers. Either select a local file, or use your device camera.</p>
+                            <div class="bubble-triangle__left"></div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat7" onclick="$('#chat7').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <form>
+                                    <label for="uploadImage" class="font-weight-bold mb-2">Photo du ticket</label>
+                                    <div class="custom-file mb-3">
+                                        <input type="file" class="custom-file-input" id="uploadImage">
+                                        <label class="custom-file-label" for="customFile">Sélectionner</label>
+                                    </div>
+                                    <a class="btn btn-ui" href="#chat9" id="answer1">Continuer</a>
+                                </form>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 9 Message Page -->
+                <section class="chat-block" id="chat9">
+                    <div class="chat-block__herbie" data-aos="fade-down">
+                        <div class="herbie">
+                            <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                        </div>
+                        <div class="double-bubble">
+                            <div class="bubble bubble__right">
+                                <p>Message Page</p>
+                                <p class="mt-3"> Leaves an informative page or piece of information to the user, but allows them to continue with the questionnaire. The question would be right under this bubble.</p>
+                                <div class="bubble-nav mt-3">
+                                    <a class="text-light" href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                                </div>
+                            </div>
+                            <div class="bubble bubble__right">
+                                <p>This is the next leading question following a Message Page. Yes?</p>
+                                <div class="bubble-triangle__left"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-block__user" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bubble bubble__user bubble__left">
+                            <div class="bubble-nav">
+                                <a href="#chat8" onclick="$('#chat8').animatescroll();"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                                <a href="#!" data-toggle="modal" data-target="#moreInfo"><i class="fas fa-info-circle"></i>&nbsp;Plus d'info</a>
+                            </div>
+                            <fieldset>
+                                <form>
+                                    <a class="btn btn-ui" href="#!" id="shortAnswer" data-toggle="button" aria-pressed="false">Continuer</a>
+                                </form>
+                            </fieldset>
+                            <div class="bubble-triangle__right">
+                                <img src="./img/bubble-user-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.svg" class="user-avatar" alt="user avatar">
+                        </div>
+                    </div>
+                    <!-- short answer to end -->
+                    <div class="short-answer d-none">
+                        <div class="chat-block__herbie">
+                            <div class="herbie">
+                                <img src="./img/herbie-head.svg" class="herbie-head" alt="herbie l'hibou avatar">
+                            </div>
+                            <div class="bubble bubble-dark bubble__right">
+                                <p>Il n’y a rien a fair à part des circonstances exceptionnelles. <a class="text-light" href="#chat10" onclick="$('#chat10').animatescroll();">Allez jusqu'au bout!</a></p>
+                                <div class="bubble-triangle__left"></div>
+                            </div>
+                        </div>
+                        <p class="small mt-4">Encore besoin d’aide, visitez <a href="https://sosticket.ca" target="_blank">sosticket.ca</a> ou appelez le <a href="tel:5144484911">514-448-4911</a>.</p>
+                    </div>
+                </section>
+
+                <!-- 10 Final Message -->
+                <section class="chat-block" id="chat10">
+                    <div class="bubble bubble-dark" data-aos="fade-in" data-aos-delay="500">
+                        <div class="bubble-nav mb-3">
+                            <a href="#chat9" onclick="$('#chat9').animatescroll();" class="text-light"><i class="fas fa-angle-left"></i>&nbsp;Retour</a>
+                        </div>
+                        <p>Merci d’avoir répondu à toutes mes questions. l’équipe des avocats SOS Ticket vous répondra sous peu. Bonne journée!</p>
+                        <p class="mt-3">Vous pouvez les contacter immédiatement par téléphone.</p>
+                        <a class="btn btn-primary btn-block mt-3" href="tel:5144484911">Appelez au (514) 448-4911</a>
+                        <div class="bubble-triangle__under"></div>
+                    </div>
+                    <div class="d-flex justify-content-between" data-aos="fade-right" data-aos-duration="500">
+                        <div class="herbie">
+                            <img src="./img/herbie-full.svg" class="herbie-full" alt="herbie l'hibou">
+                        </div>
+                    </div>
+                    <p class="small mt-4">Encore besoin d’aide, visitez <a href="https://sosticket.ca" target="_blank">sosticket.ca</a> ou appelez le <a href="tel:5144484911">514-448-4911</a>.</p>
+                </section>
+
+                <!-- 11 Plus d'info popup -->
+                <div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-light" id="exampleModalLabel"><i class="fas fa-info-circle"></i> More details title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times-circle"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
+                                <img src="./img/herbie-full.svg" style="width:80px;display: inline-block;float:left;margin:1em 1em 1em 0;" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto non minus enim dolor dolorum ipsa! Nisi totam at consectetur, quae quidem. Reiciendis iste, praesentium unde libero autem omnis assumenda.</p>
+                                <p>Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <a href="#!" data-dismiss="modal" role="button">Fermer cette fenêtre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/animatescroll.min.js"></script>
+    <script src="./js/lottie.js"></script>
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>

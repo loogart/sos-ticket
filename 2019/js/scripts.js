@@ -119,6 +119,7 @@ $(function () {
     // $("#enFooter").load("../html/en_footer.html");
     // $("#frHeader").load("./html/fr_header.html");
     // $("#frFooter").load("./html/fr_footer.html");
+
 });
 
 // wizard
