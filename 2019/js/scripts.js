@@ -5,20 +5,37 @@ $(document).ready(function() {
 
 
 
-    let redirectByPoints = function(val)
+    let redirectByPoints = function(val, isEn)
     {
       switch(val)
       {
         case '1-3':
-          window.location.href = './forfait-1-3-points';
+          if(isEn)
+          {
+            window.location.href = '/en/forfait-1-3-points';
+          }else{
+            window.location.href = '/forfait-1-3-points';
+          }
+
           return;
         break;
         case '4-5':
-          window.location.href = './forfait-4-5-points';
+          if(isEn)
+          {
+            window.location.href = '/en/forfait-4-5-points';
+          }else{
+            window.location.href = '/forfait-4-5-points';
+          }
           return;
         break;
         case '6 +':
-          window.location.href = './forfait-6-points-et-plus';
+          if(isEn)
+          {
+            window.location.href = '/en/forfait-6-points-et-plus';
+          }else{
+            window.location.href = '/forfait-6-points-et-plus';
+          }
+
           return;
         break;
         default:
@@ -26,7 +43,7 @@ $(document).ready(function() {
       }
     }
 
-    let submitSpeedingForm = function()
+    let submitSpeedingForm = function(isEn)
     {
 
       let data = $('#speeding-form').serializeArray().reduce(function(obj, item) {
@@ -36,15 +53,21 @@ $(document).ready(function() {
 
       if(data['speedingFormExcessSpeeding']==='true')
       {
-        window.location.href = './forfait-gev';
+        if(isEn)
+        {
+          window.location.href = '/en/forfait-gev';
+        }else{
+          window.location.href = './forfait-gev';
+        }
+
         return;
       }
 
-      redirectByPoints(data['speedingFormPoints']);
+      redirectByPoints(data['speedingFormPoints'], isEn);
 
     }
 
-    let submitOtherInfractionForm = function()
+    let submitOtherInfractionForm = function(isEn)
     {
       console.log('submitOtherInfractionForm')
       let data = $('#other-infraction-form').serializeArray().reduce(function(obj, item) {
@@ -58,13 +81,17 @@ $(document).ready(function() {
         return;
       }
 
-      redirectByPoints(data['otherInfractionFormPoints']);
+      redirectByPoints(data['otherInfractionFormPoints'], isEn);
     }
 
 
 
     $('#btn-submit-speeding-form').click(function(){
-      submitSpeedingForm();
+      submitSpeedingForm(false);
+    });
+
+    $('#btn-submit-speeding-form-en').click(function(){
+      submitSpeedingForm(true);
     });
 
     let submitOtherForm = function()
@@ -107,7 +134,15 @@ $(document).ready(function() {
       //submitOtherInfractionForm();
 
     //submitOtherForm();
-      submitOtherInfractionForm();
+      submitOtherInfractionForm(false);
+
+    });
+
+    $('#btn-submit-other-infraction-form-en').click(function(){
+      //submitOtherInfractionForm();
+
+    //submitOtherForm();
+      submitOtherInfractionForm(true);
 
     });
 
