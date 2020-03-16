@@ -64,10 +64,9 @@
                         </ul>
 
                         <p class="h2 font-weight-bold mb-0">$499<span class="h6">&nbsp;+&nbsp;taxes</span></p>
-                        <div id='product-component-7d08eaab64a'></div>
+                        <div id='product-component-1584379162071'></div>
                         <script type="text/javascript">
                             /*<![CDATA[*/
-
                             (function() {
                                 var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
                                 if (window.ShopifyBuy) {
@@ -93,117 +92,76 @@
                                         domain: 'sos-ticket.myshopify.com',
                                         storefrontAccessToken: '99698d204f24185c84b8f634450cad92',
                                     });
-
                                     ShopifyBuy.UI.onReady(client).then(function(ui) {
                                         ui.createComponent('product', {
-                                            id: [1943390552130],
-                                            node: document.getElementById('product-component-7d08eaab64a'),
+                                            id: '1943390552130',
+                                            node: document.getElementById('product-component-1584379162071'),
                                             moneyFormat: '%24%7B%7Bamount%7D%7D',
                                             options: {
                                                 "product": {
-                                                    "variantId": "all",
-                                                    "width": "240px",
-                                                    "contents": {
-                                                        "img": false,
-                                                        "imgWithCarousel": false,
-                                                        "title": false,
-                                                        "variantTitle": false,
-                                                        "price": false,
-                                                        "description": false,
-                                                        "buttonWithQuantity": false,
-                                                        "quantity": false
-                                                    },
-                                                    "text": {
-                                                        "button": "Buy now"
-                                                    },
                                                     "styles": {
                                                         "product": {
-                                                            "text-align": "left",
                                                             "@media (min-width: 601px)": {
                                                                 "max-width": "calc(25% - 20px)",
                                                                 "margin-left": "20px",
                                                                 "margin-bottom": "50px"
-                                                            }
+                                                            },
+                                                            "text-align": "left"
                                                         },
                                                         "button": {
-                                                            "background-color": "#2358ac",
                                                             "font-family": "Lato, sans-serif",
-                                                            "padding-left": "60px",
-                                                            "padding-right": "60px",
+                                                            "font-weight": "bold",
                                                             ":hover": {
-                                                                "background-color": "#204f9b"
+                                                                "background-color": "#265fb8"
+                                                            },
+                                                            "background-color": "#2a69cc",
+                                                            ":focus": {
+                                                                "background-color": "#265fb8"
                                                             },
                                                             "border-radius": "8px",
-                                                            ":focus": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            "font-weight": "bold"
-                                                        },
-                                                        "variantTitle": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
-                                                        },
-                                                        "description": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
+                                                            "padding-left": "100px",
+                                                            "padding-right": "100px"
                                                         },
                                                         "price": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
+                                                            "font-family": "Lato, sans-serif"
                                                         },
                                                         "compareAt": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
+                                                            "font-family": "Lato, sans-serif"
+                                                        },
+                                                        "unitPrice": {
+                                                            "font-family": "Lato, sans-serif"
+                                                        },
+                                                        "description": {
+                                                            "font-family": "Lato, sans-serif"
                                                         }
                                                     },
+                                                    "contents": {
+                                                        "img": false,
+                                                        "title": false,
+                                                        "price": false
+                                                    },
+                                                    "text": {
+                                                        "button": "Buy now"
+                                                    },
                                                     "googleFonts": [
-                                                        "Lato",
-                                                        "Lato",
-                                                        "Lato",
-                                                        "Lato",
                                                         "Lato"
                                                     ]
                                                 },
-                                                "cart": {
-                                                    "contents": {
-                                                        "button": true
-                                                    },
-                                                    "text": {
-                                                        "title": "Panier",
-                                                        "total": "Sous-total",
-                                                        "notice": "Les codes d'expédition et de réduction sont ajoutés à la caisse.",
-                                                        "button": "PAYER",
-                                                        "empty": "Votre panier est vide."
-                                                    },
+                                                "productSet": {
                                                     "styles": {
-                                                        "button": {
-                                                            "background-color": "#2358ac",
-                                                            "font-family": "Lato, sans-serif",
-                                                            ":hover": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            "border-radius": "8px",
-                                                            ":focus": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            "font-weight": "bold"
-                                                        },
-                                                        "footer": {
-                                                            "background-color": "#ffffff"
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
                                                         }
-                                                    },
-                                                    "googleFonts": [
-                                                        "Lato"
-                                                    ]
+                                                    }
                                                 },
                                                 "modalProduct": {
                                                     "contents": {
                                                         "img": false,
                                                         "imgWithCarousel": true,
-                                                        "variantTitle": false,
-                                                        "buttonWithQuantity": true,
                                                         "button": false,
-                                                        "quantity": false
+                                                        "buttonWithQuantity": true
                                                     },
                                                     "styles": {
                                                         "product": {
@@ -214,56 +172,30 @@
                                                             }
                                                         },
                                                         "button": {
-                                                            "background-color": "#2358ac",
                                                             "font-family": "Lato, sans-serif",
-                                                            "padding-left": "60px",
-                                                            "padding-right": "60px",
+                                                            "font-weight": "bold",
                                                             ":hover": {
-                                                                "background-color": "#204f9b"
+                                                                "background-color": "#265fb8"
+                                                            },
+                                                            "background-color": "#2a69cc",
+                                                            ":focus": {
+                                                                "background-color": "#265fb8"
                                                             },
                                                             "border-radius": "8px",
-                                                            ":focus": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            "font-weight": "bold"
-                                                        },
-                                                        "variantTitle": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
-                                                        },
-                                                        "description": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
+                                                            "padding-left": "100px",
+                                                            "padding-right": "100px"
                                                         },
                                                         "price": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
+                                                            "font-family": "Lato, sans-serif"
                                                         },
                                                         "compareAt": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "font-weight": "normal"
-                                                        }
-                                                    },
-                                                    "googleFonts": [
-                                                        "Lato",
-                                                        "Lato",
-                                                        "Lato",
-                                                        "Lato",
-                                                        "Lato"
-                                                    ]
-                                                },
-                                                "toggle": {
-                                                    "styles": {
-                                                        "toggle": {
-                                                            "font-family": "Lato, sans-serif",
-                                                            "background-color": "#2358ac",
-                                                            ":hover": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            ":focus": {
-                                                                "background-color": "#204f9b"
-                                                            },
-                                                            "font-weight": "bold"
+                                                            "font-family": "Lato, sans-serif"
+                                                        },
+                                                        "unitPrice": {
+                                                            "font-family": "Lato, sans-serif"
+                                                        },
+                                                        "description": {
+                                                            "font-family": "Lato, sans-serif"
                                                         }
                                                     },
                                                     "googleFonts": [
@@ -280,20 +212,132 @@
                                                         }
                                                     },
                                                     "googleFonts": [
-                                                        "Lato",
                                                         "Lato"
                                                     ]
                                                 },
-                                                "productSet": {
+                                                "cart": {
                                                     "styles": {
-                                                        "products": {
-                                                            "@media (min-width: 601px)": {
-                                                                "margin-left": "-20px"
+                                                        "button": {
+                                                            "font-family": "Lato, sans-serif",
+                                                            "font-weight": "bold",
+                                                            ":hover": {
+                                                                "background-color": "#265fb8"
+                                                            },
+                                                            "background-color": "#2a69cc",
+                                                            ":focus": {
+                                                                "background-color": "#265fb8"
+                                                            },
+                                                            "border-radius": "8px"
+                                                        },
+                                                        "title": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "header": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "lineItems": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "subtotalText": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "subtotal": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "notice": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "currency": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "close": {
+                                                            "color": "#4c4c4c",
+                                                            ":hover": {
+                                                                "color": "#4c4c4c"
                                                             }
+                                                        },
+                                                        "empty": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "noteDescription": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "discountText": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "discountIcon": {
+                                                            "fill": "#4c4c4c"
+                                                        },
+                                                        "discountAmount": {
+                                                            "color": "#4c4c4c"
+                                                        }
+                                                    },
+                                                    "text": {
+                                                        "title": "Shopping cart",
+                                                        "total": "Subtotal",
+                                                        "button": "PAY NOW"
+                                                    },
+                                                    "popup": false,
+                                                    "googleFonts": [
+                                                        "Lato"
+                                                    ]
+                                                },
+                                                "toggle": {
+                                                    "styles": {
+                                                        "toggle": {
+                                                            "font-family": "Lato, sans-serif",
+                                                            "font-weight": "bold",
+                                                            "background-color": "#2a69cc",
+                                                            ":hover": {
+                                                                "background-color": "#265fb8"
+                                                            },
+                                                            ":focus": {
+                                                                "background-color": "#265fb8"
+                                                            }
+                                                        }
+                                                    },
+                                                    "googleFonts": [
+                                                        "Lato"
+                                                    ]
+                                                },
+                                                "lineItem": {
+                                                    "styles": {
+                                                        "variantTitle": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "title": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "price": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "fullPrice": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "discount": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "discountIcon": {
+                                                            "fill": "#4c4c4c"
+                                                        },
+                                                        "quantity": {
+                                                            "color": "#4c4c4c"
+                                                        },
+                                                        "quantityIncrement": {
+                                                            "color": "#4c4c4c",
+                                                            "border-color": "#4c4c4c"
+                                                        },
+                                                        "quantityDecrement": {
+                                                            "color": "#4c4c4c",
+                                                            "border-color": "#4c4c4c"
+                                                        },
+                                                        "quantityInput": {
+                                                            "color": "#4c4c4c",
+                                                            "border-color": "#4c4c4c"
                                                         }
                                                     }
                                                 }
-                                            }
+                                            },
                                         });
                                     });
                                 }
