@@ -34,7 +34,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="import" href="../html/freshchat.html" />
+    <%- include('../html/freshchat') -%>
     <title>Packages | SOS Ticket</title>
     <meta
       name="description"
@@ -43,8 +43,7 @@
   </head>
 
   <body>
-    <div id="enHeader"></div>
-
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
       <!-- section select forfait -->
 
@@ -125,11 +124,11 @@
                     <div class="col-sm-6">
                       <a class="tile-wrapper" href="./forfait-1-3-points.html">
                         <div class="tile">
-                          <span class="badge badge-danger mb-2">Special</span>
                           <h3 class="h4">1-3 points</h3>
                           <p class="display-4 font-weight-bold mb-0">
-                            $199 +&nbsp;taxes
+                            $199
                           </p>
+                          <p class="small">+&nbsp;taxes</p>
                           <p>
                             Missed stop sign; Red light, Seatbelt; 21 to 39 km/h
                             over the speed limit, etc.
@@ -142,8 +141,9 @@
                         <div class="tile">
                           <h3 class="h4">4-5 points</h3>
                           <p class="display-4 font-weight-bold mb-0">
-                            $299 +&nbsp;taxes
+                            $299
                           </p>
+                          <p class="small">+&nbsp;taxes</p>
                           <p>
                             Cellphone; 45 to 49 km over in a 100 km/h zone, etc.
                           </p>
@@ -158,8 +158,9 @@
                         <div class="tile">
                           <h3 class="h4">6 points and +</h3>
                           <p class="display-4 font-weight-bold mb-0">
-                            $499 +&nbsp;taxes
+                            $499
                           </p>
+                          <p class="small">+&nbsp;taxes</p>
                           <p>
                             Schoolbus, Hit and Run, etc. <br />Except Excessive
                             Speeding.
@@ -172,8 +173,9 @@
                         <div class="tile">
                           <h3 class="h4">Excessive Speeding</h3>
                           <p class="display-4 font-weight-bold mb-0">
-                            $499 +&nbsp;taxes
+                            $499
                           </p>
+                          <p class="small">+&nbsp;taxes</p>
                           <p>Excessive speeding <br />Negotiation included.</p>
                         </div>
                       </a>
@@ -390,8 +392,32 @@
       <section class="cta">
         <div class="container text-center" style="max-width: 767px;">
           <div>
-            <h3>Successfully Contest Your Ticket</h3>
-            <p>When contesting a ticket in Montreal, you can always trust SOS Ticket to be your legal support in municipal court, protecting your rights and your wallet while fighting your tickets. Remember, we're not simply here to help you fight your Montreal parking ticket - we can help you no matter what the police think you are guilty of. </p>
+            <h2>Successfully Contest Your Ticket</h2>
+            <p>
+              When contesting a ticket in Montreal, you can always trust SOS
+              Ticket to be your legal support in municipal court, protecting
+              your rights and your wallet while fighting your tickets. Remember,
+              we're not simply here to help you fight your Montreal parking
+              ticket - we can help you no matter what the police think you are
+              guilty of.
+            </p>
+            <p>
+              We're always happy to take on your file, research the details of
+              your case, and help you achieve the successful outcome you're
+              looking for. It doesn't matter if you've been involved in
+              something relatively minor, or if your potential fine is huge.
+              We're here for you, so consult with our lawyers on the phone
+              today.
+            </p>
+            <p>
+              It's our goal to reduce your legal troubles and make sure you pay
+              as little as possible. At SOS Ticket, contesting tickets is our
+              business. We protect your rights, represent you in court, and even
+              if you're found guilty, our experienced ticket lawyers will use
+              their talent to reduce the amount you will have to pay if and when
+              it is possible to do so.
+            </p>
+            <p>Let us take on your file now, you'll be glad you did!</p>
           </div>
           <h3>Need help right now?</h3>
           <p>
@@ -407,8 +433,7 @@
         </div>
       </section>
     </main>
-
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>

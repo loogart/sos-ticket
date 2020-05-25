@@ -23,14 +23,13 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="./html/freshchat.html">
+    <%- include('html/freshchat') -%>
     <title>Forfait GEV | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="frHeader"></div>
-
+    <%- include('html/fr_header') -%>
     <main id="mainContent">
 
         <!-- section select forfait -->
@@ -353,13 +352,13 @@
                         <a href="#!">
                             <div class="card mt-3">
                                 <div class="card-body">
-                                    <img class="logo-payment-alt" src="./img/logos/access-d.png" alt="logo accès D affaires"> Achetez maintenant et payez sur 3 moissans intérêts
+                                    <img class="logo-payment-alt" src="./img/logos/access-d.png" alt="logo accès D affaires"> Achetez maintenant et payez sur 3 mois sans intérêts
                                 </div>
                             </div>
                         </a>
 
                         <hr>
-                        <p class="small">Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
+                        <p class="small">Ce forfait n’inclut pas la tenue d’un procès ou tout autre acte juridique autre que ceux explicitement énumérés, étant donné que chaque dossier est unique. Lors de la consultation juridique avec l’avocat, celui-ci vous conseillera quant aux prochaines étapes et vous pourrez décider ensemble de la meilleure démarche à suivre, avec le détail des honoraires. N’oubliez pas de nous faire parvenir tout document ou avis d’audition reçu relativement à votre dossier dans les plus brefs délais.</p>
                     </div>
                 </div>
 
@@ -369,8 +368,7 @@
         </section>
 
     </main>
-
-    <div id="frFooter"></div>
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>

@@ -23,14 +23,13 @@
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <%- include('../html/freshchat') -%>
     <title>Contact us | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="enHeader"></div>
-
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
 
         <section class="contact">
@@ -38,13 +37,13 @@
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <h2>Contact us</h2>
-                        <form class="mt-4 needs-validation" novalidate>
+                        <form class="mt-4 needs-validation" id="contact-form"  novalidate>
 
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="lastName">Last Name*</label>
-                                        <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Last name" autofocus="" required>
+                                        <input type="text" id="lastName" name="nom"  class="form-control form-control-lg" placeholder="Last name" autofocus="" required>
                                         <div class="invalid-feedback">
                                             Please type your last name.
                                         </div>
@@ -53,7 +52,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="FirstName">First Name*</label>
-                                        <input type="text" id="FirstName" class="form-control form-control-lg" placeholder="First name" required>
+                                        <input type="text" id="FirstName" name="prenom" class="form-control form-control-lg" placeholder="First name" required>
                                         <div class="invalid-feedback">
                                             Please type your first name.
                                         </div>
@@ -64,7 +63,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="inputEmail">Email address*</label>
-                                        <input type="email" id="inputEmail" class="form-control form-control-lg" placeholder="yourname@email.com" required>
+                                        <input type="email" id="inputEmail" name="email"  class="form-control form-control-lg" placeholder="yourname@email.com" required>
                                         <div class="invalid-feedback">
                                             Please type your email address.
                                         </div>
@@ -74,7 +73,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="inputPhone">Phone number*</label>
-                                        <input type="text" id="inputPhone" class="form-control form-control-lg" placeholder="(514) 333-4499" required>
+                                        <input type="text" id="inputPhone" name="phone" class="form-control form-control-lg" placeholder="(514) 333-4499" required>
                                         <div class="invalid-feedback">
                                             Please type in your phone number.
                                         </div>
@@ -85,7 +84,7 @@
 
                             <div class="form-group">
                                 <label for="yourMessage">Your message*</label>
-                                <textarea class="form-control form-control-lg" id="yourMessage" rows="5" placeholder="Type your message here..." required></textarea>
+                                <textarea class="form-control form-control-lg" name="message"  id="yourMessage" rows="5" placeholder="Type your message here..." required></textarea>
                                 <div class="invalid-feedback">
                                     Describe your situation or the subject of your request.
                                 </div>
@@ -93,11 +92,11 @@
 
                             <p class="font-weight-bold mb-2">Callback period*</label>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <input type="radio" id="customRadio1" name="timeContact" class="custom-control-input"  value="8:00-12:00">
                                     <label class="custom-control-label font-weight-light" for="customRadio1">Morning (Between 8am and 12pm)</label>
                                 </div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" required>
+                                    <input type="radio" id="customRadio2" name="timeContact"   class="custom-control-input" value="13:00-17:00"  required>
                                     <label class="custom-control-label font-weight-light" for="customRadio2" required>Afternoon (Between 1pm and 5pm)</label>
                                     <div class="invalid-feedback">
                                         Choose the best time to contact you.
@@ -112,7 +111,7 @@
                                                 <p class="font-weight-bold mb-2">Birthday</p>
                                                 <div class="form-row">
                                                     <div class="col-3">
-                                                        <select class="custom-select custom-select-lg mb-3">
+                                                        <select class="custom-select custom-select-lg mb-3" name="dob_day">
                                                             <option selected>Day</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -148,7 +147,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-5">
-                                                        <select class="custom-select custom-select-lg mb-3">
+                                                        <select class="custom-select custom-select-lg mb-3"  name='dob_month'>
                                                             <option selected>Month</option>
                                                             <option value="1">January</option>
                                                             <option value="2">February</option>
@@ -165,22 +164,23 @@
                                                         </select>
                                                     </div>
                                                     <div class="col">
-                                                        <select class="custom-select custom-select-lg mb-3">
+                                                        <select class="custom-select custom-select-lg mb-3"  name='dob_year'>
                                                             <option selected>Year</option>
-                                                            <option value="1">2003</option>
-                                                            <option value="2">2002</option>
-                                                            <option value="3">2001</option>
-                                                            <option value="4">2000</option>
-                                                            <option value="5">1999</option>
-                                                            <option value="6">1998</option>
-                                                            <option value="7">1997</option>
-                                                            <option value="8">1996</option>
-                                                            <option value="9">1995</option>
-                                                            <option value="10">1994</option>
-                                                            <option value="11">1993</option>
-                                                            <option value="12">1992</option>
-                                                            <option value="13">1991</option>
-                                                            <option value="14">1990</option>
+                                                            <option selected>Année</option>
+                                                            <option value="2003">2003</option>
+                                                            <option value="2002">2002</option>
+                                                            <option value="2001">2001</option>
+                                                            <option value="2000">2000</option>
+                                                            <option value="1999">1999</option>
+                                                            <option value="1998">1998</option>
+                                                            <option value="1997">1997</option>
+                                                            <option value="1996">1996</option>
+                                                            <option value="1995">1995</option>
+                                                            <option value="1994">1994</option>
+                                                            <option value="1993">1993</option>
+                                                            <option value="1992">1992</option>
+                                                            <option value="1991">1991</option>
+                                                            <option value="1990">1990</option>
                                                             <option value="15">...</option>
                                                         </select>
                                                     </div>
@@ -189,7 +189,7 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label for="licenseNumber">Driver's License Number</label>
-                                                    <input type="text" id="licenseNumber" class="form-control form-control-lg" placeholder="A1234-123456-01">
+                                                    <input type="text" name="permis"  id="licenseNumber" class="form-control form-control-lg" placeholder="A1234-123456-01">
                                                 </div>
                                             </div>
                                         </div>
@@ -197,45 +197,54 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label for="infractionType">Type of offense</label>
-                                                    <input type="text" id="infractionType" class="form-control form-control-lg" placeholder="E.g. speeding, criminal law...">
+                                                    <input type="text"  name="infractionType" id="infractionType" class="form-control form-control-lg" placeholder="E.g. speeding, criminal law...">
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <!-- <div class="col-lg-6">
                                                 <p class="font-weight-bold mb-2">Ticket photo</p>
                                                 <div class="custom-file">
                                                     <input type="file" class="custom-file-input" id="customFile">
                                                     <label class="custom-file-label" for="customFile">Select</label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
 
                                     </div>
                                 </div>
-
-
-                                <button class="btn btn-lg btn-primary btn-block mt-4 shadow" type="submit"><i class="fas fa-lock"></i>&nbsp;Submit</button>
-                                
-                                <p class="mt-4"><a href="./merci.html"><i class="fas fa-info-circle"></i>&nbsp;Demo purposes only: redirect to thank you page only once page is validated</a></p>
                         </form>
+                        <button class="btn btn-lg btn-primary btn-block mt-4 shadow"  id="btn-submit-contact-form"  type="submit"><i class="fas fa-lock"></i>&nbsp;Submit</button>
+
                     </div>
                 </div>
 
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <br/><br/>
+                    <h3 >Or get in touch with us : </h3>
+                    <p>Monday to Friday, 9:00 am - 5:00 pm<br>
+                      <a href="https://goo.gl/maps/4aq4rqKnd3YEXeTx5" target="_blank">204 rue Notre Dame Ouest, Suite 350 <br> Montreal, QC H2J 1T3</a>
+                      <br><a href="tel:5144484911">Tel.: (514) 448-4911</a>
+                      <br><a href="tel:18444100101">Tél.: 1 (844)-410-0101</a>
+                      <br><a href="mailto:info@sosticket.ca">Email: info@sosticket.ca</a>
+                    </p>
+                  </div>
+                </div>
 
             </div>
 
         </section>
 
     </main>
-
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
+    <script src="../js/config.js"></script>
     <script src="../js/scripts.js"></script>
     <script>
         window.onload = function() {
             document.getElementById('connect').classList.add("active");
-            document.getElementById('contact').classList.add("active");
+            // document.getElementById('contact').classList.add("active");
             $('#translation').attr("href", "../contactez-nous.html");
         };
         // Example starter JavaScript for disabling form submissions if there are invalid fields

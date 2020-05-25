@@ -23,14 +23,13 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="./html/freshchat.html">
+    <%- include('html/freshchat') -%>
     <title>Droit criminel | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="frHeader"></div>
-
+    <%- include('html/fr_header') -%>
     <main id="mainContent">
 
         <!-- section select forfait -->
@@ -55,7 +54,7 @@
                         </ul>
                         <p class="mt-4 mb-3 font-weight-bold">Services compris dans ce forfait :</p>
                         <p>Notre rôle est d’assurer que les procédures et techniques policières ont été respectées et ensuite de nous assurer que les lois sont respectées lorsque vous êtes accusés. Vous avez le droit à une défense pleine et entière, nos avocats se chargeront donc de vous représenter avec confiance et intelligence, à un prix compétitif.</p>
-                        
+
                         <ul>
                             <li>Appel préliminaire avec l’avocat</li><li>Comparution par l’avocat à la cour</li><li>Analyse complète de votre dossier</li><li>Rencontre stratégique à nos bureaux</li><li>Pour la suite, l’avocat prenant charge de votre dossier vous conseillera quant à vos options ainsi que les honoraires à prévoir, desquels vous pourrez choisir celui qui vous convient le mieux</li>
                         </ul>
@@ -75,8 +74,7 @@
         </section>
 
     </main>
-
-    <div id="frFooter"></div>
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>

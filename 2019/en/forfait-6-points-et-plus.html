@@ -23,14 +23,13 @@
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <%- include('../html/freshchat') -%>
     <title>Package 6 points and above | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="enHeader"></div>
-
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
 
         <!-- section select forfait -->
@@ -42,13 +41,18 @@
                         <li class="breadcrumb-item active" aria-current="page">6 points and above</li>
                     </ol>
                 </nav>
+                <div>
+                <h1>Montreal's Hit and Run Lawyer</h1>
                 <h2>Package: 6 points and above</h2>
+                <p>If you were involved in a motor vehicle accident in Quebec, there is one thing you should never do: leave the scene of the accident without filing a police report. Whether you side-swiped a parked car, were involved in a fender-bender with another driver, or hit someone with your car while driving, it is a serious violation of the criminal code to leave the scene of the accident without first calling the police, and not doing so can result in very serious consequences. Leaving the scene of the accident could result in more than the loss of demerit points - it could land you in jail.</p>
+                <p>If something like this has happened to you, or if you've committed another driving infraction that will result in the loss of 6 or more demerit points, you'll need the help of the best hit and run lawyer Montreal can provide. You'll find that help at SOS Ticket. When it comes to the Quebec criminal code, we're the experts. The package described below is designed for all serious incidents except those involving excessive speeding.</p>
+                </div>
                 <div class="row my-5">
                     <div class="col-md-6">
                         <img class="img-fluid rounded-lg shadow mb-5" src="../img/photos/autobus-scolaire.jpg" alt="autobus scolaire arrêté devant un bâtiment" data-aos="fade-up">
                     </div>
                     <div class="col-md-6">
-                        <h3>Schoolbus, Hit and Run, etc. Except Excessive Speeding.</h3>
+                        <h3>This package is designed for more serious infractions, such as accidents involving a school bus, hit and runs, etc. (but not excessive speeding).</h3>
                         <p class="my-4 font-weight-bold">Services included in the package</p>
                         <ul>
                             <li>The creation of a client file;</li>
@@ -342,8 +346,26 @@
                                     });
                                 }
                             })();
-                            /*]]>*/
+                            /*]]>*/    
                         </script>
+                        <div>
+                            <h2>Common Questions</h2>
+                            <h3>What Should I Do if I'm Involved in an Accident?</h3>
+                            <p>Millions of motor vehicle accidents happen every year across Canada and the United States. Luckily, most accidents only involve damage to property, such as other vehicles or your own. However, approximately one third of all accidents in Quebec do involve some form of personal injury. </p>
+                            <p>If you've had an accident with your vehicle in Quebec, here are some important things you should do:</p>
+                            <ul>
+                                <li>Stay there: Never leave the scene of an accident.</li>
+                                <li>Call the police: Even when there appear to be no serious injuries, it's always a best practice to file a police report. This will help you with your insurance company later on. Provide the police with all the details you remember. Very often, injuries only become apparent after the accident, so if the police ask you if you are injured and you're not sure, tell them that.</li>
+                                <li>Take pictures: Having an accurate record of the motor vehicle accident is a must. Make sure to capture all visible damage to any vehicles and record any possible physical injuries.</li>
+                                <li>Share information: Make sure to collect the name and address as well as the contact information of any person involved in the motor vehicle accident. It's a good idea to record the contact information of nearby witnesses and other drivers as well.
+                                </li>
+                                <li>Get medical attention: We advise that you seek medical attention no matter what. Since many injuries only become obvious hours or even days after the incident, you should make sure to get checked out by a doctor, even if you feel fine. It will help protect your rights and your wallet.</li>
+                                <li>Report the accident to your insurance company: Many insurance companies expect you to contact them as soon as possible after an incident involving a vehicle. Provide the company with the police report number and any information about your medical condition. However, before you do....</li>
+                                <li>Protect your rights: After you have taken the steps above, the most important thing you can do is to contact a lawyer. At SOS Ticket, we can assist you as you navigate the situation, providing advice about dealing with insurance companies, and helping you protect yourself from a legal perspective.</li>
+                            </ul>
+                            <h3>Can I Be Charged for Not Stopping at an Accident?</h3>
+                            <p>Whether the incident in question is a hit and run with another vehicle, rolling past a school bus without stopping, or something else relatively serious, any person will absolutely be charged if they do not stay at the scene. You will be charged either under the Criminal Code of Canada (or a similar provincial statute) for “failing to stop at the scene of the accident."</p>
+                        </div>
                         <p class="mt-3"><a href="./contactez-nous.html">Contact us</a></p>
                         <hr>
                         <p class="small">This package does not include trial fees or any other legal procedure, as every file is unique. When you will have your consultation with the lawyer, he will suggest an optimal course of action and you can decide together which next steps are best for you, along with associated fees. Don’t forget to send us any document or notice of hearing you may receive relating to your file as soon as possible.</p>
@@ -356,8 +378,7 @@
         </section>
 
     </main>
-
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>

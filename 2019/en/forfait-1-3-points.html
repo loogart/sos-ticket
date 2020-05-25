@@ -1,376 +1,482 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../img/logos/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="192x192" href="../img/logos/favicon.png" />
     <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="SOS TIcket">
-    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="SOS TIcket" />
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png" />
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="../img/favicon.png">
-    <meta name="msapplication-TileColor" content="#F9AF48">
-    <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
-    <meta name="theme-color" content="#F9AF48">
+    <meta name="msapplication-TileImage" content="../img/favicon.png" />
+    <meta name="msapplication-TileColor" content="#F9AF48" />
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link
+      rel="mask-icon"
+      href="../img/icons/safari-pinned-tab.svg"
+      color="#F9AF48"
+    />
+    <meta name="theme-color" content="#F9AF48" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css" />
     <link rel="stylesheet" href="../css/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <%- include('../html/freshchat') -%>
     <title>Package 1-3 points | SOS Ticket</title>
-    <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
-</head>
+    <meta
+      name="description"
+      content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions."
+    />
+  </head>
 
-<body>
-    <div id="enHeader"></div>
-
+  <body>
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
+      <!-- section select forfait -->
+      <section class="forfait">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="./forfaits.html">Packages</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                1-3 points
+              </li>
+            </ol>
+          </nav>
+          <div>
+            <h2>Stop Sign Ticket Package: 1-3 points</h2>
+            <p>
+              Being stopped by a police officer is never fun. After all, most
+              people need their vehicle to survive in the city, and they don't
+              necessarily have time to fight the traffic fine in court. Because
+              stop sign tickets are a nuisance, and because your vehicle is
+              important to you, SOS Ticket has designed a package for any
+              tickets that result in the removal of between 1 and 3 demerit
+              points.
+            </p>
+            <p>
+              At SOS Ticket, we're proud to fight for you by reducing your fine
+              or eliminating it entirely. Our lawyers will prove to the judge
+              that you're a driver that deserves a second chance, or convince
+              them you're not guilty at all. Whether you received a stop sign
+              ticket, or if you received tickets for seatbelt violations or
+              committed some other minor driving infraction, we'll help you keep
+              your licence and fight your ticket in court.
+            </p>
+          </div>
 
-        <!-- section select forfait -->
-        <section class="forfait">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./forfaits.html">Packages</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">1-3 points</li>
-                    </ol>
-                </nav>
-                <h2>Package: 1-3 points</h2>
-                <div class="row my-5">
-                    <div class="col-md-6">
-                        <img class="img-fluid rounded-lg shadow mb-5" src="../img/photos/seatbelt.jpg" alt="female in car putting a seatbelt" data-aos="fade-up">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Missed stop sign; Red light, Seatbelt; 21 to 39 km/h over the speed limit, etc.</h3>
-                        <p class="my-4 font-weight-bold">Services included in the package</p>
-                        <ul>
-                            <li>The creation of a client file;</li>
-                            <li>Compilation and research of the administrative information related to your file;</li>
-                            <li>Integration of your file in our digital management system;</li>
-                            <li>The request for a copy of your case file with the SAAQ;</li>
-                            <li>Help and support from our team of experts and retired police officers if needed;</li>
-                            <li>The assignment of an attorney to your file;</li>
-                            <li>The request for the disclosure of the legal evidence in your records;</li>
-                            <li>Administrative and legal processing of your case;</li>
-                            <li>Legal analysis of your situation.</li>
-                            <li>Consultation with a lawyer relating to your file, by phone.</li>
-                        </ul>
-                         
-                        <span class="badge badge-danger mb-2">Special</span>
-                        <p class="h2 font-weight-bold mb-0">$139<span class="h6">&nbsp;+&nbsp;taxes</span></p>
-                        <p class="h6 mt-2 mb-0"><i>Regular price&nbsp;<strike>$199</strike></i></p>
-                        <div id='product-component-1584378810577'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'sos-ticket.myshopify.com',
-      storefrontAccessToken: '99698d204f24185c84b8f634450cad92',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '1943379181634',
-        node: document.getElementById('product-component-1584378810577'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#265fb8"
-        },
-        "background-color": "#2a69cc",
-        ":focus": {
-          "background-color": "#265fb8"
-        },
-        "border-radius": "8px",
-        "padding-left": "100px",
-        "padding-right": "100px"
-      },
-      "price": {
-        "font-family": "Lato, sans-serif"
-      },
-      "compareAt": {
-        "font-family": "Lato, sans-serif"
-      },
-      "unitPrice": {
-        "font-family": "Lato, sans-serif"
-      },
-      "description": {
-        "font-family": "Lato, sans-serif"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Buy now"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#265fb8"
-        },
-        "background-color": "#2a69cc",
-        ":focus": {
-          "background-color": "#265fb8"
-        },
-        "border-radius": "8px",
-        "padding-left": "100px",
-        "padding-right": "100px"
-      },
-      "price": {
-        "font-family": "Lato, sans-serif"
-      },
-      "compareAt": {
-        "font-family": "Lato, sans-serif"
-      },
-      "unitPrice": {
-        "font-family": "Lato, sans-serif"
-      },
-      "description": {
-        "font-family": "Lato, sans-serif"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "option": {
-    "styles": {
-      "label": {
-        "font-family": "Lato, sans-serif"
-      },
-      "select": {
-        "font-family": "Lato, sans-serif"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#265fb8"
-        },
-        "background-color": "#2a69cc",
-        ":focus": {
-          "background-color": "#265fb8"
-        },
-        "border-radius": "8px"
-      },
-      "title": {
-        "color": "#4c4c4c"
-      },
-      "header": {
-        "color": "#4c4c4c"
-      },
-      "lineItems": {
-        "color": "#4c4c4c"
-      },
-      "subtotalText": {
-        "color": "#4c4c4c"
-      },
-      "subtotal": {
-        "color": "#4c4c4c"
-      },
-      "notice": {
-        "color": "#4c4c4c"
-      },
-      "currency": {
-        "color": "#4c4c4c"
-      },
-      "close": {
-        "color": "#4c4c4c",
-        ":hover": {
-          "color": "#4c4c4c"
-        }
-      },
-      "empty": {
-        "color": "#4c4c4c"
-      },
-      "noteDescription": {
-        "color": "#4c4c4c"
-      },
-      "discountText": {
-        "color": "#4c4c4c"
-      },
-      "discountIcon": {
-        "fill": "#4c4c4c"
-      },
-      "discountAmount": {
-        "color": "#4c4c4c"
-      }
-    },
-    "text": {
-      "title": "Shopping cart",
-      "total": "Subtotal",
-      "button": "PAY NOW"
-    },
-    "popup": false,
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "background-color": "#2a69cc",
-        ":hover": {
-          "background-color": "#265fb8"
-        },
-        ":focus": {
-          "background-color": "#265fb8"
-        }
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "lineItem": {
-    "styles": {
-      "variantTitle": {
-        "color": "#4c4c4c"
-      },
-      "title": {
-        "color": "#4c4c4c"
-      },
-      "price": {
-        "color": "#4c4c4c"
-      },
-      "fullPrice": {
-        "color": "#4c4c4c"
-      },
-      "discount": {
-        "color": "#4c4c4c"
-      },
-      "discountIcon": {
-        "fill": "#4c4c4c"
-      },
-      "quantity": {
-        "color": "#4c4c4c"
-      },
-      "quantityIncrement": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      },
-      "quantityDecrement": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      },
-      "quantityInput": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script> 
-                        
-                                          
-                                                                              
-
-                        <p class="mt-3"><a href="./contactez-nous.html">Contact us</a></p>
-                        <hr>
-                        <p class="small">This package does not include trial fees or any other legal procedure, as every file is unique. When you will have your consultation with the lawyer, he will suggest an optimal course of action and you can decide together which next steps are best for you, along with associated fees. Don’t forget to send us any document or notice of hearing you may receive relating to your file as soon as possible.</p>
-
-                    </div>
-                </div>
-
-
+          <div class="row my-5">
+            <div class="col-md-6">
+              <img
+                class="img-fluid rounded-lg shadow mb-5"
+                src="../img/photos/seatbelt.jpg"
+                alt="female in car putting a seatbelt"
+                data-aos="fade-up"
+              />
             </div>
+            <div class="col-md-6">
+              <h3>
+                This package is for minor infractions, such as a missed stop
+                sign, a red light ticket, seatbelt infractions, speeding 21 to
+                39 km/h over the speed limit, and others.
+              </h3>
+              <p class="my-4 font-weight-bold">
+                Services included in the package
+              </p>
+              <ul>
+                <li>The creation of a client file;</li>
+                <li>
+                  Compilation and research of the administrative information
+                  related to your file;
+                </li>
+                <li>
+                  Integration of your file in our digital management system;
+                </li>
+                <li>The request for a copy of your case file with the SAAQ;</li>
+                <li>
+                  Help and support from our team of experts and retired police
+                  officers if needed;
+                </li>
+                <li>The assignment of an attorney to your file;</li>
+                <li>
+                  The request for the disclosure of the legal evidence in your
+                  records;
+                </li>
+                <li>Administrative and legal processing of your case;</li>
+                <li>Legal analysis of your situation.</li>
+                <li>
+                  Consultation with a lawyer relating to your file, by phone.
+                </li>
+              </ul>
+              <p class="h2 font-weight-bold mb-0">
+                $139<span class="h6">&nbsp;+&nbsp;taxes</span>
+              </p>
+              <div id="product-component-1584378810577"></div>
+              <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL =
+                    "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement("script");
+                    script.async = true;
+                    script.src = scriptURL;
+                    (
+                      document.getElementsByTagName("head")[0] ||
+                      document.getElementsByTagName("body")[0]
+                    ).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: "sos-ticket.myshopify.com",
+                      storefrontAccessToken: "99698d204f24185c84b8f634450cad92",
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent("product", {
+                        id: "1943379181634",
+                        node: document.getElementById(
+                          "product-component-1584378810577"
+                        ),
+                        moneyFormat: "%24%7B%7Bamount%7D%7D",
+                        options: {
+                          product: {
+                            styles: {
+                              product: {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "calc(25% - 20px)",
+                                  "margin-left": "20px",
+                                  "margin-bottom": "50px",
+                                },
+                                "text-align": "left",
+                              },
+                              button: {
+                                "font-family": "Lato, sans-serif",
+                                "font-weight": "bold",
+                                ":hover": {
+                                  "background-color": "#265fb8",
+                                },
+                                "background-color": "#2a69cc",
+                                ":focus": {
+                                  "background-color": "#265fb8",
+                                },
+                                "border-radius": "8px",
+                                "padding-left": "100px",
+                                "padding-right": "100px",
+                              },
+                              price: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              compareAt: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              unitPrice: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              description: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                            },
+                            contents: {
+                              img: false,
+                              title: false,
+                              price: false,
+                            },
+                            text: {
+                              button: "Buy now",
+                            },
+                            googleFonts: ["Lato"],
+                          },
+                          productSet: {
+                            styles: {
+                              products: {
+                                "@media (min-width: 601px)": {
+                                  "margin-left": "-20px",
+                                },
+                              },
+                            },
+                          },
+                          modalProduct: {
+                            contents: {
+                              img: false,
+                              imgWithCarousel: true,
+                              button: false,
+                              buttonWithQuantity: true,
+                            },
+                            styles: {
+                              product: {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "100%",
+                                  "margin-left": "0px",
+                                  "margin-bottom": "0px",
+                                },
+                              },
+                              button: {
+                                "font-family": "Lato, sans-serif",
+                                "font-weight": "bold",
+                                ":hover": {
+                                  "background-color": "#265fb8",
+                                },
+                                "background-color": "#2a69cc",
+                                ":focus": {
+                                  "background-color": "#265fb8",
+                                },
+                                "border-radius": "8px",
+                                "padding-left": "100px",
+                                "padding-right": "100px",
+                              },
+                              price: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              compareAt: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              unitPrice: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              description: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                            },
+                            googleFonts: ["Lato"],
+                          },
+                          option: {
+                            styles: {
+                              label: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                              select: {
+                                "font-family": "Lato, sans-serif",
+                              },
+                            },
+                            googleFonts: ["Lato"],
+                          },
+                          cart: {
+                            styles: {
+                              button: {
+                                "font-family": "Lato, sans-serif",
+                                "font-weight": "bold",
+                                ":hover": {
+                                  "background-color": "#265fb8",
+                                },
+                                "background-color": "#2a69cc",
+                                ":focus": {
+                                  "background-color": "#265fb8",
+                                },
+                                "border-radius": "8px",
+                              },
+                              title: {
+                                color: "#4c4c4c",
+                              },
+                              header: {
+                                color: "#4c4c4c",
+                              },
+                              lineItems: {
+                                color: "#4c4c4c",
+                              },
+                              subtotalText: {
+                                color: "#4c4c4c",
+                              },
+                              subtotal: {
+                                color: "#4c4c4c",
+                              },
+                              notice: {
+                                color: "#4c4c4c",
+                              },
+                              currency: {
+                                color: "#4c4c4c",
+                              },
+                              close: {
+                                color: "#4c4c4c",
+                                ":hover": {
+                                  color: "#4c4c4c",
+                                },
+                              },
+                              empty: {
+                                color: "#4c4c4c",
+                              },
+                              noteDescription: {
+                                color: "#4c4c4c",
+                              },
+                              discountText: {
+                                color: "#4c4c4c",
+                              },
+                              discountIcon: {
+                                fill: "#4c4c4c",
+                              },
+                              discountAmount: {
+                                color: "#4c4c4c",
+                              },
+                            },
+                            text: {
+                              title: "Shopping cart",
+                              total: "Subtotal",
+                              button: "PAY NOW",
+                            },
+                            popup: false,
+                            googleFonts: ["Lato"],
+                          },
+                          toggle: {
+                            styles: {
+                              toggle: {
+                                "font-family": "Lato, sans-serif",
+                                "font-weight": "bold",
+                                "background-color": "#2a69cc",
+                                ":hover": {
+                                  "background-color": "#265fb8",
+                                },
+                                ":focus": {
+                                  "background-color": "#265fb8",
+                                },
+                              },
+                            },
+                            googleFonts: ["Lato"],
+                          },
+                          lineItem: {
+                            styles: {
+                              variantTitle: {
+                                color: "#4c4c4c",
+                              },
+                              title: {
+                                color: "#4c4c4c",
+                              },
+                              price: {
+                                color: "#4c4c4c",
+                              },
+                              fullPrice: {
+                                color: "#4c4c4c",
+                              },
+                              discount: {
+                                color: "#4c4c4c",
+                              },
+                              discountIcon: {
+                                fill: "#4c4c4c",
+                              },
+                              quantity: {
+                                color: "#4c4c4c",
+                              },
+                              quantityIncrement: {
+                                color: "#4c4c4c",
+                                "border-color": "#4c4c4c",
+                              },
+                              quantityDecrement: {
+                                color: "#4c4c4c",
+                                "border-color": "#4c4c4c",
+                              },
+                              quantityInput: {
+                                color: "#4c4c4c",
+                                "border-color": "#4c4c4c",
+                              },
+                            },
+                          },
+                        },
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+              </script>
+              <div>
+                <h2>
+                  Important Information and Common Questions for Drivers
+                  Fighting a Stop Sign Ticket
+                </h2>
+                <h3>How Should I Act When Getting a Ticket?</h3>
+                <p>
+                  If you ever find yourself on the receiving end of a stop sign
+                  ticket in Montreal (or a ticket for another minor offence),
+                  there are four central tips we would recommend following.
+                </p>
+                <ul>
+                  <li>
+                    Be polite to the police officer giving you the ticket. Being
+                    rude can only make it worse.
+                  </li>
+                  <li>
+                    Don't admit guilt, even if you think you may be guilty of
+                    the traffic violation.
+                  </li>
+                  <li>
+                    Don't pay the fine after coming home, since doing so would
+                    be a de facto admission of guilt.
+                  </li>
+                  <li>
+                    Consult a legal expert at SOS Ticket before taking any
+                    concrete steps.
+                  </li>
+                </ul>
+                <h3>How Much Will a Stop Sign Ticket Cost Me?</h3>
+                <p>
+                  If you fail to stop your car in time, you can expect to lose 3
+                  demerit points for rolling through a stop sign, and you will
+                  also pay a penalty. If you fight the stop sign ticket in court
+                  and lose, it will cost you between $200 and $1,000. Once you
+                  have been convicted of this offence it will remain on your
+                  record for three years. To fight it, call us!
+                </p>
+                <h3>How Long Do I Have to Pay a Ticket in Quebec?</h3>
+                <p>
+                  For any parking ticket, you have 30 days to pay. After that,
+                  late fees will begin to apply to your file. For other
+                  infractions, the length of time you have to pay will depend on
+                  whether or not you decide to plead guilty. If you are a driver
+                  that was accused of a moving violation and would like to prove
+                  that you are innocent, call the lawyers at SOS Ticket. We'll
+                  fight for you and do our best to prove you are a safe driver
+                  who should keep their demerit points.
+                </p>
+              </div>
 
-        </section>
-
+              <p class="mt-3"><a href="./contactez-nous.html">Contact us</a></p>
+              <hr />
+              <p class="small">
+                This package does not include trial fees or any other legal
+                procedure, as every file is unique. When you will have your
+                consultation with the lawyer, he will suggest an optimal course
+                of action and you can decide together which next steps are best
+                for you, along with associated fees. Don’t forget to send us any
+                document or notice of hearing you may receive relating to your
+                file as soon as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <div id="enFooter"></div>
+    <%- include('../html/en_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
     <script src="../js/scripts.js"></script>
     <script>
-        window.onload = function() {
-            document.getElementById('packages').classList.add("active");
-            $('#translation').attr("href", "../forfait-1-3-points.html");
-        };
+      window.onload = function () {
+        document.getElementById("packages").classList.add("active");
+        $("#translation").attr("href", "../forfait-1-3-points.html");
+      };
     </script>
-</body></html>
+  </body>
+</html>

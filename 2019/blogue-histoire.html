@@ -7,29 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="./img/logos/favicon.png">
+    <link rel="icon" sizes="192x192" href="../img/logos/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="SOS TIcket">
-    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+    <meta name="apple-mobile-web-app-title" content="<%= title %>">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
     <meta name="msapplication-TileColor" content="#F9AF48">
-    <link rel="shortcut icon" href="./img/favicon.png">
-    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#F9AF48">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <meta property="og:title" content="<%= metaTitle %>" />
+    <meta property="og:image" content="<%= imageUrl %>" />
+    <meta property="og:url" content="<%= url %>" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="./html/freshchat.html">
-    <title>Blogue 1 | SOS Ticket</title>
-    <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
+    <title><%= metaTitle %></title>
+    <meta name="description" content="<%= metaDescription %>">
 </head>
 
+
 <body>
-    <div id="frHeader"></div>
+    <%- include('html/fr_header') -%>
 
     <main id="mainContent">
         <section class="blog">
@@ -37,48 +40,36 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./blogue.html">Blogue</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Titre de l'histoire</li>
+                        <li class="breadcrumb-item"><a href="../blogue.html">Blogue</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><%= title %></li>
                     </ol>
                 </nav>
                 <div class="row mx-auto">
                     <div class="col-md-8">
                         <div class="blog-post">
-                            <img class="img-fluid rounded-lg mb-5 shadow" src="./img/photos/blog-1.jpg" alt="">
-                            <h2>Titre de l'histoire</h2>
-                            <p class="blog-post-meta">13 juin 2019 par <a href="#">Thierry Rassam</a></p>
+                            <img class="img-fluid rounded-lg mb-5 shadow" src="<%= imageUrl %>" alt="">
+                            <h2><%= title %></h2>
+                            <p class="blog-post-meta"><%= publishDateFormatted %> par <a href="#"><%= author %></a></p>
 
                             <hr>
-                            <p>Depuis le 1er juin, nos bureaux sont déménagés au 204 rue Notre-Dame Ouest, suite 350, à quelques blocs de notre ancien bureau, dans de nouvelles installations plus spacieuses pour notre équipe qui grandit au fur et à mesure que nous desservons un clientèle satisfaite de la qualité de nos services.</p>
+                            <div id="article">
+                              <%- article %>
+                            </div>
+                            <% if(hasPrevious){ %>
+                              <a class="btn btn-primary" href="./<%= previousSlug %>">Précédent</a>
+                            <%  } %>
 
-                            <p>Notre numéro de téléphone reste le même, soit le (514) 448-4911. Vous pouvez toujours nous appeler pour demander vos questions, ou visitez notre site web et la page des questions posées fréquemment.</p>
-                            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <% if(hasNext){ %>
+                              <a class="btn btn-primary float-right" href="./<%= nextSlug %>">Prochain</a>
+                            <%  } %>
 
-                            <blockquote>
-                                <p class="lead font-weight-bold">Curabitur blandit tempus porttitor.Nullam quis risus eget urna mollisornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            </blockquote>
-
-                            <h3>Sub-heading</h3>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <ul>
-                                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                                <li>Nulla vitae elit libero, a pharetra augue.</li>
-                            </ul>
-                            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-                            <ol>
-                                <li>Vestibulum id ligula porta felis euismod semper.</li>
-                                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-                            </ol>
-                            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
                         </div>
 
                     </div>
 
                     <aside class="col-md-4">
 
-                        <div class="p-4">
+                        <!-- <div class="p-4">
                             <h4 class="font-italic">Archives</h4>
                             <ol class="list-unstyled mb-0">
                                 <li><a href="#">Mai 2016</a></li>
@@ -94,21 +85,23 @@
                                 <li><a href="#">Juillet 2015</a></li>
                                 <li><a href="#">Juin 2015</a></li>
                             </ol>
-                        </div>
+                        </div> -->
+
                         <div class="p-4">
                             <h4 class="font-italic">Réseaux sociaux</h4>
                             <ol class="list-unstyled">
-                                <li><a href="#">Facebook</a></li>
+                                <li><a href="https://www.facebook.com/sosticket.ca/" target="_blank">Facebook</a></li>
                             </ol>
                         </div>
-
                     </aside>
+
+
 
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./blogue.html">Blogue</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Titre de l'histoire</li>
+                        <li class="breadcrumb-item"><a href="../blogue.html">Blogue</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><%= title %></li>
                     </ol>
                 </nav>
             </div>
@@ -116,14 +109,15 @@
 
     </main>
 
-    <div id="frFooter"></div>
+    <!-- <div id="frFooter"></div> -->
+    <%- include('html/fr_footer') -%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
         window.onload = function() {
-            document.getElementById('connect').classList.add("active");
+            document.getElementById('about').classList.add("active");
             document.getElementById('blog').classList.add("active");
             $('#translation').attr("href", "./en/blogue-histoire.html");
         };

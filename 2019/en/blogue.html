@@ -7,30 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../img/logos/favicon.png">
+    <link rel="icon" sizes="192x192" href="../../img/logos/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="SOS TIcket">
-    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="../img/favicon.png">
+    <meta name="msapplication-TileImage" content="../../img/favicon.png">
     <meta name="msapplication-TileColor" content="#F9AF48">
-    <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="mask-icon" href="../../img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#F9AF48">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/custom.css">
-    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="import" href="../html/freshchat.html">
+    <%- include('../html/freshchat') -%>
     <title>Blog | SOS Ticket</title>
     <meta name="description" content="SOS Ticket est le fier porte-parole des droits des automobilistes depuis 2006. Nous sommes les leaders en contestation d’infractions.">
 </head>
 
 <body>
-    <div id="enHeader"></div>
-    
+    <%- include('../html/en_header') -%>
     <main id="mainContent">
         <section class="blog">
 
@@ -41,121 +40,26 @@
                         <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-7 order-md-2">
-                                            <img src="../img/photos/blog-1.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-success">News</strong>
-                                                <h3>We're moving</h3>
-                                                <div class="mb-3 text-muted">June 13 2019</div>
-                                                <p class="mb-3">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="./blogue-histoire.html">Read more</a>
-                                            </div>
-                                        </div>
-
+                                    <div class="row no-gutters" id="latest-article">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-5 order-md-2">
-                                            <img src="../img/photos/blog-2.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-primary">Trucs et astuces</strong>
-                                                <h3>Summer motorcycles and tires...</h3>
-                                                <div class="mb-2 text-muted">March 12 2019</div>
-                                                <p class="mb-2">When spring arrives, you do not have to hurry to summer mode. </p>
-                                                <a href="./blogue-histoire.html">Read more</a>
-                                            </div>
-                                        </div>
+                          </div>
+                        <div class="row mb-3" id="article-list">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-5 order-md-2">
-                                            <img src="../img/photos/blog-3.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-primary">Tips and tricks</strong>
-                                                <h3>ABC of signage </h3>
-                                                <div class="mb-2 text-muted">February 28 2019</div>
-                                                <p class="mb-2">SOS Ticket offers you a short survival guide to understand....</p>
-                                                <a href="./blogue-histoire.html">Read more</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-5 order-md-2">
-                                            <img src="../img/photos/speeding-car-tickets-flying.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-primary">Tips and tricks</strong>
-                                                <h3>Become a winter driving pro! </h3>
-                                                <div class="mb-2 text-muted">December 20 2018</div>
-                                                <p class="mb-2">Discover the tips that could avoid you well ...</p>
-                                                <a href="./blogue-histoire.html">Read more</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-5 order-md-2">
-                                            <img src="../img/photos/blog-5.jpg" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <strong class="d-inline-block mb-2 text-primary">Tips and tricks</strong>
-                                                <h3>Alcohol and guests: Not always easy to manage!</h3>
-                                                <div class="mb-2 text-muted">December 20 2018</div>
-                                                <p class="mb-2">Do you receive kinship? Discover six effective tips ...</p>
-                                                <a href="./blogue-histoire.html">Keep reading</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
 
-                        <nav aria-label="blog page navigation">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Most recent</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
+                        <nav aria-label="blog page navigation" id="page-selection">
+                            <!-- <ul class="pagination justify-content-center">
+                            </ul> -->
                         </nav>
 
                     </div>
 
                     <aside class="col-md-2">
 
-                        <div class="p-4">
+                        <!-- <div class="p-4">
                             <h4 class="font-italic">Archives</h4>
                             <ol class="list-unstyled mb-0">
                                 <li><a href="#">May 2016</a></li>
@@ -171,11 +75,11 @@
                                 <li><a href="#">July 2015</a></li>
                                 <li><a href="#">June 2015</a></li>
                             </ol>
-                        </div>
+                        </div> -->
                         <div class="p-4">
                             <h4 class="font-italic">Social Media</h4>
                             <ol class="list-unstyled">
-                                <li><a href="#">Facebook</a></li>
+                                <li><a href="https://www.facebook.com/sosticket.ca/" target="_blank">Facebook</a></li>
                             </ol>
                         </div>
                     </aside>
@@ -184,16 +88,68 @@
             </div>
         </section>
 
-    </main>    
 
-    <div id="enFooter"></div>
+    </main>
+
+    <%- include('../html/en_footer') -%>
+
+    <script id="tmpl-article-card" type="text/x-jsrender">
+
+      <div class="col-md-7 order-md-2">
+          <img src={{:imageUrl}} class="card-img" alt="...">
+      </div>
+      <div class="col-md-5">
+          <div class="card-body">
+              {{if isNew}}
+              <strong class="d-inline-block mb-2 text-success">News</strong>
+              {{/if}}
+              <h3>{{:title}}</h3>
+              <div class="mb-3 text-muted">{{:publishDateFormatted}}</div>
+              <p class="mb-3">{{:previewText}}</p>
+              <a href="./blog/{{:slug}}">Read more</a>
+          </div>
+      </div>
+
+  </script>
+
+  <script id="tmpl-article-list-item" type="text/x-jsrender">
+
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="row no-gutters">
+                <div class="col-md-5 order-md-2">
+                    <img src={{:imageUrl}} class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <strong class="d-inline-block mb-2 text-primary">Tips and tricks</strong>
+                        <h3>{{:title}}</h3>
+                        <div class="mb-2 text-muted">{{:publishDateFormatted}}</div>
+                        <p class="mb-2">{{:previewText}}</p>
+                        <a href="./blog/{{:slug}}">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+    </script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.jsviews.com/download/jsrender.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
+
+    <script src="../js/jquery.bootpag.min.js"></script>
     <script src="../js/aos.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/blog-home.js"></script>
     <script>
         window.onload = function() {
-            document.getElementById('connect').classList.add("active");
+            document.getElementById('about').classList.add("active");
             document.getElementById('blog').classList.add("active");
             $('#translation').attr("href", "../blogue.html");
         };
