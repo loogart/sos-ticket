@@ -150,50 +150,50 @@ body {
     font-family: $font-family-base;
     padding-top: 3em;
     background-color: darken($darkpurple, 5%);
-        animation: fadein 1s;
+    animation: fadein 1s;
     -moz-animation: fadein 1s;
     -webkit-animation: fadein 1s;
-    -o-animation:fadein 1s
+    -o-animation: fadein 1s
 }
 
 
 @keyframes fadein {
     from {
-        opacity:0
+        opacity: 0
     }
 
     to {
-        opacity:1
+        opacity: 1
     }
 }
 
 @-moz-keyframes fadein {
     from {
-        opacity:0
+        opacity: 0
     }
 
     to {
-        opacity:1
+        opacity: 1
     }
 }
 
 @-webkit-keyframes fadein {
     from {
-        opacity:0
+        opacity: 0
     }
 
     to {
-        opacity:1
+        opacity: 1
     }
 }
 
 @-o-keyframes fadein {
     from {
-        opacity:0
+        opacity: 0
     }
 
     to {
-        opacity:1
+        opacity: 1
     }
 }
 
@@ -269,7 +269,7 @@ section.wizard {
         text-decoration: none;
         display: flex;
         align-items: stretch;
-        height:100%;
+        height: 100%;
     }
 
     a.tile-wrapper .tile {
@@ -400,6 +400,8 @@ section.wizard {
 
 section[class^="feature-"] {
     background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     h3 {
         font-weight: $font-weight-bold;
@@ -584,6 +586,17 @@ section.blog {
     }
 }
 
+section.marketing-block {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: $lightblue;
+
+    h3 {
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacer*1.25;
+    }
+}
+
 .biographie {
     display: flex;
     align-items: center;
@@ -605,8 +618,14 @@ footer {
         color: lighten($blue, 15%);
     }
 
+    li {
+        margin-bottom: 12px;
+    }
+
     a {
-        color: white;
+        color: $lightblue;
+        font-size: 14px;
+        line-height: 16px;
 
         &:hover {
             color: $yellow;
