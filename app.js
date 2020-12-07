@@ -4,7 +4,9 @@ const glob = require('glob');
 const ejs = require('ejs');
 const isNil = require('lodash/isNil');
 const httpRequest = require('request');
+const expressSitemapXml = require('express-sitemap-xml');
 const moment = require('moment');
+const robots = require('express-robots-txt');
 moment.locale('fr');
 const app = express()
 const port = 8081;//3000
@@ -33,6 +35,44 @@ app.get('/en/', function(req, res) {
   });
 });
 
+
+  const getUrls = async function (){
+    let rtsFr = ['/',
+            '/forfaits',
+            '/a-propos',
+            '/faq',
+            '/blogue',
+            '/contactez-nous',
+            '/forfait-1-3-points',
+            '/forfait-4-5-points',
+            '/forfait-facultes-affaiblies',
+            '/forfait-6-points-et-plus',
+            '/forfait-permis-suspendu',
+            '/forfait-droit-criminel',
+            '/forfait-vehicules-lourds',
+            '/forfait-taxis',
+            '/forfait-retractation-de-jugement',
+            '/forfait-permis-restreint',
+            '/forfait-mainlevee-de-la-saisie-de-vehicule',
+            '/forfait-retrait-de-plaidoyer',
+            '/forfait-gev',
+            '/conditions'
+          ];
+
+    let rts=[];
+
+    for(let rt of rtsFr)
+    {
+      rts.push(rt);
+      rts.push('/en'+rt);
+    }
+    return rts;
+  }
+
+app.use(expressSitemapXml(getUrls, 'https://sosticket.ca'))
+
+
+app.use(robots({ UserAgent: '*', Sitemap: 'https://sosticket.ca/sitemap.xml' }))
 
 app.get('/blog/:slug', function(req, res) {
  // res.sendFile(html_dir + base+'.html');
